@@ -1,147 +1,311 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>土耳其植发评测网 | 网站维护中</title>
-  <meta name="description" content="土耳其植发评测网正在整理和核对诊所公开数据，网站内容将持续更新。">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
-      color: #1f2937;
-    }
+<title>Istanbul Hair Transplant Database</title>
 
-    .wrap {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
+<style>
 
-    .card {
-      width: 100%;
-      max-width: 780px;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
-      padding: 42px 32px;
-      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
-      text-align: center;
-    }
+body{
+font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
+margin:0;
+background:#0f1115;
+color:white;
+}
 
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #eff6ff;
-      color: #1d4ed8;
-      font-size: 13px;
-      border: 1px solid #dbeafe;
-      margin-bottom: 18px;
-    }
+.header{
+text-align:center;
+padding:60px;
+background:#11151c;
+}
 
-    h1 {
-      margin: 0 0 14px;
-      font-size: 42px;
-      line-height: 1.15;
-      color: #0f172a;
-    }
+.lang{
+position:absolute;
+top:20px;
+right:20px;
+}
 
-    .sub {
-      margin: 0 auto 24px;
-      max-width: 620px;
-      font-size: 18px;
-      color: #475569;
-      line-height: 1.7;
-    }
+button{
+padding:6px 12px;
+margin-left:6px;
+cursor:pointer;
+border-radius:5px;
+border:none;
+}
 
-    .info-box {
-      margin: 26px auto 0;
-      max-width: 620px;
-      text-align: left;
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      padding: 20px 22px;
-    }
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
 
-    .info-box h2 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      color: #0f172a;
-    }
+.stats{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
 
-    .info-box ul {
-      margin: 0;
-      padding-left: 20px;
-      color: #475569;
-      line-height: 1.8;
-    }
+.card{
+flex:1;
+background:#1b212b;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
 
-    .footer {
-      margin-top: 24px;
-      font-size: 14px;
-      color: #64748b;
-    }
+.bar{
+height:18px;
+background:#2a313c;
+border-radius:10px;
+margin-top:10px;
+overflow:hidden;
+}
 
-    .footer a {
-      color: #2563eb;
-      text-decoration: none;
-    }
+.bar span{
+height:100%;
+display:block;
+}
 
-    .footer a:hover {
-      text-decoration: underline;
-    }
+.high{width:8%;background:#27ae60;}
+.medium{width:25%;background:#f39c12;}
+.low{width:67%;background:#e74c3c;}
 
-    @media (max-width: 640px) {
-      .card {
-        padding: 32px 20px;
-      }
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:20px;
+}
 
-      h1 {
-        font-size: 30px;
-      }
+.clinic{
+background:#1b212b;
+padding:20px;
+border-radius:10px;
+}
 
-      .sub {
-        font-size: 16px;
-      }
-    }
-  </style>
+.footer{
+text-align:center;
+margin-top:50px;
+padding:20px;
+background:#0b0e13;
+color:#aaa;
+}
+
+</style>
+
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="badge">网站维护中</div>
 
-      <h1>土耳其植发评测网正在更新</h1>
+<div class="header">
 
-      <p class="sub">
-        目前正在整理和核对，包括合法资质、Google 评分、评论数量、价格参考和公开资料。
-        页面内容将陆续上线。
-      </p>
+<div class="lang">
 
-      <div class="info-box">
-        <h2>当前维护内容</h2>
-        <ul>
-          <li>整理土耳其卫生部合法医疗机构名单</li>
-          <li>筛选主流植发诊所与医生品牌诊所</li>
-          <li>核对 Google 评分、评论数量和官网信息</li>
-          <li>后续上线诊所对比、价格参考和付费咨询服务</li>
-        </ul>
-      </div>
+<button onclick="setLang('zh')">中文</button>
 
-      <p class="footer">
-        网站地址：<a href="https://www.trzhifa.com">www.trzhifa.com</a>
-      </p>
-    </div>
-  </div>
+<button onclick="setLang('en')">English</button>
+
+</div>
+
+<h1 id="title">伊斯坦布尔植发诊所数据库</h1>
+
+<p id="subtitle">独立整理的伊斯坦布尔植发机构数据库</p>
+
+</div>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="card">
+
+<h2>18</h2>
+
+<p id="high">高专注植发机构</p>
+
+</div>
+
+<div class="card">
+
+<h2>58</h2>
+
+<p id="medium">中等相关机构</p>
+
+</div>
+
+<div class="card">
+
+<h2>154</h2>
+
+<p id="low">低相关机构</p>
+
+</div>
+
+</div>
+
+<h2 id="market">市场结构</h2>
+
+<p id="hightxt">高端植发机构</p>
+
+<div class="bar"><span class="high"></span></div>
+
+<p id="mediumtxt">中等相关机构</p>
+
+<div class="bar"><span class="medium"></span></div>
+
+<p id="lowtxt">低相关机构</p>
+
+<div class="bar"><span class="low"></span></div>
+
+<h2 id="top">重点植发机构</h2>
+
+<div class="grid">
+
+<div class="clinic">
+
+<h3>ASMED</h3>
+
+<p id="asmed">
+
+医生主导植发中心<br>
+
+地区：Ataşehir<br>
+
+价格：€8000 – €12000<br>
+
+评分：4.5
+
+</p>
+
+</div>
+
+<div class="clinic">
+
+<h3>EsteWorld</h3>
+
+<p id="este">
+
+大型医疗集团植发中心<br>
+
+地区：Ataşehir / Bahçelievler<br>
+
+价格：€3000 – €4500<br>
+
+评分：4.8
+
+</p>
+
+</div>
+
+<div class="clinic">
+
+<h3>CINIK Hair Hospital</h3>
+
+<p id="cinik">
+
+医生监督植发机构<br>
+
+地区：Beşiktaş<br>
+
+价格：€2350 – €5500
+
+</p>
+
+</div>
+
+<div class="clinic">
+
+<h3>Turkeyana Clinic</h3>
+
+<p id="turkeyana">
+
+技师主导植发机构<br>
+
+地区：Bakırköy<br>
+
+价格：€2500 – €3500
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Istanbul Hair Transplant Database
+
+</div>
+
+<script>
+
+function setLang(lang){
+
+if(lang=="en"){
+
+title.innerText="Istanbul Hair Transplant Database"
+
+subtitle.innerText="Independent database of hair transplant clinics in Istanbul"
+
+high.innerText="High Focus Clinics"
+
+medium.innerText="Medium Relevance Clinics"
+
+low.innerText="Low Relevance Clinics"
+
+market.innerText="Market Structure"
+
+hightxt.innerText="High-end clinics"
+
+mediumtxt.innerText="Medium relevance clinics"
+
+lowtxt.innerText="Low relevance clinics"
+
+top.innerText="Top Hair Transplant Clinics"
+
+asmed.innerHTML="Doctor-led hair transplant clinic<br>District: Ataşehir<br>Price: €8000 – €12000<br>Rating: 4.5"
+
+este.innerHTML="Large medical group hair transplant center<br>District: Ataşehir / Bahçelievler<br>Price: €3000 – €4500<br>Rating: 4.8"
+
+cinik.innerHTML="Doctor supervised hair transplant clinic<br>District: Beşiktaş<br>Price: €2350 – €5500"
+
+turkeyana.innerHTML="Technician-led transplant clinic<br>District: Bakırköy<br>Price: €2500 – €3500"
+
+}
+
+if(lang=="zh"){
+
+title.innerText="伊斯坦布尔植发诊所数据库"
+
+subtitle.innerText="独立整理的伊斯坦布尔植发机构数据库"
+
+high.innerText="高专注植发机构"
+
+medium.innerText="中等相关机构"
+
+low.innerText="低相关机构"
+
+market.innerText="市场结构"
+
+hightxt.innerText="高端植发机构"
+
+mediumtxt.innerText="中等相关机构"
+
+lowtxt.innerText="低相关机构"
+
+top.innerText="重点植发机构"
+
+}
+
+}
+
+</script>
+
 </body>
+
 </html>
