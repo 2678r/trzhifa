@@ -20,7 +20,7 @@ export default function TRHairGuidePrototype() {
       google_rating: 4.5,
       google_reviews: 352,
       price_main: "€8000–€12000",
-      price_notes: "医生品牌型，高端 FUE",
+      price_notes: "高端 FUE，医生品牌型",
       hiv_source: "unknown",
       last_checked: "2026-03",
     },
@@ -190,13 +190,10 @@ export default function TRHairGuidePrototype() {
     },
   ];
 
-  const badge = {
-    high: "bg-emerald-100 text-emerald-700",
-    medium: "bg-amber-100 text-amber-700",
-    low: "bg-slate-100 text-slate-700",
-    core: "bg-emerald-100 text-emerald-700",
-    secondary: "bg-blue-100 text-blue-700",
-    hidden: "bg-rose-100 text-rose-700",
+  const visibilityLabel = {
+    core: "核心可见",
+    secondary: "次级可见",
+    hidden: "隐藏/不透明",
   };
 
   const clinicModelLabel = {
@@ -220,110 +217,139 @@ export default function TRHairGuidePrototype() {
     unknown: "未知",
   };
 
+  const stat = [
+    { label: "机构总数", value: clinics.length },
+    { label: "医生总数", value: doctors.length },
+    { label: "核心植发", value: clinics.filter((c) => c.hair_visibility === "core").length },
+    { label: "隐藏跳过", value: clinics.filter((c) => c.hair_visibility === "hidden").length },
+  ];
+
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <div className="mx-auto max-w-7xl p-6 md:p-8">
-        <header className="mb-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="text-sm font-medium text-slate-500">TR Hair Guide · 原型预览</p>
-              <h1 className="mt-1 text-3xl font-bold tracking-tight">伊斯坦布尔植发机构数据库</h1>
-              <p className="mt-2 max-w-3xl text-sm text-slate-600">
-                这是一个基于你当前思路做的前端原型：先按网页可见度筛选，再区分机构模型、医生参与度、核心业务程度。
-              </p>
+    <div className="min-h-screen bg-[#060816] text-slate-100">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.18),transparent_25%),radial-gradient(circle_at_top_right,rgba(139,92,246,0.16),transparent_30%),radial-gradient(circle_at_bottom,rgba(16,185,129,0.14),transparent_30%)]" />
+      <div className="relative mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
+        <header className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl">
+          <div className="border-b border-white/10 px-6 py-4 md:px-8">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <div className="text-xs uppercase tracking-[0.28em] text-cyan-300/80">TR Hair Guide</div>
+                <h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">土耳其植发市场情报面板</h1>
+                <p className="mt-2 max-w-3xl text-sm text-slate-300">
+                  科技感原型，先看机构可见度、机构模型、医生参与度，再决定哪些值得继续研究。
+                </p>
+              </div>
+              <div className="hidden rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-right md:block">
+                <div className="text-xs text-cyan-200">Domain</div>
+                <div className="font-mono text-sm text-white">trhairguide.com</div>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-              <StatCard label="机构" value={String(clinics.length)} />
-              <StatCard label="医生" value={String(doctors.length)} />
-              <StatCard label="核心植发" value={String(clinics.filter(c => c.hair_visibility === 'core').length)} />
-              <StatCard label="隐藏/跳过" value={String(clinics.filter(c => c.hair_visibility === 'hidden').length)} />
-            </div>
+          </div>
+
+          <div className="grid gap-4 p-6 md:grid-cols-4 md:p-8">
+            {stat.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-white/10 bg-black/20 p-4 shadow-lg shadow-black/20"
+              >
+                <div className="text-xs text-slate-400">{item.label}</div>
+                <div className="mt-2 text-3xl font-semibold text-white">{item.value}</div>
+                <div className="mt-3 h-1 rounded-full bg-white/5">
+                  <div className="h-1 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" style={{ width: `${Math.min(100, item.value * 18)}%` }} />
+                </div>
+              </div>
+            ))}
           </div>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div className="mb-4 flex items-center justify-between">
+        <section className="mt-8 grid gap-6 xl:grid-cols-[1.35fr_0.85fr]">
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-cyan-500/5 backdrop-blur-xl md:p-6">
+            <div className="mb-5 flex items-center justify-between gap-4">
               <div>
-                <h2 className="text-xl font-semibold">机构视图</h2>
-                <p className="text-sm text-slate-500">优先看 hair_visibility、clinic_model、doctor_involvement</p>
+                <h2 className="text-xl font-semibold">机构雷达</h2>
+                <p className="mt-1 text-sm text-slate-400">快速判断哪些是核心植发玩家，哪些只是噪音。</p>
+              </div>
+              <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
+                clinic intelligence
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-slate-200">
-              <div className="grid grid-cols-12 gap-3 bg-slate-100 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600">
-                <div className="col-span-3">机构</div>
-                <div className="col-span-2">类型</div>
-                <div className="col-span-2">网页可见度</div>
-                <div className="col-span-2">手术模式</div>
-                <div className="col-span-1">评级</div>
-                <div className="col-span-2">备注</div>
-              </div>
+
+            <div className="space-y-4">
               {clinics.map((clinic) => (
-                <div key={clinic.clinic_id} className="grid grid-cols-12 gap-3 border-t border-slate-200 px-4 py-4 text-sm">
-                  <div className="col-span-3">
-                    <div className="font-semibold">{clinic.clinic_name}</div>
-                    <div className="text-xs text-slate-500">{clinic.official_name}</div>
-                    <div className="mt-1 text-xs text-slate-500">{clinic.district} · {clinic.facility_type}</div>
+                <div
+                  key={clinic.clinic_id}
+                  className="group rounded-3xl border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-5 transition hover:border-cyan-400/30 hover:bg-[linear-gradient(135deg,rgba(34,211,238,0.08),rgba(139,92,246,0.08))]"
+                >
+                  <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h3 className="text-lg font-semibold text-white">{clinic.clinic_name}</h3>
+                        <Pill tone={clinic.hair_related}>{clinic.hair_related}</Pill>
+                        <Pill tone={clinic.hair_visibility}>{visibilityLabel[clinic.hair_visibility]}</Pill>
+                      </div>
+                      <p className="mt-2 text-sm text-slate-400">{clinic.official_name}</p>
+                      <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                        <DataItem label="机构模型" value={clinicModelLabel[clinic.clinic_model] || clinic.clinic_model} />
+                        <DataItem label="医生参与" value={surgeryLabel[clinic.doctor_involvement] || clinic.doctor_involvement} />
+                        <DataItem label="区域" value={`${clinic.district} · ${clinic.facility_type}`} />
+                        <DataItem label="目标市场" value={clinic.target_market} />
+                      </div>
+                    </div>
+                    <div className="w-full max-w-xs rounded-2xl border border-white/10 bg-black/20 p-4">
+                      <div className="text-xs text-slate-400">价格备注</div>
+                      <div className="mt-2 text-sm text-white">{clinic.price_notes}</div>
+                      <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
+                        <MiniMetric label="评分" value={clinic.google_rating || "-"} />
+                        <MiniMetric label="评论" value={clinic.google_reviews || "-"} />
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-span-2">
-                    <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700">
-                      {clinicModelLabel[clinic.clinic_model] || clinic.clinic_model}
-                    </span>
-                  </div>
-                  <div className="col-span-2">
-                    <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${badge[clinic.hair_visibility]}`}>
-                      {clinic.hair_visibility === 'core' ? '核心可见' : clinic.hair_visibility === 'secondary' ? '次级可见' : '隐藏/不透明'}
-                    </span>
-                  </div>
-                  <div className="col-span-2 text-slate-700">{surgeryLabel[clinic.doctor_involvement] || clinic.doctor_involvement}</div>
-                  <div className="col-span-1">
-                    <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${badge[clinic.hair_related]}`}>
-                      {clinic.hair_related}
-                    </span>
-                  </div>
-                  <div className="col-span-2 text-xs text-slate-500">{clinic.price_notes}</div>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-              <h2 className="text-xl font-semibold">医生视图</h2>
-              <p className="mb-4 text-sm text-slate-500">只保留真正有决策价值的医生</p>
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-violet-500/5 backdrop-blur-xl md:p-6">
+              <div className="mb-4 flex items-center justify-between">
+                <div>
+                  <h2 className="text-xl font-semibold">医生面板</h2>
+                  <p className="mt-1 text-sm text-slate-400">只保留真正有决策价值的医生。</p>
+                </div>
+                <div className="rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1 text-xs text-violet-200">
+                  surgeon layer
+                </div>
+              </div>
+
               <div className="space-y-3">
                 {doctors.map((doctor) => (
-                  <div key={doctor.doctor_id} className="rounded-2xl border border-slate-200 p-4">
+                  <div key={doctor.doctor_id} className="rounded-2xl border border-white/10 bg-black/20 p-4">
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <h3 className="font-semibold">{doctor.doctor_name}</h3>
-                        <p className="text-sm text-slate-500">{doctor.clinic} · {doctor.city}</p>
+                        <div className="text-base font-semibold text-white">{doctor.doctor_name}</div>
+                        <div className="mt-1 text-sm text-slate-400">{doctor.clinic} · {doctor.city}</div>
                       </div>
-                      <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${badge[doctor.priority]}`}>
-                        {doctor.priority}
-                      </span>
+                      <Pill tone={doctor.priority}>{doctor.priority}</Pill>
                     </div>
-                    <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                      <Tag>{doctorTypeLabel[doctor.doctor_type] || doctor.doctor_type}</Tag>
-                      <Tag>{doctor.ishrs_status}</Tag>
-                      <Tag>ABHRS: {doctor.abhers}</Tag>
-                      <Tag>FUE Europe: {doctor.fue_europe_member}</Tag>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <SmallTag>{doctorTypeLabel[doctor.doctor_type] || doctor.doctor_type}</SmallTag>
+                      <SmallTag>{doctor.ishrs_status}</SmallTag>
+                      <SmallTag>ABHRS {doctor.abhers}</SmallTag>
+                      <SmallTag>FUE Europe {doctor.fue_europe_member}</SmallTag>
                     </div>
-                    <p className="mt-3 text-sm text-slate-700">{surgeryLabel[doctor.surgery_model] || doctor.surgery_model}</p>
-                    <p className="mt-2 text-xs text-slate-500">{doctor.notes}</p>
+                    <div className="mt-3 text-sm text-cyan-200">{surgeryLabel[doctor.surgery_model] || doctor.surgery_model}</div>
+                    <div className="mt-2 text-xs leading-6 text-slate-400">{doctor.notes}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-              <h2 className="text-xl font-semibold">你现在的工作流</h2>
-              <div className="mt-4 space-y-3 text-sm text-slate-700">
-                <Step n="1" text="先标记 hair_visibility：core / secondary / hidden" />
-                <Step n="2" text="只继续研究 core + secondary，hidden 直接冻结" />
-                <Step n="3" text="给机构打 clinic_model：医生诊所 / 高产量诊所 / 医美中心 / 医院科室" />
-                <Step n="4" text="确认 doctor_involvement：医生亲自做、医生开槽、医生监督、团队操作" />
-                <Step n="5" text="只有 ISHRS / FUE Europe / 明确亲自介入手术的医生才进入医生表" />
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-emerald-500/5 backdrop-blur-xl md:p-6">
+              <h2 className="text-xl font-semibold">建议工作流</h2>
+              <div className="mt-4 space-y-3">
+                <FlowStep number="01" title="先看网页可见度" text="core / secondary 继续研究，hidden 直接冻结。" />
+                <FlowStep number="02" title="再看机构模型" text="医生诊所、高产量诊所、医美中心、医院科室。" />
+                <FlowStep number="03" title="确认手术模式" text="医生亲自做、医生开槽、医生监督、团队操作。" />
+                <FlowStep number="04" title="医生入库标准" text="ISHRS / FUE Europe / 明确亲自介入手术。" />
               </div>
             </div>
           </div>
@@ -333,26 +359,56 @@ export default function TRHairGuidePrototype() {
   );
 }
 
-function StatCard({ label, value }) {
+function Pill({ children, tone = "medium" }) {
+  const tones = {
+    high: "bg-emerald-400/15 text-emerald-200 border-emerald-400/20",
+    medium: "bg-amber-400/15 text-amber-200 border-amber-400/20",
+    low: "bg-slate-400/15 text-slate-200 border-slate-400/20",
+    core: "bg-cyan-400/15 text-cyan-200 border-cyan-400/20",
+    secondary: "bg-blue-400/15 text-blue-200 border-blue-400/20",
+    hidden: "bg-rose-400/15 text-rose-200 border-rose-400/20",
+  };
   return (
-    <div className="rounded-2xl bg-slate-100 p-3">
-      <div className="text-xs text-slate-500">{label}</div>
-      <div className="mt-1 text-2xl font-bold">{value}</div>
+    <span className={`rounded-full border px-2.5 py-1 text-xs font-medium ${tones[tone] || tones.medium}`}>
+      {children}
+    </span>
+  );
+}
+
+function DataItem({ label, value }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
+      <div className="text-[11px] uppercase tracking-wide text-slate-500">{label}</div>
+      <div className="mt-2 text-sm text-white">{value}</div>
     </div>
   );
 }
 
-function Tag({ children }) {
-  return <span className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">{children}</span>;
+function MiniMetric({ label, value }) {
+  return (
+    <div className="rounded-xl border border-white/10 bg-white/5 p-3 text-center">
+      <div className="text-[11px] uppercase tracking-wide text-slate-500">{label}</div>
+      <div className="mt-1 text-lg font-semibold text-white">{value}</div>
+    </div>
+  );
 }
 
-function Step({ n, text }) {
+function SmallTag({ children }) {
+  return <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-300">{children}</span>;
+}
+
+function FlowStep({ number, title, text }) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-xs font-semibold text-white">
-        {n}
+    <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+      <div className="flex items-start gap-3">
+        <div className="rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-2 py-1 font-mono text-xs text-cyan-200">
+          {number}
+        </div>
+        <div>
+          <div className="text-sm font-semibold text-white">{title}</div>
+          <div className="mt-1 text-sm text-slate-400">{text}</div>
+        </div>
       </div>
-      <p>{text}</p>
     </div>
   );
 }
