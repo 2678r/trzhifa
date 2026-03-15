@@ -4,67 +4,123 @@ layout: home
 hero:
   name: "Istanbul Hair Transplant Guide"
   text: "Independent clinic database"
-  tagline: "Find transparent information about hair transplant clinics in Istanbul"
+  tagline: Transparent research on hair transplant clinics in Istanbul
   actions:
     - theme: brand
       text: Browse Clinics
       link: /clinics/asmed
     - theme: alt
-      text: About This Project
-      link: /about
+      text: Methodology
+      link: /methodology
 
 features:
-  - title: Independent Research
-    details: This database is built from independent research of hair transplant clinics in Istanbul, focusing on transparency and real clinic structures.
-
-  - title: Clinic Classification
-    details: Clinics are categorized by type, doctor involvement, and transparency level rather than marketing claims.
+  - title: Real Industry Structure
+    details: Most websites show marketing. This database maps the real structure of hair transplant clinics in Istanbul.
 
   - title: Doctor Involvement
-    details: We track whether clinics are doctor-led, team-based, or medical tourism centers.
+    details: Clinics are categorized by doctor involvement and surgical workflow rather than advertising claims.
 
-  - title: Real Industry Structure
-    details: The goal is to map the real structure of the Istanbul hair transplant industry.
+  - title: Clinic Models
+    details: Doctor-led clinics, medical tourism centers, aesthetic clinics, and hospital departments are clearly separated.
+
+  - title: Independent Research
+    details: This project is based on independent research of clinics, websites, and public information.
 
 ---
 
-## What is this site?
+## The Istanbul Hair Transplant Industry
 
-This project is an independent database of hair transplant clinics in Istanbul.
+Hair transplant clinics in Istanbul are heavily marketed through social media, influencers, and package deals.
 
-Many websites focus only on marketing, reviews, or package deals.  
-This site focuses on **structure and transparency**:
+However, the **real structure of the industry is rarely explained**.
 
-- Clinic type
-- Doctor involvement
-- Medical tourism model
-- Transparency of information
+Estimated industry structure:
+
+| Category | Estimated Count |
+|--------|--------|
+| Core hair transplant clinics | 40–60 |
+| Secondary clinics offering hair transplant | 100+ |
+| Hospitals capable of hair transplant | 300+ |
+
+Most patients only see marketing, not the real structure behind these clinics.
+
+---
+
+## Types of Hair Transplant Clinics
+
+Hair transplant providers in Istanbul generally fall into several categories.
+
+### Doctor-led clinics
+
+Example: **ASMED**
+
+- Doctor heavily involved in surgery  
+- Often smaller but more specialized  
+- Strong medical reputation
+
+---
+
+### Doctor brand clinics
+
+Example: **Dr. Cinik / Cosmedica**
+
+- Doctor designs hairline
+- Technician teams perform much of the procedure
+- Large international patient base
+
+---
+
+### Medical tourism hair transplant centers
+
+Example: **Now Hair Time**
+
+- Large surgical teams
+- Package-based services
+- Strong international marketing
+
+---
+
+### Aesthetic clinics offering hair transplant
+
+- Hair transplant is one of several aesthetic services
+- Often team-based surgical workflow
+
+---
+
+### Hospital departments
+
+- Hair transplant offered as a medical service
+- Not the core specialization of the institution
 
 ---
 
 ## Example Clinics
 
-| Clinic | Type | Doctor |
+| Clinic | Model | Doctor |
 |------|------|------|
 | [ASMED](/clinics/asmed) | Doctor-led clinic | Yes |
-| [Dr. Cinik](/clinics/cinik) | Medical tourism clinic | Yes |
+| [Dr. Cinik](/clinics/cinik) | Doctor brand clinic | Yes |
 | [Cosmedica](/clinics/cosmedica) | Hair transplant center | Yes |
 
 ---
 
-## How clinics are categorized
+## Explore the Database
 
-Clinics are roughly grouped into several models:
+Clinics in the database are categorized by:
 
-- **Doctor-led clinics**  
-- **Doctor brand clinics**
-- **Medical tourism hair transplant centers**
-- **Aesthetic clinics offering hair transplant**
-- **Hospital departments**
+- Clinic model
+- Doctor involvement
+- Transparency of information
+- Publicly available clinic data
+
+You can explore clinics individually or compare their structures.
+
+👉 Browse clinic profiles to learn more.
 
 ---
 
 ## Disclaimer
 
-This site is an informational project.  
-It does not provide medical advice or recommend specific clinics.
+This website is an informational research project.
+
+It does **not provide medical advice** and does not recommend specific clinics.
