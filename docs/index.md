@@ -3,8 +3,6 @@
 
 
 ## 快速测试链接
-- [医院对比](hospitals/cosmedica)  
-- [避坑指南](guide/avoid-pitfalls)
 # TR Hair Guide
 
 土耳其植发信息整理与测试页面。
