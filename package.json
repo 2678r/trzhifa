@@ -1,21 +1,14 @@
 {
-  "name": "trzhifa",
+  "name": "trhairguide",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "土耳其植发评测网",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/2678r/trzhifa.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/2678r/trzhifa/issues"
-  },
-  "homepage": "https://github.com/2678r/trzhifa#readme"
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.45"
+  }
 }
