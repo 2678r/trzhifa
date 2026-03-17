@@ -3,24 +3,19 @@ layout: home
 
 hero:
   name: "土耳其植发评测网"
-  text: "为你做手术的是医生，还是护士/团队？"
-  tagline: "先分清是谁做手术，再决定该联系哪一类诊所。"
+  text: "信息透明比推荐更重要！"
+  tagline: "为你做手术的是医生，还是护士/团队？"
   actions:
     - theme: brand
-      text: 精品诊所
+      text: ISHRS认证医生
       link: /doctors
     - theme: brand
-      text: 全包套餐
-      link: /package-clinics
-    - theme: brand
-      text: 医疗旅游
+      text: 跑量诊所
       link: /clinics
     - theme: brand
-      text: HIV植发
+      text: 艾友植发
       link: /hiv
 ---
-
-# 土耳其植发评测网
 
 ## 说明与合规
 
@@ -84,19 +79,19 @@ hero:
 /* 四个入口做成大块按钮 */
 .VPHomeHero .actions {
   display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  max-width: 620px;
-  margin-top: 28px;
+  max-width: 960px;
+  margin-top: 30px;
 }
 
 .VPHomeHero .actions .VPButton {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  min-height: 82px;
-  padding: 0 20px !important;
-  font-size: 24px !important;
+  min-height: 88px;
+  padding: 0 18px !important;
+  font-size: 22px !important;
   font-weight: 700 !important;
   border-radius: 16px;
   border: 1px solid var(--vp-c-brand-1);

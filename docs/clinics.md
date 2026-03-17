@@ -1,205 +1,112 @@
 ---
-title: 医疗旅游诊所
-aside: false
+outline: false
 ---
-
 <style>
-.clinic-note {
-  padding: 14px 16px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 14px;
-  background: var(--vp-c-bg-soft);
-  margin: 16px 0 24px;
-  font-size: 15px;
-  line-height: 1.75;
-}
-
-.clinic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 16px;
-  margin: 18px 0 28px;
-}
-
-.clinic-card {
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 14px;
-  background: var(--vp-c-bg-soft);
-  padding: 16px;
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.clinic-card h3 {
-  margin: 0 0 6px;
-  font-size: 22px;
-}
-
-.clinic-sub {
-  color: var(--vp-c-text-2);
+table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
-.clinic-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0 14px;
+table th, table td {
+  white-space: nowrap;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: middle;
 }
 
-.clinic-badges span {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
+table td {
+  white-space: normal;
 }
 
-.section-warn {
-  padding: 12px 14px;
-  border-left: 4px solid #f59e0b;
-  background: var(--vp-c-bg-soft);
-  margin: 10px 0 18px;
-  line-height: 1.75;
-}
-
-.clinic-card a {
+table a {
   color: var(--vp-c-brand-1);
   text-decoration: none;
-  font-weight: 600;
 }
 
-/* make grids tighter and more uniform */
-.clinic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 14px;
+/* 防止中文被挤成竖排 */
+table td, table th {
+  word-break: keep-all;
 }
-.clinic-card ul { margin: 8px 0 0; padding-left: 18px; }
-.clinic-card li { line-height: 1.6; }
+
+/* 行间更清晰 */
+table tr {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
 </style>
-
-# 医疗旅游诊所
-
 <div class="clinic-note">
 
-数据总览：
+- 本页汇总 2026年3月土耳其卫生部公布的有植发资质的约230家诊所 / 医疗机构
+- 所有名单来源于土耳其卫生部合法注册信息
+- 每一家都通过官网、实际沟通、公开资料、Google评价做过核对
 
-- 总计：200+ 家诊所 / 医疗机构（基于当前完整表格统计）
-- 数据来源：土耳其卫生部合法注册名单（Sağlık Bakanlığı）
-- 校验方式：官网信息 + 实际沟通 + 公开资料 + Google评价交叉验证
+你在这里能看到：
 
-分类规则（严格按字段）：
+- 有没有明确医生在做手术
+- 是否能看到价格（或大致价格区间）
+- 诊所是医生主导，还是团队/医疗旅游模式
 
-- ① Doctor = yes 且 price_transparency = Public
-- ② Doctor = yes 且 price_transparency 为空
-- ③ Doctor = no 且 facility_type ≠ hospital
-- ④ facility_type = hospital
+我只做一件事：
+把这些诊所按「医生 + 价格透明度」分类，方便你自己判断。
 
-输出字段（统一格式）：
-
-名称 — 区域 — 医生参与 — 价格 — 机构模式 — 官网
-
-说明：仅做结构分类，不做推荐、不排序。
+不推荐、不排名，只提供结构化信息。
 
 </div>
+
 
 ---
 
 ## ① 有医生 + 有价格（最透明）
 
-（Doctor = yes + price_transparency = Public）
-
-<div class="clinic-note">
-这一类是最容易判断的：医生是谁 + 大致多少钱，都能看到。
-</div>
-
-- Turkeyana — Bakırköy — doctor_supervised — Consultation — medical_tourism_center — https://turkeyanaclinic.com/
-- Smile Hair Clinic — Ümraniye — doctor_brand — €3290–€5790 — doctor_brand — https://www.smilehairclinic.com/
-- HEVA Clinic — Ümraniye — doctor_unknown — $2200 / 4000 graft — medical_tourism_center — https://www.dentalhairclinicturkey.com/
-- Cosmedica — Şişli — doctor_brand — 套餐报价 — doctor_brand — https://cosmedica.com/
-- Dr Cinik Clinic — Beşiktaş — doctor_brand — 套餐报价 — doctor_brand — https://emrahcinik.com/
-
-<div class="clinic-note">
-完整名单（节选）：Smile Hair Clinic、Dr Cinik、Cosmedica、Vera Clinic、Aslı Tarcan、HEVA 等。
-👉 完整列表见下方「全部名单」
-</div>
+| 名称 | 区 | 医生参与 | 价格 | 类型 | 官网 |
+|------|----|----------|------|------|------|
+| Turkeyana | Bakırköy | 医生参与（团队操作） | 需咨询 | 医疗旅游中心 | https://turkeyanaclinic.com/ |
+| Smile Hair Clinic | Ümraniye | 医生参与（团队执行） | €3290–€5790 | 医生品牌诊所 | https://www.smilehairclinic.com/ |
+| HEVA Clinic | Ümraniye | 医生参与不明确 | $2200 / 4000 graft | 医疗旅游中心 | https://www.dentalhairclinicturkey.com/ |
+| Cosmedica | Şişli | 医生参与（团队执行） | 套餐报价 | 医生品牌诊所 | https://cosmedica.com/ |
+| Dr Cinik Clinic | Beşiktaş | 医生参与（团队执行） | 套餐报价 | 医生品牌诊所 | https://emrahcinik.com/ |
 
 ---
 
 ## ② 有医生 + 无价格
 
-（Doctor = yes + price_transparency 为空）
-
-<div class="clinic-note">
-医生明确，但价格需要私聊获取。
-</div>
-
-- Adem Kose Polyclinic — İstanbul · Küçükçekmece — doctor_led — https://ademkose.com/
-- Melik Yagmur — İstanbul · Pendik — 新诊所 — https://melikyagmurpoliklinigi.com/
-- Fatih Kose — İstanbul · Şişli — 2002成立 — https://fatihkosepoliklinigi.com.tr/
-- Dr Bayer Clinic — İstanbul · Beşiktaş — 老医生 — https://www.yetkinbayer.com/en/
-- Dr Terziler — İstanbul · Beşiktaş — 医美+植发 — http://drterziler.com/
-- Dr Alp Aslan — İstanbul · Şişli — 医生主导 — https://dralpaslan.com/
-- Dr Yasemin Savaş — İstanbul · Ataşehir — 医生诊所 — https://dryaseminsavas.com/
+| 名称 | 区 | 医生参与 | 价格 | 类型 | 官网 |
+|------|----|----------|------|------|------|
+| Adem Kose Polyclinic | Küçükçekmece | 医生主导 | 无公开价格 | 医生个人诊所 | https://ademkose.com/ |
+| Melik Yagmur | Pendik | 医生主导（经验较新） | 无公开价格 | 医生个人诊所 | https://melikyagmurpoliklinigi.com/ |
+| Fatih Kose | Şişli | 医生主导 | 无公开价格 | 医生个人诊所 | https://fatihkosepoliklinigi.com.tr/ |
+| Dr Bayer Clinic | Beşiktaş | 老牌医生 | 无公开价格 | 医生个人诊所 | https://www.yetkinbayer.com/en/ |
+| Dr Terziler | Beşiktaş | 医生参与（团队执行） | 无公开价格 | 医美+植发诊所 | http://drterziler.com/ |
+| Dr Alp Aslan | Şişli | 医生主导 | 无公开价格 | 医生个人诊所 | https://dralpaslan.com/ |
+| Dr Yasemin Savaş | Ataşehir | 医生主导 | 无公开价格 | 医生个人诊所 | https://dryaseminsavas.com/ |
 
 ---
 
-## ③ 无医生 + 无价格（最常见套路）
+## ③ 无医生 + 无价格（最常见）
 
-（Doctor = no + 非 hospital）
-
-<div class="clinic-note">
-看得到品牌，看不到医生。
-</div>
-
-- Now Hair Time — İstanbul · Pendik — 大型医疗旅游中心 — https://nowhairtime.com/
-- G.E Poliklinik — İstanbul · Ataşehir — 小型团队 — https://gepoliklinik.com/
-- Alp Hac — İstanbul · Şişli — 营销型 — https://alphacpoliklinik.com.tr/
-- A Plus Polyclinic — İstanbul · Kadıköy — 医美综合 — https://www.apluspoliklinik.com/
-- AKL Polyclinic — İstanbul · Ataşehir — 小型 — https://www.aklpoliklinik.com/
-- Estepera — İstanbul · Şişli — 医疗旅游 — https://www.estepera.com/
-- Healthzen — İstanbul · Şişli — 医美+植发 — https://healthzenpoliklinigi.com/
-- DY MED Hair — İstanbul · Şişli — 小型团队 — https://dymedhairclinic.com
-- Şule Clinic — İstanbul · Eyüpsultan — 大团队 — https://sule-hairtransplant.com/
+| 名称 | 区 | 医生参与 | 价格 | 类型 | 官网 |
+|------|----|----------|------|------|------|
+| Now Hair Time | Pendik | 无明确医生 | 无公开价格 | 大型医疗旅游中心 | https://nowhairtime.com/ |
+| G.E Poliklinik | Ataşehir | 无明确医生 | 无公开价格 | 小型团队诊所 | https://gepoliklinik.com/ |
+| Alp Hac | Şişli | 无明确医生 | 无公开价格 | 营销型诊所 | https://alphacpoliklinik.com.tr/ |
+| A Plus Polyclinic | Kadıköy | 无明确医生 | 无公开价格 | 医美综合诊所 | https://www.apluspoliklinik.com/ |
+| AKL Polyclinic | Ataşehir | 无明确医生 | 无公开价格 | 小型诊所 | https://www.aklpoliklinik.com/ |
+| Estepera | Şişli | 无明确医生 | 无公开价格 | 医疗旅游诊所 | https://www.estepera.com/ |
+| Healthzen | Şişli | 无明确医生 | 无公开价格 | 医美+植发诊所 | https://healthzenpoliklinigi.com/ |
+| DY MED Hair | Şişli | 无明确医生 | 无公开价格 | 小型团队诊所 | https://dymedhairclinic.com |
+| Şule Clinic | Eyüpsultan | 无明确医生 | 无公开价格 | 大型团队诊所 | https://sule-hairtransplant.com/ |
 
 ---
 
-## ④ 综合医院 / 医疗中心
+## ④ 综合医院
 
-（facility_type = hospital）
-
-<div class="clinic-note">
-合法医院体系，但植发通常只是其中一个项目。
-</div>
-
-- Medical Park — İstanbul · 多院区 — 大型综合医院集团
-- Acıbadem — İstanbul · 多院区 — 顶级私立医院体系
-- Memorial — İstanbul · 多院区 — 知名医疗集团
-- Medipol — İstanbul · 多院区 — 医疗体系 / 大学医院
-
-其他综合/附属医疗机构（节选）：
-
-- Vialife Polyclinic — İstanbul · Ataşehir
-- Yıldızlar Polyclinic — İstanbul · Şişli
-- Pendik Medical Center — İstanbul · Pendik
-- Atlas University Hair Unit — İstanbul · Bağcılar
+- Medical Park — 多院区 — 综合医院体系
+- Acıbadem — 多院区 — 大型私立医院集团
+- Memorial — 多院区 — 知名医疗集团
+- Medipol — 多院区 — 医疗体系 / 大学医院
 
 ---
 
-## 全部名单（200+ 机构）
+## 完整名单
 
-本页只展示结构与代表机构。
-
-👉 完整名单（200+）单独页面：
-
-- 全部已核对诊所
-- 按四类完整分类
-- 可直接用于筛选 / 联系
-
-👉 /full-list
+👉 完整 220 家诊所名单请查看：[完整名单](/full-list)
