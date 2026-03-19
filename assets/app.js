@@ -14,6 +14,22 @@ function withBase(path) {
   return `${getBasePath()}${cleanPath}`
 }
 
+function injectSharedFooter() {
+  if (document.querySelector('footer.footer')) return
+  const shell = document.querySelector('.min-h-screen, .shell')
+  if (!shell) return
+  const footer = document.createElement('footer')
+  footer.className = 'footer'
+  footer.innerHTML = `
+    <div class="container">
+      <div class="card footer-card">
+        <p>免责声明：本网站基于公开资料整理，仅供信息参考与术语解读，不构成医疗建议。所有医疗决定请结合官方信息、面诊结果与个人情况独立判断。</p>
+      </div>
+    </div>
+  `
+  shell.appendChild(footer)
+}
+
 async function loadJson(path) {
   const response = await fetch(withBase(path))
   if (!response.ok) throw new Error(`Failed to load ${path}`)
@@ -366,6 +382,7 @@ function setupClinics() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  injectSharedFooter()
   const page = document.body.dataset.page
   if (page === 'home') setupHome()
   if (page === 'doctors') setupDoctors()

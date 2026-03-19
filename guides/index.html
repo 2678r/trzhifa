@@ -3,165 +3,305 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>术语解释 | 土耳其植发信息网</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { sand: '#f6f0e7', ink: '#1f1a14', clay: '#8b5e34', line: '#e4d8c8' },
-            boxShadow: { soft: '0 20px 50px rgba(46, 31, 17, 0.08)' },
-          },
-        },
-      }
-    </script>
+    <meta
+      name="description"
+      content="客观拆解土耳其植发常见术语：FUE、DHI、医生打孔、医生监督等，帮助你看懂真实含义与营销差异。"
+    />
+    <title>术语解释 | 土耳其植发透明指南</title>
     <link rel="stylesheet" href="../assets/styles.css?v=20260319b" />
+    <style>
+      .hero-panel {
+        padding: 28px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 196, 180, 0.18);
+        background: rgba(0, 196, 180, 0.08);
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--brand);
+      }
+
+      .lead {
+        max-width: 760px;
+        margin-top: 18px;
+        font-size: 17px;
+        color: var(--text-soft);
+      }
+
+      .section {
+        margin-top: 24px;
+      }
+
+      .term-grid {
+        display: grid;
+        gap: 20px;
+        margin-top: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .term-card {
+        border: 1px solid var(--line);
+        background: var(--surface-muted);
+        border-radius: var(--radius-md);
+        padding: 24px;
+      }
+
+      .term-card h3 {
+        margin: 0 0 16px;
+        font-size: 20px;
+        color: var(--brand-deep);
+        letter-spacing: -0.02em;
+      }
+
+      .term-card p {
+        margin: 12px 0;
+        font-size: 15.5px;
+        line-height: 1.8;
+        color: var(--text-soft);
+      }
+
+      .source-list {
+        margin: 20px 0 0;
+        padding-left: 20px;
+        color: var(--text-soft);
+      }
+
+      .source-list li + li {
+        margin-top: 10px;
+      }
+
+      .mini-note {
+        margin-top: 24px;
+        color: var(--text-soft);
+      }
+
+      @media (max-width: 820px) {
+        .hero-panel,
+        .term-card,
+        .content-card {
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
-  <body data-page="guide" class="bg-sand text-ink">
-    <div class="min-h-screen">
-      <header class="border-b border-stone-200/80 bg-white/80 backdrop-blur">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="../" class="flex flex-col">
-            <span class="text-2xl font-semibold tracking-tight">土耳其植发信息网</span>
-            <span class="text-xs uppercase tracking-[0.28em] text-stone-500">Terminology</span>
+  <body>
+    <div class="shell">
+      <header class="header">
+        <div class="container header-inner">
+          <a href="../">
+            <div class="brand-title">土耳其植发透明指南</div>
+            <div class="brand-subtitle">Transparent Hair Transplant Guide</div>
           </a>
-          <nav class="hidden gap-6 text-sm text-stone-600 md:flex">
+          <nav class="nav">
             <a href="../" class="nav-link">首页</a>
             <a href="../doctors/" class="nav-link">医生库</a>
             <a href="../clinics/" class="nav-link">诊所库</a>
             <a href="../guides/" class="nav-link nav-link-active">术语解释</a>
             <a href="../blog/" class="nav-link">科普文章</a>
-            <a href="../consult/" class="nav-link">提交信息</a>
+            <a href="../consult/" class="nav-link">提交反馈</a>
           </nav>
         </div>
       </header>
 
-      <main class="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 lg:px-8">
-        <section class="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-10">
-          <div class="inline-flex rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-stone-600">
-            土耳其植发信息网
-          </div>
-          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">术语解释</h1>
-          <p class="mt-5 max-w-4xl text-base leading-8 text-stone-600">
-            这一页专注于把土耳其植发中最常见、也最容易被营销包装的术语进行客观拆解，帮助患者理解每个词的真实含义。
-          </p>
-        </section>
+      <main class="main">
+        <div class="container">
+          <section class="section">
+            <div class="card hero-panel">
+              <div class="eyebrow">TR Hair Guide · 中立透明平台</div>
+              <h1 style="margin-top: 20px; font-size: clamp(42px, 7vw, 76px); line-height: 0.96; color: var(--brand-deep);">术语解释</h1>
+              <p class="lead">
+                把土耳其植发中最常见、也最容易被营销包装的术语进行客观拆解。<br />
+                我们只基于ISHRS官方资料和土耳其卫生部法规，帮助你看清每个词的真实含义。
+              </p>
+            </div>
+          </section>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <div class="text-xs uppercase tracking-[0.24em] text-stone-500">核心技术</div>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900">核心技术</h2>
-          <div class="mt-6 grid gap-4 md:grid-cols-2">
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">FUE</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：从供体区逐个提取毛囊单位的主流植发技术（Follicular Unit Extraction）。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：供体保护、疤痕表现、提取精细度和整体手术效率。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：只要写了FUE就代表做得很好，实际上不同医生和团队的执行差异可以非常大。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">DHI</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：使用植入笔直接将毛囊植入受区的一种种植方式（Direct Hair Implantation）。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：种植工具、节奏和流程，本质上仍是FUE的种植变体。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：DHI不是“更高级的植发版本”，也不天然比其他方式更好。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">FUT</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：先切取头皮条，再分离毛囊单位的传统方法（Follicular Unit Transplantation）。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：供体利用方式、线性疤痕和单次获取效率。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：FUT不等于落后，只是适用场景、代价和疤痕表现不同。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">手工 FUE</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：取发时主要依靠手动器械而非电动设备的提取方式。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：手感控制、取发节奏和对操作者熟练度的要求。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：手工不自动等于更高级，关键仍在于谁在操作和供体保护效果。</p>
-            </article>
-          </div>
-        </section>
+          <section class="section">
+            <div class="card content-card">
+              <h2>核心技术</h2>
+              <div class="term-grid">
+                <article class="term-card">
+                  <h3>FUE（Follicular Unit Excision）</h3>
+                  <p><strong>一句话定义：</strong>使用小圆形微型冲孔器（punch）逐个切除并取出毛囊单位的植发取发技术。</p>
+                  <p><strong>真正影响什么：</strong>供区保护、提取精准度、是否留下可见点状疤痕，以及整体手术效率。</p>
+                  <p><strong>常见误解：</strong>“FUE就等于无痕或更高级”。实际上FUE仍是外科手术，效果高度依赖医生经验和团队执行。ISHRS已将“Extraction”改为“Excision”，强调其手术性质。</p>
+                </article>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <div class="text-xs uppercase tracking-[0.24em] text-stone-500">器械与包装词</div>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900">器械与包装词</h2>
-          <div class="mt-6 grid gap-4 md:grid-cols-2">
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">蓝宝石</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：指使用蓝宝石刀片进行受区开槽或打孔。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：切口形状和器械手感，但不是决定手术结果的第一变量。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：蓝宝石听起来高级，但不等于医生技术更强或团队更稳。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">微型蓝宝石</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：强调切口更小、更精细的蓝宝石器械包装说法。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：仅为器械参数上的细微调整，最终效果仍取决于操作者水平。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：名字越长不代表技术越新，很多时候只是更细化的营销描述。</p>
-            </article>
-          </div>
-        </section>
+                <article class="term-card">
+                  <h3>DHI（Direct Hair Implantation）</h3>
+                  <p><strong>一句话定义：</strong>使用植入笔（implanter pen）在提取毛囊后直接进行植入的一种种植方式。</p>
+                  <p><strong>真正影响什么：</strong>毛囊体外保存时间和植入节奏，本质上是FUE取发 + 植入笔种植的组合。</p>
+                  <p><strong>常见误解：</strong>“DHI是全新更高级的技术”。ISHRS明确指出DHI不是独立的植发方法，而是FUE的植入变体，最终结果仍取决于医生主导程度而非工具名称。</p>
+                </article>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <div class="text-xs uppercase tracking-[0.24em] text-stone-500">角色与分工</div>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900">角色与分工</h2>
-          <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">医生打孔 / 医生开槽</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：受区关键切口由医生亲自完成。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：角度、方向、密度布局和最终自然度。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：不是医生出现过就算医生打孔，必须确认做到哪一步、做了多久。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">医生监督</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：医生在场或参与决策，但不一定亲自完成大部分执行。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：实际面对的是医生主导模式，还是团队主导模式。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：监督不等于操作，不能直接理解为“全程医生做”。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">团队</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：医生之外实际参与执行的助手群体。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：取发、分离、摆放、节奏和当天手术执行效率。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：团队不是天然专业保证，关键在于是否固定、是否熟练、分工是否透明。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">无痛麻醉 / 镇静</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：用来强调过程更舒适，或加入镇静让患者没那么紧张。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：舒适度和安全要求，不直接决定植发质量。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：只听“无痛”会忽略更关键的问题，谁负责麻醉和监测才更重要。</p>
-            </article>
-          </div>
-        </section>
+                <article class="term-card">
+                  <h3>FUT（Follicular Unit Transplantation）</h3>
+                  <p><strong>一句话定义：</strong>先从供区切取一条头皮条，再在显微镜下分离成单个毛囊单位进行移植的传统方法。</p>
+                  <p><strong>真正影响什么：</strong>单次可获取较多毛囊，但会在供区留下线性疤痕。</p>
+                  <p><strong>常见误解：</strong>“FUT已经过时”。在合适病例中，FUT仍可提供高效、高密度结果，关键在于患者供区条件和医生选择。</p>
+                </article>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <div class="text-xs uppercase tracking-[0.24em] text-stone-500">数量与结果</div>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900">数量与结果</h2>
-          <div class="mt-6 grid gap-4 md:grid-cols-2">
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">graft / 毛囊单位</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：植发时计算数量的基本单位，一个graft里可能包含1到多根头发。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：手术规模、供体消耗和费用计算方式。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：graft数字越大不代表越划算，要结合面积、供体条件和设计看。</p>
-            </article>
-            <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <h3 class="text-xl font-semibold text-stone-900">密度</h3>
-              <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：单位面积内种植的毛囊单位数量。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-700">它真正影响什么：视觉覆盖感、自然度、供体消耗和未来修复空间。</p>
-              <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：高密度不等于一定更好，不考虑供体和设计只追数字容易出问题。</p>
-            </article>
-          </div>
-        </section>
+                <article class="term-card">
+                  <h3>手工FUE</h3>
+                  <p><strong>一句话定义：</strong>取发过程中主要依靠手动器械而非电动设备的提取方式。</p>
+                  <p><strong>真正影响什么：</strong>操作者对毛囊损伤的控制能力和节奏。</p>
+                  <p><strong>常见误解：</strong>“手工一定比电动更好”。两者各有优势，最终取决于操作者的熟练度和供体保护效果。</p>
+                </article>
+              </div>
+            </div>
+          </section>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <h2 class="text-3xl font-semibold tracking-tight text-stone-900">参考来源</h2>
-          <ul class="mt-5 list-disc space-y-3 pl-6 text-base leading-8 text-stone-700">
-            <li>International Society of Hair Restoration Surgery（ISHRS）官方患者教育资料</li>
-            <li>土耳其卫生部《Saç Ekimi Birimleri Hakkında Yönetmelik》</li>
-          </ul>
-        </section>
+          <section class="section">
+            <div class="card content-card">
+              <h2>器械与包装词</h2>
+              <div class="term-grid">
+                <article class="term-card">
+                  <h3>蓝宝石（Sapphire Blade）</h3>
+                  <p><strong>一句话定义：</strong>使用由蓝宝石晶体制成的刀片进行受区打孔/开槽。</p>
+                  <p><strong>真正影响什么：</strong>切口形状（V形更细）、组织创伤程度和器械耐用性。</p>
+                  <p><strong>常见误解：</strong>“蓝宝石 = 技术更先进、效果更好”。蓝宝石是器械升级，最终自然度和成活率仍主要取决于医生的设计与执行。</p>
+                </article>
 
-        <section class="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
-          <h2 class="text-3xl font-semibold tracking-tight text-stone-900">免责声明</h2>
-          <p class="mt-5 text-base leading-8 text-stone-600">
-            本页内容基于公开权威资料整理，仅供信息参考与术语解读，不构成医疗建议。
-          </p>
-        </section>
+                <article class="term-card">
+                  <h3>微型蓝宝石 / 其他“XX FUE”</h3>
+                  <p><strong>一句话定义：</strong>强调切口更小、更精细的蓝宝石器械或类似营销描述。</p>
+                  <p><strong>真正影响什么：</strong>仅为器械参数的细微调整。</p>
+                  <p><strong>常见误解：</strong>名字越长、技术越新。许多“第X代”“微型”“冰”FUE等均为营销包装，核心仍是医生技术。</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="card content-card">
+              <h2>角色与分工</h2>
+              <div class="term-grid">
+                <article class="term-card">
+                  <h3>医生打孔 / 医生开槽</h3>
+                  <p><strong>一句话定义：</strong>受区切口创建（recipient site creation）由医生亲自完成。</p>
+                  <p><strong>真正影响什么：</strong>毛囊植入的角度、方向、密度和最终自然度，是决定手术美观度的关键步骤。</p>
+                  <p><strong>常见误解：</strong>“医生出现过就算医生打孔”。土耳其卫生部法规明确要求此步骤必须由持有资质的医生完成。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>医生监督</h3>
+                  <p><strong>一句话定义：</strong>医生在场或参与部分决策，但不一定亲自执行大部分操作。</p>
+                  <p><strong>真正影响什么：</strong>实际手术是由医生主导还是团队主导。</p>
+                  <p><strong>常见误解：</strong>把“监督”等同于“全程医生操作”。监督不等于亲手执行，效果差异可能很大。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>团队 / 技师</h3>
+                  <p><strong>一句话定义：</strong>医生之外参与取发、分拣、植入辅助等工作的助手。</p>
+                  <p><strong>真正影响什么：</strong>手术效率、毛囊处理质量和节奏。</p>
+                  <p><strong>常见误解：</strong>“团队专业就够了”。土耳其法规要求技师仅能在医生监督下进行辅助工作，核心外科步骤仍需医生负责。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>无痛麻醉 / 镇静</h3>
+                  <p><strong>一句话定义：</strong>通过局部麻醉或辅助镇静让手术过程更舒适。</p>
+                  <p><strong>真正影响什么：</strong>患者舒适度和安全性。</p>
+                  <p><strong>常见误解：</strong>“无痛 = 完全没感觉且更安全”。舒适宣传不等于质量，重点是麻醉执行者和监测是否规范。</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="card content-card">
+              <h2>数量与结果</h2>
+              <div class="term-grid">
+                <article class="term-card">
+                  <h3>Graft / 毛囊单位</h3>
+                  <p><strong>一句话定义：</strong>植发计算的基本单位，一个graft可包含1-4根头发。</p>
+                  <p><strong>真正影响什么：</strong>手术规模、供体消耗和费用。</p>
+                  <p><strong>常见误解：</strong>“graft数量越多越好”。需结合脱发面积、供体条件和设计密度综合判断。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>密度</h3>
+                  <p><strong>一句话定义：</strong>单位面积内种植的毛囊单位数量。</p>
+                  <p><strong>真正影响什么：</strong>视觉覆盖感、自然度和未来修复空间。</p>
+                  <p><strong>常见误解：</strong>“密度越高越自然”。过高密度可能增加供体负担和毛囊存活风险，合理规划更重要。</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="card content-card">
+              <h2>植发手术的5个核心事实：ISHRS患者必知事项</h2>
+              <div class="term-grid">
+                <article class="term-card">
+                  <h3>供体毛囊有限且不可再生</h3>
+                  <p><strong>核心事实：</strong>供区头发是有限资源，一旦提取就无法再生。</p>
+                  <p><strong>真正影响什么：</strong>医生必须在有限毛囊内实现最佳美观效果，而不是试图“一比一”补满所有脱发区。</p>
+                  <p><strong>避坑提醒：</strong>如果机构只强调高 graft 数量，却不谈供体保护和未来修复空间，就要更谨慎。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>植发是真正的手术</h3>
+                  <p><strong>核心事实：</strong>无论 FUE 还是 FUT，都是外科操作。</p>
+                  <p><strong>真正影响什么：</strong>FUE 通常需要部分或全部剃发，FUT 则涉及切取和缝合，恢复时间也会随术式不同而变化。</p>
+                  <p><strong>避坑提醒：</strong>任何把植发说成“像做护理一样轻松”的宣传，都没有把手术本质讲清楚。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>脱发是进行性的</h3>
+                  <p><strong>核心事实：</strong>原有非移植区头发会继续脱落，一次手术很少能“一劳永逸”。</p>
+                  <p><strong>真正影响什么：</strong>保守规划供体、预留未来修复空间，通常比一次性追求过高密度更重要。</p>
+                  <p><strong>避坑提醒：</strong>任何承诺“一次解决终身问题”的说法，都应该保持理性判断。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>现实期望至关重要</h3>
+                  <p><strong>核心事实：</strong>广告中的浓密效果往往更常见于早期脱发患者。</p>
+                  <p><strong>真正影响什么：</strong>晚期脱发者通常难以达到“满头浓发”，过度追求高密度可能过快耗尽供体。</p>
+                  <p><strong>避坑提醒：</strong>真正负责的医生，通常会先谈限制和取舍，而不是只承诺结果。</p>
+                </article>
+
+                <article class="term-card">
+                  <h3>必须由合格医生主导</h3>
+                  <p><strong>核心事实：</strong>术前咨询和手术执行应由有执照的医生主导，而不是仅由销售顾问或无照技师负责。</p>
+                  <p><strong>真正影响什么：</strong>设计、判断和关键步骤如果交给非医生人员，风险会显著上升。</p>
+                  <p><strong>避坑提醒：</strong>任何宣称“零风险”“完全无痕无痛”的说法，都应结合医生资质和真实分工一起核实。</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="card content-card">
+              <h2>参考来源</h2>
+              <ul class="source-list">
+                <li>International Society of Hair Restoration Surgery (ISHRS) 官方患者教育资料与FUE/FUT指南</li>
+                <li>土耳其卫生部《Saç Ekimi Birimleri Hakkında Yönetmelik》（2023及后续修订）</li>
+                <li>ISHRS 关于DHI和器械使用的立场声明</li>
+                <li>
+                  <a href="https://ishrs.org/top-5-things-to-know-about-hair-transplantation/" target="_blank" rel="noreferrer" style="color: var(--brand); font-weight: 600;">
+                    ISHRS：《Top 5 Things to Know About Hair Transplantation》
+                  </a>
+                </li>
+              </ul>
+              <p class="mini-note">本页内容基于公开权威资料整理，仅供信息参考与术语解读，不构成医疗建议。</p>
+            </div>
+          </section>
+        </div>
       </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="card footer-card">
+            <p>免责声明：本网站基于公开资料整理，仅供信息参考与术语解读，不构成医疗建议。所有医疗决定请结合官方信息、面诊结果与个人情况独立判断。</p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="../assets/app.js?v=20260319b" defer></script>
