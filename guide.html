@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自查指南 | 土耳其植发信息网</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { sand: '#f6f0e7', ink: '#1f1a14', clay: '#8b5e34', line: '#e4d8c8' },
+            boxShadow: { soft: '0 20px 50px rgba(46, 31, 17, 0.08)' },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body data-page="guide" class="bg-sand text-ink">
+    <div class="min-h-screen">
+      <header class="border-b border-stone-200/80 bg-white/80 backdrop-blur">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="/" class="flex flex-col">
+            <span class="text-2xl font-semibold tracking-tight">土耳其植发信息网</span>
+            <span class="text-xs uppercase tracking-[0.28em] text-stone-500">Self-Check Guide</span>
+          </a>
+          <nav class="hidden gap-6 text-sm text-stone-600 md:flex">
+            <a href="/" class="nav-link">首页</a>
+            <a href="/doctors.html" class="nav-link">医生库</a>
+            <a href="/clinics.html" class="nav-link">诊所库</a>
+            <a href="/guide.html" class="nav-link nav-link-active">自查指南</a>
+            <a href="/submit.html" class="nav-link">提交信息</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-5xl px-4 pb-16 pt-10 sm:px-6 lg:px-8">
+        <article class="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-10">
+          <div class="inline-flex rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-stone-600">
+            Static Guide Page
+          </div>
+          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">先看医生，再看机构，最后才问价格。</h1>
+          <div class="prose prose-stone mt-8 max-w-none prose-headings:font-semibold prose-p:leading-8">
+            <h2>1. 先做医生筛选</h2>
+            <p>医生页的核心不是“谁最火”，而是先筛掉不符合你预期的对象。重点看 Fellow / Member、ABHRS、专长和医生主导模式。</p>
+
+            <h2>2. 再做机构筛选</h2>
+            <p>诊所页的第一层逻辑是合规。它不是推荐榜，而是合规机构全集。接着再看有没有医生、有没有公开 package、是不是医院体系。</p>
+
+            <h2>3. 不要被营销节奏带着走</h2>
+            <p>很多机构会把“套餐、翻译、接送、酒店”讲得非常完整，但这些都不是决定手术质量的第一变量。真正重要的是医生能力、手术责任和长期审美判断。</p>
+
+            <h2>4. 联系前准备什么</h2>
+            <p>建议至少准备正面、左侧、右侧、头顶、后枕部照片，以及年龄、脱发史、既往治疗和用药信息。你越早准备清楚，越容易得到有效回复。</p>
+
+            <h2>5. 以后怎么维护这页</h2>
+            <p>这页是纯静态文章。以后只要你想补充经验、常见问题或判断逻辑，直接改这一个 HTML 就行，不会影响数据库结构。</p>
+          </div>
+        </article>
+      </main>
+
+      <footer class="border-t border-stone-200 bg-white">
+        <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-stone-500 sm:px-6 lg:px-8">
+          这是固定结构里的静态知识页，适合长期累积你的判断逻辑。
+        </div>
+      </footer>
+    </div>
+
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>
