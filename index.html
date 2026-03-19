@@ -148,6 +148,20 @@
         color: var(--text-soft);
       }
 
+      .hero-question {
+        margin-top: 0;
+        max-width: 900px;
+        font-size: clamp(44px, 8vw, 92px);
+        line-height: 1.02;
+        letter-spacing: -0.05em;
+        color: var(--text);
+      }
+
+      .hero-question strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+
       .content-card {
         padding: 24px;
       }
@@ -165,32 +179,6 @@
       .grid {
         display: grid;
         gap: 16px;
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .stat-card {
-        border: 1px solid var(--line);
-        background: var(--surface-muted);
-        border-radius: var(--radius-md);
-        padding: 22px;
-      }
-
-      .stat-number {
-        font-size: clamp(44px, 7vw, 76px);
-        line-height: 0.95;
-        font-weight: 700;
-        letter-spacing: -0.06em;
-        color: var(--text);
-      }
-
-      .stat-label {
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 1.7;
-        color: var(--text-soft);
       }
 
       .roles-grid {
@@ -319,12 +307,12 @@
           grid-template-columns: 1fr;
         }
 
-        .stats-grid {
-          grid-template-columns: 1fr;
-        }
-
         .lead {
           font-size: 16px;
+        }
+
+        .hero-question {
+          font-size: clamp(38px, 11vw, 60px);
         }
       }
     </style>
@@ -335,7 +323,7 @@
         <div class="container header-inner">
           <a href="./">
             <div class="brand-title">土耳其植发透明指南</div>
-            <div class="brand-subtitle">Neutral Patient Education Platform</div>
+            <div class="brand-subtitle">Transparent Hair Transplant Guide</div>
           </a>
           <nav class="nav">
             <a href="doctors/">医生库</a>
@@ -351,53 +339,50 @@
         <div class="container">
           <section class="section">
             <div class="card hero">
-              <div class="eyebrow">中立信息平台</div>
               <h1>土耳其植发透明指南</h1>
-              <p class="lead">
-                帮助用户先看清两件最重要的事：植发手术的钱到底花在哪里，手术到底由谁真正执行。
+              <p class="hero-question">
+                你花了几万块钱做植发。<br />
+                <strong>真正做手术的人，</strong><br />
+                <strong>你真的知道是谁吗？</strong>
               </p>
               <p class="lead">
-                这里不做诊所推广，只整理公开法规、认证信息和可核实的数据，帮助你先建立判断框架，再去看医生和诊所。
+                很多人手术后才突然意识到：<br />
+                自己了解的，只是营销话术。<br />
+                不是手术的真实执行。
               </p>
             </div>
           </section>
 
           <section class="section">
             <div class="card content-card">
-              <h2>土耳其卫生部对植发手术的关键要求</h2>
+              <h2>设计 → 取发 → 打孔 → 移植</h2>
               <p>
-                植发属于医疗行为，核心步骤和辅助分工并不是任意安排。根据土耳其卫生部《Saç Ekimi Birimleri Hakkında Yönetmelik》，至少应先核对下面这些底线要求。
+                一台植发手术通常包括这四步。每一步都不简单，真正的差异往往就藏在这些步骤分别由谁完成、完成到什么程度。
               </p>
               <div class="grid roles-grid">
                 <article class="role-card">
-                  <h3>打孔 / 开槽</h3>
-                  <p>打孔或开槽这类关键切口步骤，必须由持有医师执照的医生亲自完成。</p>
+                  <h3>设计</h3>
+                  <p>决定发际线、区域分配和整体规划。设计如果失误，后面步骤再细也很难补回来。</p>
                 </article>
                 <article class="role-card">
-                  <h3>助手 / 技术员</h3>
-                  <p>可以参与取发和移植，但必须在医生直接监督下工作，并持有卫生部认证证书。</p>
+                  <h3>取发</h3>
+                  <p>关系到供体保护、毛囊完整性和未来修复空间，不只是“把毛囊拿出来”这么简单。</p>
                 </article>
                 <article class="role-card">
-                  <h3>麻醉 / 镇静</h3>
-                  <p>如果涉及全麻或更深镇静，必须由合格麻醉医师负责，并全程监测体征。</p>
+                  <h3>打孔</h3>
+                  <p>决定角度、方向和密度布局，是自然度最关键的步骤之一。按法规，这一步必须由医生完成。</p>
                 </article>
                 <article class="role-card">
-                  <h3>机构资质</h3>
-                  <p>植发必须在获得卫生部批准的医院、医疗中心或诊所内进行，并满足许可与感染控制要求。</p>
+                  <h3>移植</h3>
+                  <p>关系到毛囊摆放、成活率和最终视觉覆盖感，团队熟练度会直接影响结果。</p>
                 </article>
               </div>
-              <p>
-                官方来源：
-                <a href="https://www.resmigazete.gov.tr/eskiler/2023/05/20230506-11.htm" target="_blank" rel="noreferrer"><strong>2023 主法规</strong></a>
-                /
-                <a href="https://www.resmigazete.gov.tr/eskiler/2025/09/20250912-2.htm" target="_blank" rel="noreferrer"><strong>2025 修订版</strong></a>
-              </p>
             </div>
           </section>
 
           <section class="section">
             <div class="card content-card">
-              <h2>把一台植发手术拆开来看</h2>
+              <h2>把角色拆开来看</h2>
               <p>
                 真正影响结果和费用的，往往不是宣传页写得多漂亮，而是下面这些角色各自承担什么工作。
               </p>
@@ -419,15 +404,12 @@
                   <p>负责接待、沟通和转化，但不等于医疗能力。你的费用中，可能有一部分就花在这里。</p>
                 </article>
               </div>
-              <p>
-                真正要问的不是“是不是名医”，而是关键步骤是谁做、做到什么程度、费用主要流向哪里。
-              </p>
             </div>
           </section>
 
           <section class="section">
             <div class="card content-card">
-              <h2>从这里开始查</h2>
+              <h2>从这里开始</h2>
               <div class="cta-row">
                 <a class="button button-primary" href="doctors/">查看医生库</a>
                 <a class="button button-secondary" href="clinics/">查看诊所库</a>
@@ -469,6 +451,9 @@
                 <li><a href="https://ishrs.org/" target="_blank" rel="noreferrer"><strong>ISHRS 官网</strong></a></li>
                 <li><a href="https://abhrs.org/certification/" target="_blank" rel="noreferrer"><strong>ABHRS 认证说明</strong></a></li>
               </ul>
+              <p class="mt-5 text-sm leading-8 text-stone-600">
+                本网站所有医生与诊所信息均基于以上公开来源整理，仅供信息参考，请以最新官方信息为准。
+              </p>
             </div>
           </section>
         </div>

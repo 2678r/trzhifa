@@ -208,9 +208,8 @@ function setupDoctors() {
                       </div>
                     </div>
 
-                    <div class="flex items-center justify-between gap-4 border-t border-stone-100 pt-4 text-sm">
+                    <div class="border-t border-stone-100 pt-4 text-sm">
                       <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="font-medium text-clay ${doctor.website ? 'hover:underline' : 'pointer-events-none text-stone-400'}">${doctor.website ? websiteHost(doctor.website) : '暂无官网'}</a>
-                      <span class="text-stone-500">${doctor.city_cn || doctor.city || '未标注城市'}</span>
                     </div>
                   </div>
                 </div>
