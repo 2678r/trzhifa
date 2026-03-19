@@ -47,182 +47,242 @@
 
       <main>
         <section class="mx-auto max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8 lg:pb-12 lg:pt-14">
-          <div class="grid gap-8 rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:grid-cols-[1.3fr_0.7fr] lg:p-10">
-            <div>
-              <div class="inline-flex rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-stone-600">
-                Turkey Hair Transplant Research Hub
-              </div>
-              <h1 class="mt-5 max-w-3xl text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
-                土耳其植发信息网：先把植发手术本身讲清楚。
-              </h1>
-              <p class="mt-5 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
-                对普通用户来说，先理解一台植发手术到底怎么做，比先看广告、套餐和案例更重要。因为同样叫植发，真正负责关键步骤的是谁、团队熟练度怎么样，最后会直接影响价格和质量。
-              </p>
-              <div class="mt-6 rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5">
-                <div class="text-xs uppercase tracking-[0.2em] text-stone-500">植发手术 4 个步骤</div>
-                <div class="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-                  <div>
-                    <div class="text-base font-semibold text-stone-900">设计</div>
-                    <p class="mt-2 text-sm leading-7 text-stone-600">设计发际线和种植区域，决定整体方向和审美基础。</p>
-                  </div>
-                  <div>
-                    <div class="text-base font-semibold text-stone-900">取发</div>
-                    <p class="mt-2 text-sm leading-7 text-stone-600">从供体区提取毛囊，考验手法、节奏和对供体的保护。</p>
-                  </div>
-                  <div>
-                    <div class="text-base font-semibold text-stone-900">打孔</div>
-                    <p class="mt-2 text-sm leading-7 text-stone-600">决定角度、方向和密度，是手术里最关键的步骤之一。</p>
-                  </div>
-                  <div>
-                    <div class="text-base font-semibold text-stone-900">移植</div>
-                    <p class="mt-2 text-sm leading-7 text-stone-600">把毛囊放回受区，影响成活率、排列和最终观感。</p>
-                  </div>
+          <div class="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-10">
+            <div class="inline-flex rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs uppercase tracking-[0.24em] text-stone-600">
+              Hair Transplant Education Hub
+            </div>
+            <div class="mt-6 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+              <div>
+                <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">土耳其植发信息网</h1>
+                <p class="mt-5 max-w-4xl text-base leading-8 text-stone-600 sm:text-lg">
+                  讲清术语、流程、角色分工和真实差异，帮助用户看懂医生、团队、价格与宣传。
+                </p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <a href="#terms" class="inline-flex items-center rounded-full bg-stone-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-stone-700">先看术语解释</a>
+                  <a href="#roles" class="inline-flex items-center rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-50">了解医生与团队怎么分工</a>
+                  <a href="#database" class="inline-flex items-center rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-50">查看医生库 / 诊所库</a>
                 </div>
               </div>
-              <div class="mt-8 flex flex-wrap gap-3">
-                <a href="doctors.html" class="inline-flex items-center rounded-full bg-stone-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-stone-700">进入医生库</a>
-                <a href="clinics.html" class="inline-flex items-center rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-50">进入诊所库</a>
-                <a href="guide.html" class="inline-flex items-center rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-50">查看自查指南</a>
+
+              <div class="grid gap-4">
+                <div class="rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5">
+                  <div class="text-xs uppercase tracking-[0.22em] text-stone-500">为什么先做客户教育</div>
+                  <p class="mt-3 text-sm leading-8 text-stone-600">
+                    首页不是为了推销某家诊所，而是先让第一次接触土耳其植发的人知道：同样叫植发，真正差异往往不在包装，而在术语背后到底是什么意思、关键步骤是谁做、团队是否稳定。
+                  </p>
+                </div>
+                <div class="rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5">
+                  <div class="text-xs uppercase tracking-[0.22em] text-stone-500">当前数据库规模</div>
+                  <div id="home-stats" class="mt-4 grid gap-3 sm:grid-cols-2">
+                    <div class="rounded-2xl border border-stone-200 bg-white p-4">
+                      <div class="text-sm text-stone-500">精品医生</div>
+                      <div data-home-doctors class="mt-2 text-3xl font-semibold">—</div>
+                    </div>
+                    <div class="rounded-2xl border border-stone-200 bg-white p-4">
+                      <div class="text-sm text-stone-500">合规机构</div>
+                      <div data-home-clinics class="mt-2 text-3xl font-semibold">—</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="grid gap-4">
-              <div class="rounded-3xl border border-stone-200 bg-stone-50 p-5">
-                <p class="text-xs uppercase tracking-[0.22em] text-stone-500">当前数据库规模</p>
-                <div id="home-stats" class="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div class="rounded-2xl border border-stone-200 bg-white p-4">
-                    <div class="text-sm text-stone-500">精品医生</div>
-                    <div data-home-doctors class="mt-2 text-3xl font-semibold">—</div>
-                  </div>
-                  <div class="rounded-2xl border border-stone-200 bg-white p-4">
-                    <div class="text-sm text-stone-500">合规机构</div>
-                    <div data-home-clinics class="mt-2 text-3xl font-semibold">—</div>
-                  </div>
-                </div>
+        <section id="roles" class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12">
+          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
+            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">第二屏</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">植发到底是谁在做</h2>
+            <p class="mt-4 max-w-4xl text-sm leading-8 text-stone-600 sm:text-base">
+              不同诊所最大的差异，不只是医生名气，而是医生参与到哪一步、团队是否稳定、每天做几台、宣传和真实分工是否一致。
+            </p>
+            <div class="mt-6 grid gap-4 lg:grid-cols-3">
+              <div class="rounded-[1.5rem] border border-emerald-200 bg-emerald-50/60 p-5">
+                <div class="text-sm font-semibold text-stone-900">医生</div>
+                <p class="mt-3 text-sm leading-7 text-stone-600">通常负责设计、判断供体条件、规划发际线和关键技术决策。有些医生会亲自打孔，有些还会亲自取发。</p>
+                <p class="mt-3 text-sm leading-7 text-stone-700">真正影响：方向、密度、自然度，以及手术最关键的判断。</p>
               </div>
-              <div class="rounded-3xl border border-stone-200 bg-stone-50 p-5">
-                <p class="text-xs uppercase tracking-[0.22em] text-stone-500">一般怎么分工</p>
-                <ol class="mt-4 grid gap-3 text-sm leading-7 text-stone-600">
-                  <li>1. 一般是一位医生，加几位助手共同完成。</li>
-                  <li>2. 医生通常负责设计和打孔，有些医生也会亲自取发。</li>
-                  <li>3. 其余步骤常由助手完成，所以团队熟练度也非常重要。</li>
-                </ol>
+              <div class="rounded-[1.5rem] border border-amber-200 bg-amber-50/60 p-5">
+                <div class="text-sm font-semibold text-stone-900">团队 / 助手</div>
+                <p class="mt-3 text-sm leading-7 text-stone-600">常负责分离毛囊、部分取发、种植等步骤。团队是否固定、是否熟练，会明显影响效率、成活率和一致性。</p>
+                <p class="mt-3 text-sm leading-7 text-stone-700">真正影响：执行稳定性、毛囊处理质量、当天手术体验。</p>
+              </div>
+              <div class="rounded-[1.5rem] border border-sky-200 bg-sky-50/60 p-5">
+                <div class="text-sm font-semibold text-stone-900">护士 / 麻醉相关人员</div>
+                <p class="mt-3 text-sm leading-7 text-stone-600">如果涉及镇静、无痛或更强的麻醉方案，就要问清楚现场有没有真正负责麻醉和监测的人。</p>
+                <p class="mt-3 text-sm leading-7 text-stone-700">真正影响：安全边界，而不是宣传里“舒服不舒服”这么简单。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="terms" class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12">
+          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
+            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">第三屏</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">术语翻译区</h2>
+            <p class="mt-4 max-w-4xl text-sm leading-8 text-stone-600 sm:text-base">
+              下面这些词经常被用来做宣传，但真正有价值的是：它到底是什么意思、会影响什么、最容易被误解成什么。
+            </p>
+            <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">FUE</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：从供体区一个个提取毛囊单位的主流植发方式。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：供体保护、疤痕表现、取发精细度。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：只要写了 FUE 就代表做得精细，其实差异很大。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">DHI</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：常指用植入笔直接把毛囊放入受区的一种种植方式。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：种植节奏、器械选择、团队配合方式。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：DHI 不是更高级版本的植发，也不天然比别的方法更好。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">FUT</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：切取头皮条后再分离毛囊的老一代主流方法。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：供体利用方式、线性疤痕、毛囊获取效率。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：FUT 不等于落后，只是适用场景和代价不同。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">手工 FUE</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：取发时主要靠手动器械而不是电动设备。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：取发节奏、手感控制、对医生或团队熟练度的要求。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：手工不等于一定更高级，关键还是谁在做、做得怎么样。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">蓝宝石</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：常指用蓝宝石刀片做开槽或打孔。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：器械形状和切口表现，但不是决定结果的第一变量。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：蓝宝石不是质量保证，更不是听到这个词就可以放心。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">微型蓝宝石</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：宣传语里常用来强调切口更小、更精细的蓝宝石器械。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：切口大小只是一个参数，仍取决于操作者的稳定性和判断。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：名字越长不代表技术越新，很多时候只是包装得更细。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">医生打孔 / 医生开槽</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：指受区关键切口由医生亲自完成。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：角度、方向、密度布局和最终自然度。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：只要医生露个面就算医生打孔，必须问清楚做到哪一步、做了多久。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">医生监督</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：医生在场或参与部分决策，但不一定亲自做关键执行。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：你面对的是医生主导模式，还是团队主导模式。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：监督不等于操作，不能把两者当成一回事。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">无痛麻醉 / 镇静</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：常用来描述局麻更舒适，或加入镇静让过程没那么紧张。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：舒适度和安全要求，而不是手术本身质量。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：听起来轻松，但只要麻醉更深，就要问清楚谁负责监测。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">团队</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：医生之外参与执行的助手群体。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：分离、摆放、节奏、熟练度和一天能做几台。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：团队不是天然专业词，必须问是不是固定团队、谁在做什么。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">graft / 毛囊单位</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：植发时计算数量的基本单位，一个 graft 里可能有 1 到多根头发。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：手术规模、供体消耗和费用计算方式。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：graft 数越大不代表越好，要结合面积、密度和供体条件看。</p>
+              </article>
+              <article class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">密度</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">一句话定义：单位面积内种了多少毛囊单位。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-700">真正影响什么：视觉覆盖感、自然度、供体消耗和二次修复空间。</p>
+                <p class="mt-2 text-sm leading-7 text-stone-500">常见误解：高密度不是越高越好，不考虑供体和设计只追数字容易出问题。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12">
+          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
+            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">第四屏</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">这些词听起来高级，但你要问清是什么意思</h2>
+            <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">全程医生操作</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：别只听四个字，要问设计、取发、打孔、移植是不是都由医生本人完成。</p>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">医生监督</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：很多时候是医生负责看一眼、做部分步骤，真正大部分执行还是团队。</p>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">无痛麻醉</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：它强调舒服，不代表没有风险。只要涉及更深的麻醉，就要问谁在监测。</p>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">高密度</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：高密度不是口号，是供体、面积、设计和执行能力一起决定的，不是想种多密就多密。</p>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">VIP 团队</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：先别被名字打动，要问是不是固定团队、每天做几台、谁有经验、谁临时拼凑。</p>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <h3 class="text-lg font-semibold text-stone-900">蓝宝石 / 微针 / DHI</h3>
+                <p class="mt-3 text-sm leading-7 text-stone-600">人话解释：这些先是器械或方法名，不是质量认证。关键仍然是谁在操作、操作得怎么样。</p>
               </div>
             </div>
           </div>
         </section>
 
         <section class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12">
-          <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            <a href="doctors.html" class="group rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft transition hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">Doctors</div>
-              <h2 class="mt-4 text-2xl font-semibold">医生数据库</h2>
-              <p class="mt-3 text-sm leading-7 text-stone-600">先看 ISHRS 会员身份，再看 Fellow / Member、ABHRS、城市、专长和医生主导模式。</p>
-              <div class="mt-5 text-sm font-medium text-clay">打开医生库</div>
-            </a>
-
-            <a href="clinics.html" class="group rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft transition hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">Clinics</div>
-              <h2 class="mt-4 text-2xl font-semibold">诊所数据库</h2>
-              <p class="mt-3 text-sm leading-7 text-stone-600">先看是否具名医生、是否价格透明，再自己继续研究，不把刷量评价和粉丝数当核心依据。</p>
-              <div class="mt-5 text-sm font-medium text-clay">打开诊所库</div>
-            </a>
-
-            <a href="guide.html" class="group rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft transition hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">Guide</div>
-              <h2 class="mt-4 text-2xl font-semibold">自查指南</h2>
-              <p class="mt-3 text-sm leading-7 text-stone-600">把术前要问的问题拆开看：医生、团队、麻醉、销售、中介，每一环都影响风险和费用去向。</p>
-              <div class="mt-5 text-sm font-medium text-clay">阅读指南</div>
-            </a>
-
-            <a href="submit.html" class="group rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft transition hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">Submit</div>
-              <h2 class="mt-4 text-2xl font-semibold">提交信息</h2>
-              <p class="mt-3 text-sm leading-7 text-stone-600">收集真实用户反馈、价格信息和纠错补充，让数据库随着众包持续变得更完整。</p>
-              <div class="mt-5 text-sm font-medium text-clay">进入提交页</div>
-            </a>
+          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
+            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">第五屏</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">判断一家诊所的框架</h2>
+            <p class="mt-4 max-w-4xl text-sm leading-8 text-stone-600 sm:text-base">
+              真正要问的不是“是不是名医”，而是关键步骤是谁做、做到什么程度、每天做多少台。
+            </p>
+            <div class="mt-6 grid gap-4 lg:grid-cols-2">
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <div class="text-sm font-semibold text-stone-900">判断清单</div>
+                <ul class="mt-3 grid gap-3 text-sm leading-7 text-stone-600">
+                  <li>谁做设计</li>
+                  <li>谁做开槽 / 打孔</li>
+                  <li>谁做取发</li>
+                  <li>谁做种植</li>
+                  <li>团队是否固定</li>
+                  <li>价格是否和参与度匹配</li>
+                </ul>
+              </div>
+              <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
+                <div class="text-sm font-semibold text-stone-900">为什么这个框架有用</div>
+                <p class="mt-3 text-sm leading-8 text-stone-600">
+                  因为同样一个品牌名，背后可能是完全不同的执行结构。有人是医生高度参与，有人是医生只做前面一小段，后面全部交给团队。每天做几台、团队是不是固定、价格和医生参与度是否匹配，才是决定体验和结果差异的关键。
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft">
-            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">手术分工</div>
-            <h2 class="mt-4 text-3xl font-semibold tracking-tight">一台手术的质量，通常由医生水平和团队熟练度共同决定。</h2>
-            <div class="mt-5 grid gap-4 lg:grid-cols-3">
-              <div class="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
-                <div class="text-sm font-semibold text-stone-900">医生</div>
-                <p class="mt-2 text-sm leading-7 text-stone-600">医生负责设计和打孔，有些医生还会亲自取发。医生水平决定方向、密度和手术核心质量。</p>
-              </div>
-              <div class="rounded-2xl border border-amber-200 bg-amber-50/60 p-4">
-                <div class="text-sm font-semibold text-stone-900">助手团队</div>
-                <p class="mt-2 text-sm leading-7 text-stone-600">毛囊分离、移植等步骤常由助手完成。团队是否稳定、熟练，会直接影响效率和结果。</p>
-              </div>
-              <div class="rounded-2xl border border-stone-200 bg-stone-50 p-4">
-                <div class="text-sm font-semibold text-stone-900">价格与质量</div>
-                <p class="mt-2 text-sm leading-7 text-stone-600">不同的医生、不同的团队，价格不一样，质量也不一样。便宜和贵，背后往往对应的是完全不同的执行结构。</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-            <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">真正要先问的问题</div>
-              <h2 class="mt-4 text-3xl font-semibold tracking-tight">客户最该先弄明白的，是关键步骤到底由谁来做。</h2>
-              <div class="mt-4 space-y-4 text-sm leading-8 text-stone-600">
-                <p>
-                  一台植发手术里，设计、取发、打孔、移植未必都由同一个人完成。表面上看是一个套餐，实际上背后是不同角色的协作。
-                </p>
-                <p>
-                  很多机构会说“医生监督”或“团队操作”，但这些说法本身并不能回答最关键的问题：设计是谁做的，打孔是谁做的，取发和移植又是谁做的。
-                </p>
-                <p>
-                  所以这个网站先帮你把手术拆开，再去看医生库和诊所库。先把执行结构看清楚，后面的价格和营销信息才有解释基础。
-                </p>
-              </div>
-            </div>
-
-            <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">法律底线</div>
-              <h2 class="mt-4 text-3xl font-semibold tracking-tight">土耳其公开规定里，关键步骤有明确的医生要求。</h2>
-              <div class="mt-4 space-y-4 text-sm leading-8 text-stone-600">
-                <p>
-                  你参考的土耳其植发单元相关公开规定里，明确提到手术中的<strong>设计</strong>和<strong>打孔</strong>这类关键步骤应由医生完成，其他人员只能在规定范围内辅助。
-                </p>
-                <p>
-                  这也是为什么这个网站会优先去核实医生身份。因为一旦连关键步骤是不是医生在做都说不清，后面的价格、服务和营销就都失去了判断基础。
-                </p>
-                <p>
-                  参考来源：
-                  <a href="https://www.saglikaktuel.com/haber/sac-ekimi-birimleri-hakkinda-yonetmelik-89923.htm" target="_blank" rel="noreferrer" class="font-medium text-clay hover:underline">
-                    土耳其植发单元相关公开规定
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 grid gap-6 lg:grid-cols-2">
-            <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft">
-              <div class="text-xs uppercase tracking-[0.24em] text-stone-500">网站怎么用</div>
-              <h2 class="mt-4 text-3xl font-semibold tracking-tight">首页讲手术概念，具体核实去看两个数据库。</h2>
-              <div class="mt-4 grid gap-4 sm:grid-cols-2">
-                <div class="rounded-2xl border border-stone-200 bg-stone-50 p-4">
-                  <div class="text-sm font-semibold text-stone-900">精品医生</div>
-                  <p class="mt-2 text-sm leading-7 text-stone-600">先核实医生是谁，是否有 ISHRS 会员身份、ABHRS、专长和公开网站。</p>
-                </div>
-                <div class="rounded-2xl border border-stone-200 bg-stone-50 p-4">
-                  <div class="text-sm font-semibold text-stone-900">合规机构</div>
-                  <p class="mt-2 text-sm leading-7 text-stone-600">再核实机构是否在合法名单里，以及是否具名医生、是否公开套餐价。</p>
-                </div>
-                <div class="rounded-2xl border border-stone-200 bg-stone-50 p-4">
-                  <div class="text-sm font-semibold text-stone-900">真实反馈</div>
-                  <p class="mt-2 text-sm leading-7 text-stone-600">最后再结合用户真实反馈，持续补足价格、体验和纠错信息。</p>
-                </div>
-                <div class="rounded-2xl border border-stone-200 bg-stone-50 p-4">
-                  <div class="text-sm font-semibold text-stone-900">警惕误导</div>
-                  <p class="mt-2 text-sm leading-7 text-stone-600">不要把粉丝数、评价数和博主推荐，当成资格与合规的替代品。</p>
-                </div>
-              </div>
+        <section id="database" class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+          <div class="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-8">
+            <div class="text-xs uppercase tracking-[0.24em] text-stone-500">第六屏</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">继续查看数据库与评价系统</h2>
+            <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <a href="doctors.html" class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5 transition hover:border-stone-300 hover:bg-white">
+                <div class="text-sm font-semibold text-stone-900">查看医生库</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">看 Fellow / Member、ABHRS、专长和医生主导模式。</p>
+              </a>
+              <a href="clinics.html" class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5 transition hover:border-stone-300 hover:bg-white">
+                <div class="text-sm font-semibold text-stone-900">查看诊所库</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">看合法机构、具名医生、价格透明度和备注信息。</p>
+              </a>
+              <a href="guide.html" class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5 transition hover:border-stone-300 hover:bg-white">
+                <div class="text-sm font-semibold text-stone-900">查看术语解释全集</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">把首页的核心概念继续扩展成更完整的自查内容。</p>
+              </a>
+              <a href="submit.html" class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5 transition hover:border-stone-300 hover:bg-white">
+                <div class="text-sm font-semibold text-stone-900">提交真实评价</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">补充价格、体验和纠错，让数据库越来越完整。</p>
+              </a>
             </div>
           </div>
         </section>
