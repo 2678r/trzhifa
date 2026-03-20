@@ -51,38 +51,59 @@
         <section class="page-hero rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-10">
           <div class="page-kicker">Clinics Database</div>
           <h1 class="text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">诊所库</h1>
-          <div class="mt-6 grid gap-4 lg:grid-cols-3">
-            <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <div class="text-base font-semibold text-stone-900">Hastanesi（医院）</div>
-              <p class="mt-3 text-sm leading-7 text-stone-600">规模最大、可住院的医疗机构。</p>
+          <div class="mt-6 rounded-[1.75rem] border border-sky-200 bg-gradient-to-br from-sky-50 via-white to-stone-50 p-5 shadow-soft">
+            <div class="inline-flex rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">
+              Direct Contact Guide
             </div>
-            <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <div class="text-base font-semibold text-stone-900">Tip Merkezi（医疗中心）</div>
-              <p class="mt-3 text-sm leading-7 text-stone-600">中等规模，可做日间手术。</p>
+            <div class="mt-4 max-w-4xl">
+              <h2 class="text-2xl font-semibold tracking-tight text-stone-900">官网直联流程</h2>
+              <p class="mt-3 text-base leading-8 text-stone-700">
+                这部分不是理论说明，而是给你直接拿去用的联系流程。先联系官网英文客服，再问清楚医生参与度、套餐内容和直客优惠。
+              </p>
             </div>
-            <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-5">
-              <div class="text-base font-semibold text-stone-900">Poliklinik（诊所）</div>
-              <p class="mt-3 text-sm leading-7 text-stone-600">较小规模，主要门诊 + 日间手术。</p>
+            <div class="mt-4 grid gap-4 lg:grid-cols-5">
+              <div class="rounded-[1.25rem] border border-sky-200 bg-white p-4">
+                <div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-700 text-xs font-semibold text-white">1</div>
+                <div class="mt-3 text-sm font-semibold text-stone-900">找到官网</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">在诊所库表格中点击“官网”链接，优先使用英文客服。</p>
+              </div>
+              <div class="rounded-[1.25rem] border border-sky-200 bg-white p-4">
+                <div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-700 text-xs font-semibold text-white">2</div>
+                <div class="mt-3 text-sm font-semibold text-stone-900">打开 WhatsApp</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">直接点击官网上的 WhatsApp 图标，或搜索诊所官方号码。</p>
+              </div>
+              <div class="rounded-[1.25rem] border border-sky-200 bg-white p-4">
+                <div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-700 text-xs font-semibold text-white">3</div>
+                <div class="mt-3 text-sm font-semibold text-stone-900">用英文简单沟通</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">先问价格、医生是否亲自设计和打孔、套餐包含内容，以及有没有直客优惠。</p>
+              </div>
+              <div class="rounded-[1.25rem] border border-sky-200 bg-white p-4">
+                <div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-700 text-xs font-semibold text-white">4</div>
+                <div class="mt-3 text-sm font-semibold text-stone-900">问关键问题</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">一定要问清设计和打孔由谁做、团队是否固定、一天做几台、是否有直客优惠。</p>
+              </div>
+              <div class="rounded-[1.25rem] border border-sky-200 bg-white p-4">
+                <div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-700 text-xs font-semibold text-white">5</div>
+                <div class="mt-3 text-sm font-semibold text-stone-900">对比多家</div>
+                <p class="mt-2 text-sm leading-7 text-stone-600">建议至少联系 3-5 家，再比较医生参与度、价格和服务后决定。</p>
+              </div>
             </div>
-          </div>
-          <p class="mt-5 max-w-5xl text-base leading-8 text-stone-600">
-            重要提醒：后缀只是机构类型，并不代表植发质量高低。无论哪种类型，只要开展植发，都必须遵守卫生部植发单位管理条例（打孔必须医生做、助手需持证等）。
-          </p>
-          <div class="mt-6 rounded-[1.5rem] border border-sky-200 bg-sky-50/60 p-5">
-            <div class="text-sm font-semibold text-stone-900">数据库概览</div>
-            <p class="mt-3 text-sm leading-7 text-stone-700">
-              本页收录土耳其卫生部公布的 <strong>230 所合法植发诊所名单（伊斯坦布尔）</strong>。
-            </p>
-            <p class="mt-3 text-sm leading-7 text-stone-700">
-              其中官网有医生信息可查的诊所为 <strong id="overview-doctor-count">—</strong> 家，价格公开的为 <strong id="overview-price-count">—</strong> 家，大型综合医院类型为医院的为 <strong id="overview-hospital-count">—</strong> 家。
-            </p>
-            <p class="mt-3 text-sm leading-7 text-stone-700">
-              大多数诊所都有直客渠道，请尽量避开中文博主和广告中介，直接与英文客服联系，通常更容易获得更透明的信息、更好的服务安排和更灵活的价格。
-            </p>
-            <p class="mt-3 text-sm leading-7 text-stone-700">
-              特别注明：<strong>科拉伊·埃尔多安（Koray Erdogan）</strong>为前 ISHRS 会员，创立了 ASMED，模式为医生 + 团队。官网信息较为详尽，价格未公开。
-              <a href="https://www.asmed.com.tr/" target="_blank" rel="noreferrer" class="font-medium text-clay hover:underline">官网链接</a>
-            </p>
+            <div class="mt-5 rounded-[1.25rem] border border-sky-200 bg-white p-4">
+              <div class="text-sm font-semibold text-stone-900">英文沟通模板</div>
+              <pre class="mt-3 overflow-auto whitespace-pre-wrap text-sm leading-7 text-stone-600">Hi, I'm interested in a hair transplant. Could you please provide:
+- The current package price for FUE/DHI
+- Whether the doctor will personally do the design and punching
+- What's included (accommodation, transfers, aftercare)
+- Any direct client discount available?
+
+Thank you!</pre>
+            </div>
+            <div class="mt-4 rounded-[1.35rem] border border-sky-300 bg-gradient-to-r from-sky-100 via-white to-sky-50 p-5">
+              <div class="inline-flex rounded-full bg-sky-700 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white">小贴士</div>
+              <p class="mt-3 text-base font-semibold leading-8 text-stone-900">
+                直接联系医院通常能省 <span class="text-sky-700">15%-25%</span> 的中介差价，且服务更透明。
+              </p>
+            </div>
           </div>
         </section>
 
