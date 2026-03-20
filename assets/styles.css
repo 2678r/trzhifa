@@ -337,6 +337,33 @@ main article section li {
   max-width: 72ch;
 }
 
+body .min-h-screen > main[class*="max-w-3xl"] > div.rounded-\[2rem\],
+body .min-h-screen > main[class*="max-w-4xl"] > article.rounded-\[2rem\],
+body .min-h-screen > main[class*="max-w-4xl"] > div.rounded-\[2rem\] {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body .min-h-screen > main[class*="max-w-3xl"] > div.rounded-\[2rem\] > .inline-flex.rounded-full,
+body .min-h-screen > main[class*="max-w-4xl"] > article.rounded-\[2rem\] > .inline-flex.rounded-full,
+body .min-h-screen > main[class*="max-w-4xl"] > div.rounded-\[2rem\] > .inline-flex.rounded-full {
+  margin-top: 0.5rem;
+}
+
+body .min-h-screen > main[class*="max-w-3xl"] > div.rounded-\[2rem\] section,
+body .min-h-screen > main[class*="max-w-4xl"] > article.rounded-\[2rem\] section,
+body .min-h-screen > main[class*="max-w-4xl"] > div.rounded-\[2rem\] section {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 main article section {
   margin-top: 2rem;
 }
@@ -353,6 +380,7 @@ div.border-l-4 {
   border-bottom: 0 !important;
   border-radius: 14px !important;
   box-shadow: none !important;
+  padding: 1rem 1.25rem !important;
 }
 
 main article hr {
