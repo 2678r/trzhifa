@@ -31,6 +31,137 @@ function injectGoogleAnalytics() {
   document.head.appendChild(script)
 }
 
+function siteOrigin() {
+  return 'https://trhairguide.com'
+}
+
+function readMeta(selector, attr = 'content') {
+  const node = document.querySelector(selector)
+  return node ? normalize(node.getAttribute(attr)) : ''
+}
+
+function stripTitleSuffix(title) {
+  return normalize(title).replace(/\s*\|\s*土耳其植发透明指南\s*$/, '').trim()
+}
+
+function detectDateModified() {
+  const text = document.body ? document.body.textContent || '' : ''
+  const match = text.match(/更新于\s*(\d{4}-\d{2}-\d{2})/)
+  return match ? match[1] : ''
+}
+
+function injectStructuredData() {
+  if (document.querySelector('script[data-seo-schema="1"]')) return
+  const robots = readMeta('meta[name="robots"]')
+  if (robots.toLowerCase().includes('noindex')) return
+
+  const canonical = readMeta('link[rel="canonical"]', 'href') || window.location.href
+  const pathname = new URL(canonical, siteOrigin()).pathname
+  const title = normalize(document.title)
+  const headline = stripTitleSuffix(title)
+  const description =
+    readMeta('meta[name="description"]') ||
+    readMeta('meta[property="og:description"]')
+  const dateModified = detectDateModified()
+
+  const organization = {
+    '@type': 'Organization',
+    '@id': `${siteOrigin()}/#organization`,
+    name: '土耳其植发透明指南',
+    url: siteOrigin(),
+  }
+
+  const graph = [organization]
+
+  const addWebPage = (type) => {
+    const page = {
+      '@type': type,
+      '@id': `${canonical}#webpage`,
+      url: canonical,
+      name: headline || title,
+      description,
+      inLanguage: 'zh-CN',
+      isPartOf: { '@id': `${siteOrigin()}/#website` },
+      about: { '@id': `${siteOrigin()}/#organization` },
+    }
+    if (dateModified) page.dateModified = dateModified
+    graph.push(page)
+  }
+
+  if (pathname === '/') {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      description:
+        description || '中立整理土耳其植发医生主导比例、法规和避坑信息。',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    addWebPage('WebPage')
+  } else if (pathname === '/blog/' || pathname === '/guides/' || pathname === '/doctors/' || pathname === '/clinics/') {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    addWebPage('CollectionPage')
+  } else if (pathname === '/consult/') {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    addWebPage('ContactPage')
+  } else if ((pathname.startsWith('/blog/') && pathname.endsWith('.html')) || pathname === '/about/') {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    const article = {
+      '@type': 'Article',
+      '@id': `${canonical}#article`,
+      mainEntityOfPage: { '@id': `${canonical}#webpage` },
+      headline: headline || title,
+      description,
+      author: { '@id': `${siteOrigin()}/#organization` },
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+      inLanguage: 'zh-CN',
+      url: canonical,
+    }
+    if (dateModified) article.dateModified = dateModified
+    graph.push(article)
+    addWebPage('WebPage')
+  } else {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    addWebPage('WebPage')
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.dataset.seoSchema = '1'
+  script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })
+  document.head.appendChild(script)
+}
+
 function injectSharedFooter() {
   if (document.querySelector('footer.footer')) return
   const shell = document.querySelector('.min-h-screen, .shell')
@@ -406,6 +537,7 @@ function setupClinics() {
 
 document.addEventListener('DOMContentLoaded', () => {
   injectGoogleAnalytics()
+  injectStructuredData()
   injectSharedFooter()
   const page = document.body.dataset.page
   if (page === 'home') setupHome()
