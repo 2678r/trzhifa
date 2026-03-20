@@ -494,7 +494,17 @@ function setupClinics() {
                 </td>
                 <td class="px-4 py-5 text-stone-700 break-words">${formatLeadDoctorName(clinic.lead_doctor)}</td>
                 <td class="px-4 py-5 text-sm leading-7 text-stone-600 break-words">${clinicSurgeryModeLabel(clinic)}</td>
-                <td class="px-4 py-5 text-stone-700 whitespace-nowrap"><a href="${clinic.website || '#'}" ${clinic.website ? 'target="_blank" rel="noreferrer"' : ''} class="${clinic.website ? 'text-clay font-medium hover:underline' : 'pointer-events-none text-stone-400'}">${clinic.website ? '官网链接' : '—'}</a></td>
+                <td class="px-4 py-5 text-stone-700 whitespace-nowrap">
+                  <a
+                    href="${clinic.website || '#'}"
+                    ${clinic.website ? 'target="_blank" rel="noreferrer"' : ''}
+                    class="${
+                      clinic.website
+                        ? 'inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-xs font-semibold tracking-[0.08em] text-sky-700 transition hover:border-sky-300 hover:bg-sky-100 hover:text-sky-800'
+                        : 'pointer-events-none text-stone-400'
+                    }"
+                  >${clinic.website ? '打开官网' : '—'}</a>
+                </td>
                 <td class="px-4 py-5"><span class="pill ${normalize(clinic.price_transparency) ? 'pill-success' : 'pill-brand'}">${clinicPriceLabel(clinic)}</span></td>
                 <td class="table-cell-note px-4 py-5 text-sm leading-7 text-stone-600 whitespace-pre-line break-words">${normalize(clinic.note) || '—'}</td>
               </tr>
