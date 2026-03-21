@@ -124,14 +124,207 @@
       }
 
       .hero {
-        position: relative;
-        overflow: hidden;
-        padding: 44px;
-        background:
-          radial-gradient(circle at top right, rgba(0, 196, 180, 0.24), transparent 28%),
-          radial-gradient(circle at 18% 18%, rgba(15, 76, 129, 0.16), transparent 30%),
-          linear-gradient(135deg, #0b3558 0%, #0f4c81 58%, #12739c 100%);
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+      }
+
+      .hero-intro {
+        margin: 0 0 20px;
+        padding: 0 4px;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: clamp(40px, 6vw, 68px);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
+        color: #0d2030;
+      }
+
+      .hero-subtitle {
+        margin: 14px 0 0;
+        max-width: 760px;
+        font-size: clamp(18px, 2.4vw, 24px);
+        line-height: 1.5;
+        color: #5a6e7c;
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .entry-card {
+        border: 1px solid rgba(15, 76, 129, 0.16);
+        background: linear-gradient(135deg, #0b3558 0%, #0f4c81 58%, #156ea3 100%);
+        border-radius: 26px;
+        padding: 30px;
         color: #fff;
+        box-shadow: var(--shadow);
+        min-height: 360px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .entry-card-secondary {
+        background: linear-gradient(135deg, #067a6e 0%, #0b9b8f 52%, #27bca8 100%);
+        border-color: rgba(6, 122, 110, 0.22);
+      }
+
+      .entry-label {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .entry-card h1 {
+        margin: 18px 0 0;
+        max-width: none;
+        font-size: clamp(34px, 4.4vw, 52px);
+        line-height: 1.02;
+        color: #fff;
+      }
+
+      .entry-kicker {
+        margin: 14px 0 0;
+        font-size: clamp(18px, 2.2vw, 24px);
+        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .entry-copy {
+        margin: 16px 0 0;
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .entry-meta {
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-top: 22px;
+      }
+
+      .entry-stat {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .entry-card .button {
+        margin-top: 22px;
+        width: fit-content;
+        min-height: 72px;
+        padding: 0 38px;
+        font-size: 20px;
+        border-radius: 999px;
+        letter-spacing: -0.02em;
+      }
+
+      .entry-card .button-primary {
+        background: #ffffff;
+        color: var(--brand-deep);
+        box-shadow: 0 16px 30px rgba(255, 255, 255, 0.18);
+      }
+
+      .entry-card .button-primary:hover {
+        background: #f2fbff;
+      }
+
+      .entry-card-secondary .button-primary {
+        color: #076157;
+        box-shadow: 0 16px 30px rgba(255, 255, 255, 0.2);
+      }
+
+      .subnav-grid {
+        margin-top: 22px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr;
+      }
+
+      .subnav-card {
+        border: 1px solid var(--line);
+        background: var(--surface);
+        border-radius: 22px;
+        padding: 22px;
+        box-shadow: 0 16px 34px rgba(15, 76, 129, 0.08);
+      }
+
+      .subnav-card strong {
+        display: block;
+        font-size: 20px;
+        color: var(--brand-deep);
+        letter-spacing: -0.03em;
+      }
+
+      .subnav-card p {
+        margin: 10px 0 0;
+        font-size: 15px;
+        color: var(--text-soft);
+      }
+
+      .subnav-list {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
+        color: var(--text-soft);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .subnav-list li + li {
+        margin-top: 8px;
+      }
+
+      .subnav-list li {
+        border-top: 1px solid rgba(216, 229, 235, 0.9);
+        padding-top: 10px;
+      }
+
+      .subnav-list li:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .subnav-list a {
+        display: block;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.55;
+        color: var(--text);
+      }
+
+      .subnav-list a:hover {
+        color: var(--brand);
+      }
+
+      .subnav-card a {
+        display: inline-flex;
+        margin-top: 16px;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--brand);
       }
 
       .eyebrow {
@@ -231,8 +424,18 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
+      .quick-grid,
+      .check-grid,
+      .steps-grid {
+        margin-top: 22px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
       .role-card,
-      .article-link {
+      .article-link,
+      .quick-card,
+      .check-card,
+      .step-card {
         border: 1px solid var(--line);
         background: var(--surface-muted);
         border-radius: var(--radius-md);
@@ -247,6 +450,56 @@
       .role-card p {
         margin: 12px 0 0;
         font-size: 15px;
+        color: var(--text-soft);
+      }
+
+      .quick-card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 250, 249, 0.98)),
+          var(--surface-muted);
+      }
+
+      .quick-card strong,
+      .check-card strong,
+      .step-card strong {
+        display: block;
+        font-size: 20px;
+        color: var(--brand-deep);
+        letter-spacing: -0.03em;
+      }
+
+      .quick-card p,
+      .check-card p,
+      .step-card p {
+        margin: 0;
+        font-size: 15px;
+        color: var(--text-soft);
+      }
+
+      .quick-card .button {
+        margin-top: auto;
+        width: fit-content;
+      }
+
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        background: rgba(15, 76, 129, 0.1);
+        color: var(--brand);
+        font-weight: 800;
+      }
+
+      .section-intro {
+        margin-top: 14px;
+        max-width: 760px;
+        font-size: 16px;
         color: var(--text-soft);
       }
 
@@ -376,11 +629,15 @@
           padding: 24px;
         }
 
+        .hero {
+          padding: 0;
+        }
+
         .hero-stats {
           grid-template-columns: 1fr;
         }
 
-        .roles-grid {
+        .hero-grid {
           grid-template-columns: 1fr;
         }
 
@@ -388,8 +645,8 @@
           font-size: 16px;
         }
 
-        .hero-copy {
-          font-size: clamp(26px, 7vw, 34px);
+        .entry-card {
+          min-height: auto;
         }
       }
     </style>
@@ -417,170 +674,73 @@
       <main class="main">
         <div class="container">
           <section class="section">
-            <div class="card hero">
-              <div class="eyebrow">TR Hair Guide · 公开资料整理</div>
-              <h1>土耳其植发哪家好？先看医生资质和手术分工</h1>
-              <p class="hero-copy">把医生资质、机构透明度、关键步骤分工和公开评价放在一起，方便你快速比较。</p>
-              <p class="lead">
-                当前站内收录 <strong>14位ISHRS认证医生</strong>，用于展示医生资质、公开分工信息和机构透明度。<br />
-                页面内容以公开资料整理为主，不包含广告导流或销售内容。
-              </p>
-              <p class="lead" style="margin-top: 12px;">
-                全站判断逻辑基于<strong>土耳其卫生部 2023 / 2025 植发单位管理条例</strong>与<strong>ISHRS 官方标准</strong>整理，不靠广告话术做筛选。
-              </p>
-              <div class="cta-row">
-                <a class="button button-primary" href="doctors/">→ 查看14位ISHRS精品医生（附分工详情）</a>
-                <a class="button button-secondary" href="clinics/">→ 浏览230家合规诊所</a>
-              </div>
-              <div class="hero-stats">
-                <div class="hero-stat">
-                  <strong>14</strong>
-                  <span>ISHRS认证精品医生<br />国际公认的高标准</span>
-                </div>
-                <div class="hero-stat">
-                  <strong>100%</strong>
-                  <span>关键步骤信息<br />持续核对更新</span>
-                </div>
-                <div class="hero-stat">
-                  <strong>持续更新</strong>
-                  <span>真实用户反馈 + 公开资料验证</span>
-                </div>
-              </div>
-              <p class="mini-note">
-                土耳其卫生部法规要求：设计、打孔等核心操作必须由医生完成。<br />
-                当前页面重点展示具备公开可核查资质与分工信息的医生。
-              </p>
+            <div class="hero-intro">
+              <h1 class="hero-title">土耳其全部的植发诊所和医生都在这</h1>
+              <p class="hero-subtitle">医生库看医生资质和手术分工，诊所库看合法主体、评分和价格。</p>
             </div>
-          </section>
-
-          <section class="section">
-            <div class="card content-card home-feature">
-              <div class="home-feature-grid">
-                <div class="home-feature-copy">
-                  <div class="eyebrow" style="background: rgba(15, 76, 129, 0.08); border-color: rgba(15, 76, 129, 0.14); color: var(--brand-deep);">
-                    Reading Priority
-                  </div>
-                  <h2>优先阅读：医生、机构与关键步骤的区分方式</h2>
-                  <p style="margin-top: 16px;">
-                    这篇文章集中解释网络分享、直客预约、关键步骤分工和医生信息之间的关系，适合作为进入数据库前的基础阅读。
-                  </p>
-                  <ul class="home-feature-points">
-                    <li>先区分机构信息、渠道信息和具体医生信息。</li>
-                    <li>把直客沟通、书面确认和关键步骤分工放在同一个对比框架里。</li>
-                    <li>阅读后再对照医生库和诊所库，更容易理解公开信息差异。</li>
-                  </ul>
-                  <div class="cta-row" style="margin-top: 24px;">
-                    <a class="button button-primary" href="blog/how-to-choose-a-doctor-not-a-clinic.html">阅读这篇基础文章</a>
-                    <a class="button button-secondary" href="doctors/">直接进入医生库</a>
+            <div class="hero">
+              <div class="hero-grid">
+                <div class="entry-card">
+                  <div class="entry-label">Doctor Database</div>
+                  <h1>土耳其最好的 14 名植发医生</h1>
+                  <p class="entry-kicker">国际植发协会认证医生名单</p>
+                  <p class="entry-copy">适合先看医生资质、关键步骤分工，以及谁真正参与设计、打孔和手术规划。</p>
+                  <a class="button button-primary" href="doctors/">进入医生库</a>
+                  <div class="entry-meta">
+                    <div class="entry-stat">14 位医生</div>
+                    <div class="entry-stat">ISHRS 认证</div>
                   </div>
                 </div>
-                <aside class="home-feature-aside">
-                  <div class="pill pill-brand">Start Here</div>
-                  <h3 style="margin-top: 14px;">先看文章，再看数据库</h3>
-                  <p>
-                    如果当前还在对比诊所官网、价格或网络案例，这篇文章可以先帮助建立更清晰的判断顺序。
-                  </p>
-                  <div class="cta-row" style="margin-top: 20px;">
-                    <a class="button button-primary" href="doctors/">查看 14 位 ISHRS 医生</a>
+
+                <div class="entry-card entry-card-secondary">
+                  <div class="entry-label">Clinic Database</div>
+                  <h1>伊斯坦布尔全部 230 家合法植发诊所</h1>
+                  <p class="entry-kicker">土耳其卫生部认证机构名单</p>
+                  <p class="entry-copy">适合先比较合法主体、Google 评价、公开价格和备注信息，再筛选目标机构。</p>
+                  <a class="button button-primary" href="clinics/">进入诊所库</a>
+                  <div class="entry-meta">
+                    <div class="entry-stat">230 家诊所</div>
+                    <div class="entry-stat">更新至 2026-03</div>
                   </div>
-                </aside>
+                </div>
+              </div>
+            </div>
+            <div class="subnav-grid">
+              <div class="subnav-card">
+                <strong>法律法规 · 权威 · 数据来源</strong>
+                <p>先看这些官方和权威入口。</p>
+                <ul class="subnav-list">
+                  <li><a href="https://www.resmigazete.gov.tr/eskiler/2023/05/20230506-11.htm" target="_blank" rel="noreferrer">土耳其卫生部植发单位管理条例（2023）</a></li>
+                  <li><a href="https://www.resmigazete.gov.tr/eskiler/2025/09/20250912-2.htm" target="_blank" rel="noreferrer">土耳其卫生部植发单位管理条例修订版（2025）</a></li>
+                  <li><a href="https://sacekimmerkezi.saglik.gov.tr/" target="_blank" rel="noreferrer">合法植发中心官方查询入口</a></li>
+                  <li><a href="https://ishrs.org/" target="_blank" rel="noreferrer">ISHRS 官网</a></li>
+                  <li><a href="https://abhrs.org/certification/" target="_blank" rel="noreferrer">ABHRS 认证说明</a></li>
+                </ul>
+                <a href="https://sacekimmerkezi.saglik.gov.tr/" target="_blank" rel="noreferrer">查看官方入口</a>
+              </div>
+              <div class="subnav-card">
+                <strong>文章</strong>
+                <p>直接看这些重点文章。</p>
+                <ul class="subnav-list">
+                  <li><a href="blog/how-to-choose-a-doctor-not-a-clinic.html">如何选择植发医生？别再只看诊所和网络分享了</a></li>
+                  <li><a href="blog/black-market-warning.html">ISHRS 官方黑市警告：土耳其植发最该警惕的风险</a></li>
+                  <li><a href="blog/price-difference.html">土耳其植发价格为什么差异巨大？</a></li>
+                </ul>
+                <a href="blog/">查看文章</a>
+              </div>
+              <div class="subnav-card">
+                <strong>常用术语解释</strong>
+                <p>先看这些常见概念。</p>
+                <ul class="subnav-list">
+                  <li><a href="guides/">植发手术全流程 + 权威法规 + 避坑指南</a></li>
+                  <li><a href="blog/fue-explained.html">FUE 到底是什么？</a></li>
+                  <li><a href="blog/graft-density.html">graft 与密度怎么理解</a></li>
+                </ul>
+                <a href="guides/">查看术语</a>
               </div>
             </div>
           </section>
 
-          <section class="section">
-            <div class="card content-card">
-              <div class="eyebrow" style="background: rgba(15, 76, 129, 0.08); border-color: rgba(15, 76, 129, 0.14); color: var(--brand-deep);">
-                Featured Story
-              </div>
-              <h2 style="margin-top: 18px;">关于这个网站</h2>
-              <p>
-                该页面用于说明本站的定位、资料来源、数据库结构与更新方式，帮助用户理解站内信息的整理边界和使用方法。
-              </p>
-              <div class="cta-row">
-                <a class="button button-primary" href="about/">阅读关于页面</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="card content-card">
-              <h2 style="text-align: center; margin-bottom: 32px;">
-                14位ISHRS医生 vs 普通机构<br />
-                <span class="section-kicker">最大的区别在于：谁真正上手做手术</span>
-              </h2>
-              <div class="grid roles-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-                <article class="role-card">
-                  <h3>普通机构常见模式</h3>
-                  <p>医生只负责“设计”或短暂出现，打孔、移植主要由技师完成。<br /><strong>结果不确定性更高，中介成本也更高。</strong></p>
-                </article>
-                <article class="role-card">
-                  <h3>ISHRS医生的高标准</h3>
-                  <p>他们通常会亲自参与设计与规划，并亲自或高度主导打孔，对整个团队进行更严格把控。</p>
-                </article>
-                <article class="role-card">
-                  <h3>为什么这14位值得优先考虑</h3>
-                  <p>相关医生均可在公开渠道核查。站内同步整理公开分工信息，便于横向比较。</p>
-                </article>
-              </div>
-              <div class="cta-row" style="justify-content: center; margin-top: 32px;">
-                <a class="button button-primary" href="doctors/">想看具体医生的分工详情 → 打开医生库</a>
-              </div>
-              <p class="mini-note" style="margin-top: 18px;">
-                这套对比标准基于土耳其卫生部 2023 / 2025 法规，以及 ISHRS 对医生主导关键步骤的公开立场。
-              </p>
-              <p class="mini-note">
-                该对比模块用于展示公开可核查信息的差异，包括团队透明度、医生参与环节和机构披露程度。
-              </p>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="card content-card">
-              <div class="eyebrow" style="background: rgba(15, 76, 129, 0.06); border-color: rgba(15, 76, 129, 0.14); color: var(--brand-deep);">
-                Reading List
-              </div>
-              <h2>避坑必读文章</h2>
-              <p class="section-kicker" style="margin-top: 14px;">
-                先读医生选择逻辑，再看 FUE、黑市风险、认证体系和设备误区。
-              </p>
-              <div class="grid article-list">
-                <a class="article-link" href="blog/how-to-choose-a-doctor-not-a-clinic.html">
-                  如何选择植发医生？从机构信息、医生信息与关键步骤开始看
-                  <span>把重点放回具体医生、直客预约和关键步骤的书面确认，而不是只看宣传内容。</span>
-                </a>
-                <a class="article-link" href="blog/fue-explained.html">
-                  FUE 到底是什么？—— ISHRS 官方权威解读
-                  <span>从官方定义、手术流程、优势局限到黑市风险，把 FUE 先讲清楚。</span>
-                </a>
-                <a class="article-link" href="blog/black-market-warning.html">
-                  ISHRS 官方黑市警告：土耳其植发最该警惕的风险
-                  <span>低价和漂亮宣传背后，真正危险的是谁在做手术，以及供区会不会被不可逆破坏。</span>
-                </a>
-                <a class="article-link" href="blog/how-to-choose-a-qualified-hair-transplant-doctor.html">
-                  如何选择合格的植发医生？ISHRS 与 ABHRS 认证体系详解
-                  <span>把会员级别、认证要求、案例经验和手术分工放到同一张判断表里。</span>
-                </a>
-                <a class="article-link" href="blog/doctor-vs-device.html">
-                  ISHRS 专家建议：植发手术中设备与医生的关系
-                  <span>设备不是越贵越好，真正决定效果的仍然是医生的经验、判断和执行能力。</span>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="card content-card">
-              <h2>数据来源与参考</h2>
-              <ul class="source-list">
-                <li><a href="https://www.resmigazete.gov.tr/eskiler/2023/05/20230506-11.htm" target="_blank" rel="noreferrer"><strong>土耳其卫生部植发单位管理条例（2023）</strong></a></li>
-                <li><a href="https://www.resmigazete.gov.tr/eskiler/2025/09/20250912-2.htm" target="_blank" rel="noreferrer"><strong>土耳其卫生部植发单位管理条例修订版（2025）</strong></a></li>
-                <li><a href="https://sacekimmerkezi.saglik.gov.tr/" target="_blank" rel="noreferrer"><strong>合法植发中心官方查询入口</strong></a></li>
-                <li><a href="https://ishrs.org/" target="_blank" rel="noreferrer"><strong>ISHRS 官网</strong></a></li>
-                <li><a href="https://abhrs.org/certification/" target="_blank" rel="noreferrer"><strong>ABHRS 认证说明</strong></a></li>
-              </ul>
-            </div>
-          </section>
         </div>
       </main>
 
