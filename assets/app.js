@@ -391,8 +391,6 @@ function setupDoctors() {
           const initials = (doctor.doctor_name_cn || doctor.doctor_name_en || 'TR').slice(0, 2)
           const status = normalize(doctor.ishrs_status).toLowerCase()
           const statusClass = status === 'fellow' ? 'pill-success' : status === 'member' ? 'pill-brand' : ''
-          const googleSnapshot = renderGoogleSnapshot(doctor) || 'Google 评分待更新'
-          const googleSummary = renderGoogleSummary(doctor)
           return `
             <article class="group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:border-stone-300">
               <div class="grid gap-0 lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -438,25 +436,8 @@ function setupDoctors() {
                       </div>
                     </div>
 
-                    <details class="rounded-[1.5rem] border border-amber-200 bg-amber-50/50 p-4">
-                      <summary class="cursor-pointer list-none">
-                        <div class="flex flex-col gap-2 lg:flex-row lg:items-start lg:justify-between">
-                          <div class="min-w-0">
-                            <div class="text-xs uppercase tracking-[0.18em] text-stone-400">Google 评价快照</div>
-                            <div class="mt-2 text-sm font-medium leading-7 text-stone-900">${googleSnapshot}</div>
-                            <div class="mt-1 text-sm leading-7 text-stone-600">${googleSummary}</div>
-                          </div>
-                          <div class="shrink-0 text-xs font-medium uppercase tracking-[0.16em] text-clay">查看摘要</div>
-                        </div>
-                      </summary>
-                      <div class="mt-4 border-t border-amber-200 pt-4 text-sm leading-7 text-stone-700">
-                        ${googleSummary}
-                        <p class="mt-3 text-xs leading-6 text-stone-500">Google 评分和评价数量仅为公开平台快照，不等同于医疗质量、医生参与度或结果保证。</p>
-                      </div>
-                    </details>
-
-                    <div class="border-t border-stone-100 pt-4 text-sm">
-                      <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="font-medium text-clay ${doctor.website ? 'hover:underline' : 'pointer-events-none text-stone-400'}">${doctor.website ? websiteHost(doctor.website) : '暂无官网'}</a>
+                    <div class="border-t border-stone-100 pt-4">
+                      <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="${doctor.website ? 'button button-primary' : 'button pointer-events-none bg-stone-200 text-stone-400'}">${doctor.website ? '官网地址' : '暂无官网地址'}</a>
                     </div>
                   </div>
                 </div>
@@ -583,22 +564,14 @@ function setupClinics() {
             const rating = formatRating(clinic.google_rating)
             const reviewCount = formatReviewCount(clinic.google_review_count)
             const googleLink = getGoogleLink(clinic)
-            const googleParts = []
-            if (rating) googleParts.push(`Google ${rating} / 5`)
-            if (reviewCount) googleParts.push(`${reviewCount} 条评价`)
-            if (googleLink) {
-              googleParts.push(
-                `<a href="${googleLink}" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold tracking-[0.08em] text-sky-700 transition hover:border-sky-300 hover:bg-sky-100 hover:text-sky-800">Google 地址</a>`
-              )
-            }
-            if (clinic.website) {
-              googleParts.push(
-                `<a href="${clinic.website}" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-2.5 py-1 text-xs font-semibold tracking-[0.08em] text-sky-700 transition hover:border-sky-300 hover:bg-sky-100 hover:text-sky-800">官网</a>`
-              )
-            }
-            const googleInline =
-              googleParts.join('<span class="shrink-0 text-stone-300">·</span>') ||
-              '<span class="text-stone-500">Google 评分待更新</span>'
+            const ratingText = rating ? `评分 ${rating}/5` : '评分待更新'
+            const reviewText = reviewCount ? `${reviewCount} 条评价` : '评价数待更新'
+            const googleButton = googleLink
+              ? `<a href="${googleLink}" target="_blank" rel="noreferrer" class="text-xs font-medium leading-5 text-clay hover:underline">Google地址</a>`
+              : `<span class="text-xs font-medium leading-5 text-stone-400">Google地址</span>`
+            const websiteButton = clinic.website
+              ? `<a href="${clinic.website}" target="_blank" rel="noreferrer" class="text-xs font-medium leading-5 text-clay hover:underline">官网</a>`
+              : `<span class="text-xs font-medium leading-5 text-stone-400">官网</span>`
             const doctorName = normalize(clinic.lead_doctor) ? formatLeadDoctorName(clinic.lead_doctor) : ''
             const publicPrice = normalize(clinic.price_transparency) ? clinicPriceLabel(clinic) : ''
             const noteText = normalize(clinic.note)
@@ -607,16 +580,25 @@ function setupClinics() {
                 <td class="px-0 py-0 text-stone-900">
                   <details class="group">
                     <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3">
-                      <div class="min-w-0">
-                        <div class="flex items-center gap-2 overflow-hidden whitespace-nowrap">
-                          <span class="truncate text-[17px] font-semibold tracking-[-0.02em] leading-6 text-stone-900" title="${clinic.clinic_name || '—'}">${clinic.clinic_name || '—'}</span>
-                          <span class="shrink-0 rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700">${clinicTypeLabel(clinic)}</span>
-                        </div>
-                        <div class="mt-2 border-t border-stone-200/80 pt-2">
-                          <div class="overflow-hidden rounded-full border border-sky-200 bg-sky-50/80 px-2.5 py-1 text-xs font-medium leading-5 text-stone-700">
-                          <div class="flex items-center gap-1.5 overflow-hidden whitespace-nowrap">
-                            ${googleInline}
+                      <div class="min-w-0 flex-1">
+                        <div class="grid min-w-0 gap-3 xl:grid-cols-[minmax(260px,320px)_minmax(90px,110px)_minmax(140px,170px)_minmax(96px,120px)_auto_auto] xl:items-center">
+                          <div class="min-w-0">
+                            <span class="block truncate text-[17px] font-semibold tracking-[-0.02em] leading-6 text-stone-900" title="${clinic.clinic_name || '—'}">${clinic.clinic_name || '—'}</span>
                           </div>
+                          <div>
+                            <span class="inline-flex shrink-0 rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700">${clinicTypeLabel(clinic)}</span>
+                          </div>
+                          <div class="min-w-0">
+                            <span class="block truncate text-xs font-medium leading-5 text-stone-700" title="${ratingText}">${ratingText}</span>
+                          </div>
+                          <div class="min-w-0">
+                            <span class="block truncate text-xs font-medium leading-5 text-stone-700" title="${reviewText}">${reviewText}</span>
+                          </div>
+                          <div>
+                            ${googleButton}
+                          </div>
+                          <div>
+                            ${websiteButton}
                           </div>
                         </div>
                       </div>
