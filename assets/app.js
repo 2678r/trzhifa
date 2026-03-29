@@ -77,6 +77,8 @@ function breadcrumbItemsForPath(pathname) {
     items.push({ name: '关于', url: `${siteOrigin()}/about/` })
   } else if (pathname === '/consult/') {
     items.push({ name: '提交入口', url: `${siteOrigin()}/consult/` })
+  } else if (pathname === '/hiv/') {
+    items.push({ name: 'HIV植发', url: `${siteOrigin()}/hiv/` })
   } else if (pathname === '/reviews/') {
     items.push({ name: '评论交流区', url: `${siteOrigin()}/reviews/` })
   } else if (pathname.startsWith('/blog/') && pathname !== '/blog/') {
@@ -187,6 +189,16 @@ function injectStructuredData() {
       publisher: { '@id': `${siteOrigin()}/#organization` },
     })
     addWebPage('ContactPage')
+  } else if (pathname === '/hiv/') {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': `${siteOrigin()}/#website`,
+      url: siteOrigin(),
+      name: '土耳其植发透明指南',
+      inLanguage: 'zh-CN',
+      publisher: { '@id': `${siteOrigin()}/#organization` },
+    })
+    addWebPage('WebPage')
   } else if (pathname === '/reviews/') {
     graph.push({
       '@type': 'WebSite',
