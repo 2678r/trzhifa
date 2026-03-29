@@ -184,6 +184,13 @@ async function setupSubmitReview() {
     const priceEur = Number(priceInput.value)
     const comment = normalize(commentInput.value)
     const channelOpeningType = targetType === 'doctor' ? 'doctor' : channelSelect.value
+    const ipHash = btoa(navigator.userAgent + new Date().toDateString())
+    const lastSubmit = localStorage.getItem('review_submit_at')
+
+    if (lastSubmit && Date.now() - Number(lastSubmit) < 24 * 60 * 60 * 1000) {
+      alert('你今天已经提交过一次，请明天再试')
+      return
+    }
 
     if (!selectedTarget) {
       setMessage(message, 'error', '请选择有效的医生或诊所名称。')
@@ -213,6 +220,21 @@ async function setupSubmitReview() {
 
     try {
       const supabase = getSupabaseClient()
+      const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
+      const { data: existingRows, error: existingError } = await supabase
+        .from('reviews')
+        .select('id,created_at')
+        .eq('ip_hash', ipHash)
+        .gte('created_at', since)
+        .limit(1)
+
+      if (existingError) throw existingError
+
+      if (Array.isArray(existingRows) && existingRows.length > 0) {
+        setMessage(message, 'error', '今天已经提交过一次，请明天再试')
+        return
+      }
+
       const { error } = await supabase.from('reviews').insert([
         {
           user_name: '匿名用户',
@@ -222,6 +244,7 @@ async function setupSubmitReview() {
           graft_count: graftCount,
           channel_opening_type: channelOpeningType,
           price_eur: priceEur,
+          ip_hash: ipHash,
           comment,
           status: 'pending',
         },
@@ -232,6 +255,7 @@ async function setupSubmitReview() {
       form.reset()
       targetTypeSelect.value = 'doctor'
       syncTargetOptions()
+      localStorage.setItem('review_submit_at', Date.now().toString())
       setMessage(message, 'success', '提交成功，等待审核')
       if (successActions) successActions.hidden = false
     } catch (error) {
