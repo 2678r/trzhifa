@@ -458,10 +458,6 @@ function setupDoctors() {
         title: '3｜前会员',
         description: '前会员表示之前是会员、现已退出，查看时需要结合最新公开信息判断。',
       },
-      associate_member: {
-        title: '4｜准会员',
-        description: 'Associate Member（准会员）：入门级别会员。通常是对植发领域感兴趣的执业医生，教育和经验要求相对基础。',
-      },
     }
 
     const renderDoctorCard = (doctor) => {
@@ -571,13 +567,11 @@ function setupDoctors() {
         fellow: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'fellow'),
         member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'member'),
         former_member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'former_member'),
-        associate_member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'associate_member'),
       }
 
       grid.innerHTML = Object.entries(sectionMeta)
         .map(([key, meta]) => {
           const items = grouped[key] || []
-          const isAssociateMember = key === 'associate_member'
           return `
             <section class="grid gap-5">
               <div class="rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-soft">
@@ -591,18 +585,7 @@ function setupDoctors() {
               </div>
               ${
                 items.length
-                  ? isAssociateMember
-                    ? `<div class="rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-soft">
-                        <div class="grid gap-2 text-sm text-stone-700 sm:grid-cols-2 lg:grid-cols-3">
-                          ${items
-                            .map((doctor) => {
-                              const name = doctor.doctor_name_en || doctor.doctor_name_cn || '未命名医生'
-                              return `<div class="rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 leading-7">${name}</div>`
-                            })
-                            .join('')}
-                        </div>
-                      </div>`
-                    : items.map(renderDoctorCard).join('')
+                  ? items.map(renderDoctorCard).join('')
                   : `<div class="rounded-[1.5rem] border border-dashed border-stone-300 bg-white/80 p-8 text-center text-sm leading-7 text-stone-500">当前这一组还没有收录医生，后续如数据补充会自动显示在这里。</div>`
               }
             </section>
