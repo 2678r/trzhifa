@@ -12,7 +12,9 @@
     "google_rating": 4.8,
     "google_review_count": 5850,
     "google_summary_cn": "https://share.google/GcQDA1Pcj84O7xdTe",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "EsteWorld",
+    "name_zh": "EsteWorld"
   },
   {
     "clinic_id": "cl_002",
@@ -27,7 +29,9 @@
     "google_rating": 4.8,
     "google_review_count": 516,
     "google_summary_cn": "https://share.google/mjr6eCd6UJVBnrzzc",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Long Hair Center",
+    "name_zh": "Long Hair Center"
   },
   {
     "clinic_id": "cl_003",
@@ -42,7 +46,9 @@
     "google_rating": 4.6,
     "google_review_count": 889,
     "google_summary_cn": "https://share.google/CX9UINf9ZGWAyu4K3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Quartz Clinique",
+    "name_zh": "Quartz Clinique"
   },
   {
     "clinic_id": "cl_004",
@@ -57,7 +63,9 @@
     "google_rating": 4.9,
     "google_review_count": 141,
     "google_summary_cn": "https://share.google/adQ8BCnzKKIj9xUGX",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "NOVA POL",
+    "name_zh": "NOVA POL"
   },
   {
     "clinic_id": "cl_005",
@@ -72,7 +80,9 @@
     "google_rating": 4.3,
     "google_review_count": 6,
     "google_summary_cn": "https://share.google/RjBEtOwAP93lQazCE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Gur",
+    "name_zh": "Gur"
   },
   {
     "clinic_id": "cl_006",
@@ -87,7 +97,9 @@
     "google_rating": 4.6,
     "google_review_count": 297,
     "google_summary_cn": "https://share.google/CBgM7XtZkWG86BE4N",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Center",
+    "name_zh": "Center"
   },
   {
     "clinic_id": "cl_007",
@@ -102,7 +114,9 @@
     "google_rating": 4.7,
     "google_review_count": 41,
     "google_summary_cn": "https://share.google/zVH0AHxo0nSUQ81dN",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "DrGO",
+    "name_zh": "DrGO"
   },
   {
     "clinic_id": "cl_008",
@@ -117,7 +131,9 @@
     "google_rating": 4.7,
     "google_review_count": 12,
     "google_summary_cn": "https://share.google/wpM2EocNQ2UhL9Oko",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "L.E.A",
+    "name_zh": "L.E.A"
   },
   {
     "clinic_id": "cl_009",
@@ -132,7 +148,9 @@
     "google_rating": 4.6,
     "google_review_count": 150,
     "google_summary_cn": "https://share.google/TIyyw1rakVNZ2i5Yy",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dunya",
+    "name_zh": "Dunya"
   },
   {
     "clinic_id": "cl_010",
@@ -147,7 +165,9 @@
     "google_rating": 4.8,
     "google_review_count": 1491,
     "google_summary_cn": "https://share.google/3nU7CiiGUB4YTgULK",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Levent DNZ",
+    "name_zh": "Levent DNZ"
   },
   {
     "clinic_id": "cl_011",
@@ -162,7 +182,9 @@
     "google_rating": 4.9,
     "google_review_count": 56,
     "google_summary_cn": "https://share.google/OKPWIhtNLEtn8LPC8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medlook",
+    "name_zh": "Medlook"
   },
   {
     "clinic_id": "cl_012",
@@ -177,7 +199,9 @@
     "google_rating": 3.5,
     "google_review_count": 4,
     "google_summary_cn": "https://share.google/WHajq3v9v1z2q8MBs",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Isvec",
+    "name_zh": "Isvec"
   },
   {
     "clinic_id": "cl_013",
@@ -192,7 +216,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Zeyd Polyclinic",
+    "name_zh": "Zeyd Polyclinic"
   },
   {
     "clinic_id": "cl_014",
@@ -207,7 +233,9 @@
     "google_rating": 4.9,
     "google_review_count": 925,
     "google_summary_cn": "https://share.google/j7cwaNbgbIKqO4H0s",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Esteliv",
+    "name_zh": "Esteliv"
   },
   {
     "clinic_id": "cl_015",
@@ -222,7 +250,9 @@
     "google_rating": 4.3,
     "google_review_count": 167,
     "google_summary_cn": "https://share.google/BeoIJBpIV2TE3qnR9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Fizyoestet",
+    "name_zh": "Fizyoestet"
   },
   {
     "clinic_id": "cl_016",
@@ -237,7 +267,9 @@
     "google_rating": 4.9,
     "google_review_count": 555,
     "google_summary_cn": "https://share.google/uY6K4xgjBKMyWk6ys",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estemedical Group",
+    "name_zh": "Estemedical Group"
   },
   {
     "clinic_id": "cl_017",
@@ -252,7 +284,9 @@
     "google_rating": 5,
     "google_review_count": 58,
     "google_summary_cn": "https://share.google/hvf0WOMA7gqcq5ucq",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Renewa Suadiye",
+    "name_zh": "Renewa Suadiye"
   },
   {
     "clinic_id": "cl_018",
@@ -267,7 +301,9 @@
     "google_rating": 4.4,
     "google_review_count": 314,
     "google_summary_cn": "https://share.google/h3Ue4F5Cti4SAK4bA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estoria",
+    "name_zh": "Estoria"
   },
   {
     "clinic_id": "cl_019",
@@ -282,7 +318,9 @@
     "google_rating": 4.4,
     "google_review_count": 102,
     "google_summary_cn": "https://share.google/uJIk2fuZaLmSGC7cm",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "EHT Clinic",
+    "name_zh": "EHT Clinic"
   },
   {
     "clinic_id": "cl_020",
@@ -297,7 +335,9 @@
     "google_rating": 4.6,
     "google_review_count": 192,
     "google_summary_cn": "https://share.google/4iQXdHxWV2pukMU7k",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Goodlook",
+    "name_zh": "Goodlook"
   },
   {
     "clinic_id": "cl_021",
@@ -312,7 +352,9 @@
     "google_rating": 4.8,
     "google_review_count": 155,
     "google_summary_cn": "https://share.google/6vSyoS4rfM6ToyPVP",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Inter Life Clinic",
+    "name_zh": "Inter Life Clinic"
   },
   {
     "clinic_id": "cl_022",
@@ -327,7 +369,9 @@
     "google_rating": 4.3,
     "google_review_count": 12,
     "google_summary_cn": "https://share.google/4kiRsJzoK9tPjCgeN",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Health Point Clinic",
+    "name_zh": "Health Point Clinic"
   },
   {
     "clinic_id": "cl_023",
@@ -342,7 +386,9 @@
     "google_rating": 5,
     "google_review_count": 13,
     "google_summary_cn": "https://share.google/xTRLZknlUHyhZwbRT",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Life Point",
+    "name_zh": "Life Point"
   },
   {
     "clinic_id": "cl_024",
@@ -357,7 +403,9 @@
     "google_rating": 4.5,
     "google_review_count": 2975,
     "google_summary_cn": "https://share.google/ZsV0sVY8UghPn1jKt",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Natural",
+    "name_zh": "Natural"
   },
   {
     "clinic_id": "cl_025",
@@ -372,7 +420,9 @@
     "google_rating": 4.5,
     "google_review_count": 783,
     "google_summary_cn": "https://share.google/X2AbpLUo40zo0EB4G",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yesilkoy Medical Center",
+    "name_zh": "Yesilkoy Medical Center"
   },
   {
     "clinic_id": "cl_026",
@@ -387,7 +437,9 @@
     "google_rating": 4.1,
     "google_review_count": 443,
     "google_summary_cn": "https://share.google/c0QmfF3DSGcGr0fMk",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yaman Medical Center",
+    "name_zh": "Yaman Medical Center"
   },
   {
     "clinic_id": "cl_027",
@@ -402,7 +454,9 @@
     "google_rating": 4,
     "google_review_count": 717,
     "google_summary_cn": "https://share.google/8NV3Md5oqCDjx9OUS",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Abat Medical Center",
+    "name_zh": "Abat Medical Center"
   },
   {
     "clinic_id": "cl_028",
@@ -417,7 +471,9 @@
     "google_rating": 4.5,
     "google_review_count": 160,
     "google_summary_cn": "https://share.google/Q1VUraVsQpwCqy3nn",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Maslak Surgical Medical Center",
+    "name_zh": "Maslak Surgical Medical Center"
   },
   {
     "clinic_id": "cl_029",
@@ -432,7 +488,9 @@
     "google_rating": 3.3,
     "google_review_count": 493,
     "google_summary_cn": "https://share.google/i3KYjklRUOm0K6h6V",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Mediplus Medical Center",
+    "name_zh": "Mediplus Medical Center"
   },
   {
     "clinic_id": "cl_030",
@@ -447,7 +505,9 @@
     "google_rating": 5,
     "google_review_count": 7,
     "google_summary_cn": "https://share.google/DnL9vbpqkMsl2Ffj6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "EFC Surgical Medical Center",
+    "name_zh": "EFC Surgical Medical Center"
   },
   {
     "clinic_id": "cl_031",
@@ -462,7 +522,9 @@
     "google_rating": 4.8,
     "google_review_count": 5800,
     "google_summary_cn": "https://share.google/UYeotfV4wl7ne0fhV",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estethica",
+    "name_zh": "Estethica"
   },
   {
     "clinic_id": "cl_032",
@@ -477,7 +539,9 @@
     "google_rating": 4.8,
     "google_review_count": 41,
     "google_summary_cn": "https://share.google/GqaO27LcfCVWrugb8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "A Klinik Medical Center",
+    "name_zh": "A Klinik Medical Center"
   },
   {
     "clinic_id": "cl_033",
@@ -492,7 +556,9 @@
     "google_rating": 4.7,
     "google_review_count": 355,
     "google_summary_cn": "https://share.google/yK953hgq6Px3FEVOE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Coolest Medical Center",
+    "name_zh": "Coolest Medical Center"
   },
   {
     "clinic_id": "cl_034",
@@ -507,7 +573,9 @@
     "google_rating": 4.2,
     "google_review_count": 303,
     "google_summary_cn": "https://share.google/hWOwKd3SMmGBUbqgk",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Besiktas IAC Aesthetic Center",
+    "name_zh": "Besiktas IAC Aesthetic Center"
   },
   {
     "clinic_id": "cl_035",
@@ -522,7 +590,9 @@
     "google_rating": 4.9,
     "google_review_count": 146,
     "google_summary_cn": "https://share.google/V6qWPAAk3hpDQ59Zw",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Quartz Surgical Medical Center",
+    "name_zh": "Quartz Surgical Medical Center"
   },
   {
     "clinic_id": "cl_036",
@@ -537,7 +607,9 @@
     "google_rating": 4.2,
     "google_review_count": 598,
     "google_summary_cn": "https://share.google/jVtheFbXwindUtl2p",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estetik International Medical Center",
+    "name_zh": "Estetik International Medical Center"
   },
   {
     "clinic_id": "cl_037",
@@ -552,7 +624,9 @@
     "google_rating": 4.8,
     "google_review_count": 454,
     "google_summary_cn": "https://share.google/ahAUe2td9Jwv3WQmP",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Oz Sevgi Physical Therapy and Rehabilitation Center",
+    "name_zh": "Oz Sevgi Physical Therapy and Rehabilitation Center"
   },
   {
     "clinic_id": "cl_038",
@@ -567,7 +641,9 @@
     "google_rating": 5,
     "google_review_count": 78,
     "google_summary_cn": "https://share.google/2t1OCvNRQBaBmvDQF",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Venus Polyclinic",
+    "name_zh": "Venus Polyclinic"
   },
   {
     "clinic_id": "cl_039",
@@ -582,7 +658,9 @@
     "google_rating": 4.8,
     "google_review_count": 79,
     "google_summary_cn": "https://share.google/EAZDHhsL4f5EZ1gD0",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "CELYXMED",
+    "name_zh": "CELYXMED"
   },
   {
     "clinic_id": "cl_040",
@@ -597,7 +675,9 @@
     "google_rating": 5,
     "google_review_count": 466,
     "google_summary_cn": "https://share.google/yUuuaC8ypYNjn35JH",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "History Clinic",
+    "name_zh": "History Clinic"
   },
   {
     "clinic_id": "cl_041",
@@ -612,7 +692,9 @@
     "google_rating": 4.9,
     "google_review_count": 828,
     "google_summary_cn": "https://share.google/fJLZY9gOApPZWUWG8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medialkent Polyclinic",
+    "name_zh": "Medialkent Polyclinic"
   },
   {
     "clinic_id": "cl_042",
@@ -627,7 +709,9 @@
     "google_rating": 4.7,
     "google_review_count": 423,
     "google_summary_cn": "https://share.google/WviKFU1XrvfxZpEMR",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Bluemagic Group Clinic",
+    "name_zh": "Bluemagic Group Clinic"
   },
   {
     "clinic_id": "cl_043",
@@ -642,7 +726,9 @@
     "google_rating": 4.2,
     "google_review_count": 40,
     "google_summary_cn": "https://share.google/mqUiJsZmfHMwlWwDE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "SRK",
+    "name_zh": "SRK"
   },
   {
     "clinic_id": "cl_044",
@@ -657,7 +743,9 @@
     "google_rating": 4.7,
     "google_review_count": 214,
     "google_summary_cn": "https://share.google/EF5Jp5EnZKR5UDPx6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "ESTEPALACE",
+    "name_zh": "ESTEPALACE"
   },
   {
     "clinic_id": "cl_045",
@@ -672,7 +760,9 @@
     "google_rating": 5,
     "google_review_count": 32,
     "google_summary_cn": "https://share.google/orXdsRbf2238WooNM",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Elix",
+    "name_zh": "Elix"
   },
   {
     "clinic_id": "cl_046",
@@ -687,7 +777,9 @@
     "google_rating": 4.2,
     "google_review_count": 73,
     "google_summary_cn": "https://share.google/TCADk8yw0uo0akUvQ",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estet Istanbul Medical Center",
+    "name_zh": "Estet Istanbul Medical Center"
   },
   {
     "clinic_id": "cl_047",
@@ -702,7 +794,9 @@
     "google_rating": 4.8,
     "google_review_count": 354,
     "google_summary_cn": "https://share.google/F8fUtE8omKSngjJs1",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Enda Clinic",
+    "name_zh": "Enda Clinic"
   },
   {
     "clinic_id": "cl_048",
@@ -717,7 +811,9 @@
     "google_rating": 4.2,
     "google_review_count": 33,
     "google_summary_cn": "https://share.google/CYK5PXmjVw9268W7A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "NOVA",
+    "name_zh": "NOVA"
   },
   {
     "clinic_id": "cl_049",
@@ -732,7 +828,9 @@
     "google_rating": 4.7,
     "google_review_count": 542,
     "google_summary_cn": "https://share.google/ptmDrHryhjb0yZzh5",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "LUVA",
+    "name_zh": "LUVA"
   },
   {
     "clinic_id": "cl_050",
@@ -747,7 +845,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://share.google/YXoWZJBP7mnu47dYY",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Ara Medical",
+    "name_zh": "Ara Medical"
   },
   {
     "clinic_id": "cl_051",
@@ -762,7 +862,9 @@
     "google_rating": 4.9,
     "google_review_count": 398,
     "google_summary_cn": "https://share.google/qOnbsDZiCDqRhCin9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "BUL Oral and Dental Health Polyclinic",
+    "name_zh": "BUL Oral and Dental Health Polyclinic"
   },
   {
     "clinic_id": "cl_052",
@@ -777,7 +879,9 @@
     "google_rating": 4.2,
     "google_review_count": 165,
     "google_summary_cn": "https://share.google/OG362J5rkZBO8O0Tv",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yali Atakoy",
+    "name_zh": "Yali Atakoy"
   },
   {
     "clinic_id": "cl_053",
@@ -792,7 +896,9 @@
     "google_rating": 4.7,
     "google_review_count": 2829,
     "google_summary_cn": "https://share.google/fcv46KYknZi3gp96X",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Liva",
+    "name_zh": "Liva"
   },
   {
     "clinic_id": "cl_054",
@@ -807,7 +913,9 @@
     "google_rating": 4.6,
     "google_review_count": 81,
     "google_summary_cn": "https://share.google/zAEY3e5Y55dsJycjp",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medfa",
+    "name_zh": "Medfa"
   },
   {
     "clinic_id": "cl_055",
@@ -822,7 +930,9 @@
     "google_rating": 4.6,
     "google_review_count": 105,
     "google_summary_cn": "https://share.google/wwIzmohFlNb2z68Cp",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Avsar",
+    "name_zh": "Avsar"
   },
   {
     "clinic_id": "cl_056",
@@ -837,7 +947,9 @@
     "google_rating": 4.4,
     "google_review_count": 375,
     "google_summary_cn": "https://share.google/MVRaI9FLr6lOtwIMk",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Aktif",
+    "name_zh": "Aktif"
   },
   {
     "clinic_id": "cl_057",
@@ -852,7 +964,9 @@
     "google_rating": 4.5,
     "google_review_count": 218,
     "google_summary_cn": "https://share.google/5GzGg3Xqfd8S8SGzT",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Akif Mehmetoglu",
+    "name_zh": "Akif Mehmetoglu"
   },
   {
     "clinic_id": "cl_058",
@@ -867,7 +981,9 @@
     "google_rating": 4.4,
     "google_review_count": 26,
     "google_summary_cn": "https://share.google/JEchLvGSz2jVvHv0M",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "IRC",
+    "name_zh": "IRC"
   },
   {
     "clinic_id": "cl_059",
@@ -882,7 +998,9 @@
     "google_rating": 4.4,
     "google_review_count": 69,
     "google_summary_cn": "https://share.google/D7AZSgA89Lbauj9hG",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medest",
+    "name_zh": "Medest"
   },
   {
     "clinic_id": "cl_060",
@@ -897,7 +1015,9 @@
     "google_rating": 4.8,
     "google_review_count": 82,
     "google_summary_cn": "https://share.google/OKlj2a1fUuc477iiw",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "VIP Med Clinic",
+    "name_zh": "VIP Med Clinic"
   },
   {
     "clinic_id": "cl_061",
@@ -912,7 +1032,9 @@
     "google_rating": 4.7,
     "google_review_count": 15,
     "google_summary_cn": "https://share.google/VBgTxm5GtQ72p6j5s",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Alana",
+    "name_zh": "Alana"
   },
   {
     "clinic_id": "cl_062",
@@ -927,7 +1049,9 @@
     "google_rating": 4.6,
     "google_review_count": 113,
     "google_summary_cn": "https://share.google/o7WRAJwMuFCRouEKj",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Scala",
+    "name_zh": "Scala"
   },
   {
     "clinic_id": "cl_063",
@@ -942,7 +1066,9 @@
     "google_rating": 3.4,
     "google_review_count": 5,
     "google_summary_cn": "https://share.google/ItOZAehTEeJ2dzVUA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Genesis",
+    "name_zh": "Genesis"
   },
   {
     "clinic_id": "cl_064",
@@ -957,7 +1083,9 @@
     "google_rating": 4.8,
     "google_review_count": 102,
     "google_summary_cn": "https://share.google/qqUshsCWheb2ePbjt",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Opal",
+    "name_zh": "Opal"
   },
   {
     "clinic_id": "cl_065",
@@ -972,7 +1100,9 @@
     "google_rating": 4.7,
     "google_review_count": 1678,
     "google_summary_cn": "https://share.google/hKaCXHXP7g0UcnGfE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medica World",
+    "name_zh": "Medica World"
   },
   {
     "clinic_id": "cl_066",
@@ -987,7 +1117,9 @@
     "google_rating": 3.3,
     "google_review_count": 105,
     "google_summary_cn": "https://share.google/sg2PUjEFFUIkdY9et",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kartal AS",
+    "name_zh": "Kartal AS"
   },
   {
     "clinic_id": "cl_067",
@@ -1002,7 +1134,9 @@
     "google_rating": 4.7,
     "google_review_count": 490,
     "google_summary_cn": "https://share.google/Yzana0xfOwdenKxQT",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Class",
+    "name_zh": "Class"
   },
   {
     "clinic_id": "cl_068",
@@ -1017,7 +1151,9 @@
     "google_rating": 4.2,
     "google_review_count": 5,
     "google_summary_cn": "https://share.google/opZyHzVUMEYEeAuA3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "AS",
+    "name_zh": "AS"
   },
   {
     "clinic_id": "cl_069",
@@ -1032,7 +1168,9 @@
     "google_rating": 4.9,
     "google_review_count": 192,
     "google_summary_cn": "https://share.google/Qh5xke4mo5p1CmHzW",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Rita",
+    "name_zh": "Rita"
   },
   {
     "clinic_id": "cl_070",
@@ -1047,7 +1185,9 @@
     "google_rating": 4.9,
     "google_review_count": 604,
     "google_summary_cn": "https://share.google/Y2fTgRCImrvsvfxGO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "BBM",
+    "name_zh": "BBM"
   },
   {
     "clinic_id": "cl_071",
@@ -1062,7 +1202,9 @@
     "google_rating": 4.9,
     "google_review_count": 604,
     "google_summary_cn": "https://share.google/Y2fTgRCImrvsvfxGO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "BBM",
+    "name_zh": "BBM"
   },
   {
     "clinic_id": "cl_072",
@@ -1077,7 +1219,9 @@
     "google_rating": 4.1,
     "google_review_count": 528,
     "google_summary_cn": "https://share.google/LGYgG3KKaiClTU6tp",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Maya",
+    "name_zh": "Maya"
   },
   {
     "clinic_id": "cl_073",
@@ -1092,7 +1236,9 @@
     "google_rating": 4.2,
     "google_review_count": 5,
     "google_summary_cn": "https://share.google/KZZ3EtgV8hKnA4tww",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "ND",
+    "name_zh": "ND"
   },
   {
     "clinic_id": "cl_074",
@@ -1107,7 +1253,9 @@
     "google_rating": 4.8,
     "google_review_count": 217,
     "google_summary_cn": "https://share.google/HNf2qqjOYiTiFjPEl",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "CLV Polyclinic",
+    "name_zh": "CLV Polyclinic"
   },
   {
     "clinic_id": "cl_075",
@@ -1122,7 +1270,9 @@
     "google_rating": 4.9,
     "google_review_count": 446,
     "google_summary_cn": "https://maps.app.goo.gl/CZwU85QiV1SaAXg16?g_st=ic",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Vita Clinic",
+    "name_zh": "Istanbul Vita Clinic"
   },
   {
     "clinic_id": "cl_076",
@@ -1137,7 +1287,9 @@
     "google_rating": 3,
     "google_review_count": 651,
     "google_summary_cn": "https://maps.app.goo.gl/AHSEpQYt3avXBy9y7?g_st=ic",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dilan Polat",
+    "name_zh": "Dilan Polat"
   },
   {
     "clinic_id": "cl_077",
@@ -1152,7 +1304,9 @@
     "google_rating": 5,
     "google_review_count": 22,
     "google_summary_cn": "https://share.google/l7AG3ZPou03ViU2BB",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Beauty",
+    "name_zh": "Beauty"
   },
   {
     "clinic_id": "cl_078",
@@ -1167,7 +1321,9 @@
     "google_rating": 4.3,
     "google_review_count": 210,
     "google_summary_cn": "https://maps.app.goo.gl/mPzx8f23znQBSY2X6?g_st=ic",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Elit",
+    "name_zh": "Elit"
   },
   {
     "clinic_id": "cl_079",
@@ -1182,7 +1338,9 @@
     "google_rating": 4.4,
     "google_review_count": 109,
     "google_summary_cn": "https://share.google/GfEN0135J6JIY6oqO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Nera",
+    "name_zh": "Nera"
   },
   {
     "clinic_id": "cl_080",
@@ -1197,7 +1355,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://share.google/73cBgQXGMSeG8XZuv",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr. Ali Sahan",
+    "name_zh": "Dr. Ali Sahan"
   },
   {
     "clinic_id": "cl_081",
@@ -1212,7 +1372,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "MMC",
+    "name_zh": "MMC"
   },
   {
     "clinic_id": "cl_082",
@@ -1227,7 +1389,9 @@
     "google_rating": 4.7,
     "google_review_count": 26,
     "google_summary_cn": "https://share.google/DnGry52hGBk7VsXCj",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dermaist",
+    "name_zh": "Dermaist"
   },
   {
     "clinic_id": "cl_083",
@@ -1242,7 +1406,9 @@
     "google_rating": 1,
     "google_review_count": 1,
     "google_summary_cn": "https://share.google/0OwLsQMTzkkserhvU",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "HC",
+    "name_zh": "HC"
   },
   {
     "clinic_id": "cl_084",
@@ -1257,7 +1423,9 @@
     "google_rating": 5,
     "google_review_count": 110,
     "google_summary_cn": "https://share.google/bijaY3JeiJzrzaFUo",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Vitruvian",
+    "name_zh": "Vitruvian"
   },
   {
     "clinic_id": "cl_085",
@@ -1272,7 +1440,9 @@
     "google_rating": 3.8,
     "google_review_count": 83,
     "google_summary_cn": "https://share.google/Kxx7qGX2jdrSNq17l",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Anadolu Saglik Medical Center",
+    "name_zh": "Anadolu Saglik Medical Center"
   },
   {
     "clinic_id": "cl_086",
@@ -1287,7 +1457,9 @@
     "google_rating": 3.8,
     "google_review_count": 267,
     "google_summary_cn": "https://share.google/1u1rNGOK5HA3Al6sX",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Lilyum Medical Center",
+    "name_zh": "Lilyum Medical Center"
   },
   {
     "clinic_id": "cl_087",
@@ -1302,7 +1474,9 @@
     "google_rating": 4.5,
     "google_review_count": 2340,
     "google_summary_cn": "https://share.google/8OqZ2URnEFSzzi2Gw",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Acibadem Medical Center",
+    "name_zh": "Acibadem Medical Center"
   },
   {
     "clinic_id": "cl_088",
@@ -1317,7 +1491,9 @@
     "google_rating": 4.3,
     "google_review_count": 1377,
     "google_summary_cn": "https://share.google/1SYyJQf6707Jtgdih",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Ornek Medical Center",
+    "name_zh": "Ornek Medical Center"
   },
   {
     "clinic_id": "cl_089",
@@ -1332,7 +1508,9 @@
     "google_rating": 3,
     "google_review_count": 3,
     "google_summary_cn": "https://share.google/F4TPRpB5fvMV3TxI7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medicana Medical Center",
+    "name_zh": "Medicana Medical Center"
   },
   {
     "clinic_id": "cl_090",
@@ -1347,7 +1525,9 @@
     "google_rating": 4.1,
     "google_review_count": 81,
     "google_summary_cn": "https://share.google/ec8RdJEhvRONgnkWk",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Optimum Medical Center",
+    "name_zh": "Optimum Medical Center"
   },
   {
     "clinic_id": "cl_091",
@@ -1362,7 +1542,9 @@
     "google_rating": 4.1,
     "google_review_count": 225,
     "google_summary_cn": "https://share.google/qpXUF8OxerYQkW7DS",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Mediworld Medical Center",
+    "name_zh": "Mediworld Medical Center"
   },
   {
     "clinic_id": "cl_092",
@@ -1377,7 +1559,9 @@
     "google_rating": 4.3,
     "google_review_count": 841,
     "google_summary_cn": "https://share.google/E3PaMCXELySyDI2en",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kas Medical Center",
+    "name_zh": "Kas Medical Center"
   },
   {
     "clinic_id": "cl_093",
@@ -1392,7 +1576,9 @@
     "google_rating": 4.4,
     "google_review_count": 375,
     "google_summary_cn": "https://share.google/5tldiIvLMjjOc1Z3o",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Basaksehir Aktif Medical Center",
+    "name_zh": "Basaksehir Aktif Medical Center"
   },
   {
     "clinic_id": "cl_094",
@@ -1407,7 +1593,9 @@
     "google_rating": 2.9,
     "google_review_count": 191,
     "google_summary_cn": "https://share.google/pIpfu6umoZ6uVAQhE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Beykent Medical Center",
+    "name_zh": "Beykent Medical Center"
   },
   {
     "clinic_id": "cl_095",
@@ -1422,7 +1610,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://share.google/voaiTEKeibKoGEvma",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medicell Medical Center",
+    "name_zh": "Medicell Medical Center"
   },
   {
     "clinic_id": "cl_096",
@@ -1437,7 +1627,9 @@
     "google_rating": 4.9,
     "google_review_count": 595,
     "google_summary_cn": "https://share.google/e9uv53zJOsnNQLObn",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Veni Vidi Eye Medical Center",
+    "name_zh": "Veni Vidi Eye Medical Center"
   },
   {
     "clinic_id": "cl_097",
@@ -1452,7 +1644,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://share.google/Us64QeCoaCkSlsj6d",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Etik Life Medical Center",
+    "name_zh": "Etik Life Medical Center"
   },
   {
     "clinic_id": "cl_098",
@@ -1467,7 +1661,9 @@
     "google_rating": 3.7,
     "google_review_count": 942,
     "google_summary_cn": "https://share.google/0sIEqFIeT9Dt53dGO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medihaus Surgical Medical Center",
+    "name_zh": "Medihaus Surgical Medical Center"
   },
   {
     "clinic_id": "cl_099",
@@ -1482,7 +1678,9 @@
     "google_rating": 3.9,
     "google_review_count": 172,
     "google_summary_cn": "https://share.google/bl4asCrMpLIvOIxyF",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Esensehir Medical Center",
+    "name_zh": "Esensehir Medical Center"
   },
   {
     "clinic_id": "cl_100",
@@ -1497,7 +1695,9 @@
     "google_rating": 3.5,
     "google_review_count": 414,
     "google_summary_cn": "https://share.google/wtVl1Zz7cgG4hDQ9u",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yeni Hayat Medical Center",
+    "name_zh": "Yeni Hayat Medical Center"
   },
   {
     "clinic_id": "cl_101",
@@ -1512,7 +1712,9 @@
     "google_rating": 4.8,
     "google_review_count": 140,
     "google_summary_cn": "https://share.google/dRcsfOJ0z7ZjVdF8S",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "CE Surgical Medical Center",
+    "name_zh": "CE Surgical Medical Center"
   },
   {
     "clinic_id": "cl_102",
@@ -1527,7 +1729,9 @@
     "google_rating": 4.4,
     "google_review_count": 81,
     "google_summary_cn": "https://share.google/nOzptN9RMKmfaGo6U",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Global Dr. Goz Medical Center",
+    "name_zh": "Global Dr. Goz Medical Center"
   },
   {
     "clinic_id": "cl_103",
@@ -1542,7 +1746,9 @@
     "google_rating": 3.7,
     "google_review_count": 370,
     "google_summary_cn": "https://share.google/X5aC4PXmDvO200Aoh",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Ekotom Surgical Medical Center",
+    "name_zh": "Ekotom Surgical Medical Center"
   },
   {
     "clinic_id": "cl_104",
@@ -1557,7 +1763,9 @@
     "google_rating": 3.5,
     "google_review_count": 167,
     "google_summary_cn": "https://share.google/dfxAFnK03RSEdYxgP",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Merve Medical Center",
+    "name_zh": "Merve Medical Center"
   },
   {
     "clinic_id": "cl_105",
@@ -1572,7 +1780,9 @@
     "google_rating": 4.2,
     "google_review_count": 93,
     "google_summary_cn": "https://share.google/0VL9PJT9I8g0Qt2rZ",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cadde Medical Center",
+    "name_zh": "Cadde Medical Center"
   },
   {
     "clinic_id": "cl_106",
@@ -1587,7 +1797,9 @@
     "google_rating": 4.6,
     "google_review_count": 359,
     "google_summary_cn": "https://share.google/M54vcwd9u197hX4dO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medipoint Medical Center",
+    "name_zh": "Medipoint Medical Center"
   },
   {
     "clinic_id": "cl_107",
@@ -1602,7 +1814,9 @@
     "google_rating": 4.2,
     "google_review_count": 490,
     "google_summary_cn": "https://share.google/QZ2xzfMiou2iF25Lt",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Lifemed Medical Center",
+    "name_zh": "Lifemed Medical Center"
   },
   {
     "clinic_id": "cl_108",
@@ -1617,7 +1831,9 @@
     "google_rating": 4.5,
     "google_review_count": 91,
     "google_summary_cn": "https://share.google/9mptfxyZz1PNYS4D3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Orion Surgical Medical Center",
+    "name_zh": "Orion Surgical Medical Center"
   },
   {
     "clinic_id": "cl_109",
@@ -1632,7 +1848,9 @@
     "google_rating": 3.4,
     "google_review_count": 262,
     "google_summary_cn": "https://share.google/pRMBQxQrlxKrlbxK1",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yeni Huzur Medical Center",
+    "name_zh": "Yeni Huzur Medical Center"
   },
   {
     "clinic_id": "cl_110",
@@ -1647,7 +1865,9 @@
     "google_rating": 4,
     "google_review_count": 777,
     "google_summary_cn": "https://share.google/cjz79Ns6002ZoBd4D",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dogan Medical Center",
+    "name_zh": "Dogan Medical Center"
   },
   {
     "clinic_id": "cl_111",
@@ -1662,7 +1882,9 @@
     "google_rating": 4.1,
     "google_review_count": 796,
     "google_summary_cn": "https://share.google/i2iZM0xbv7Pmi3myF",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kizilay Medical Center",
+    "name_zh": "Kizilay Medical Center"
   },
   {
     "clinic_id": "cl_112",
@@ -1677,7 +1899,9 @@
     "google_rating": 3.7,
     "google_review_count": 339,
     "google_summary_cn": "https://share.google/3PLdCA2eUKicFupQi",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kardelen Medical Center",
+    "name_zh": "Kardelen Medical Center"
   },
   {
     "clinic_id": "cl_113",
@@ -1692,7 +1916,9 @@
     "google_rating": 2.6,
     "google_review_count": 92,
     "google_summary_cn": "https://share.google/9qUs3nmmVSmqVO8lf",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kurtkoy Medical Center",
+    "name_zh": "Kurtkoy Medical Center"
   },
   {
     "clinic_id": "cl_114",
@@ -1707,7 +1933,9 @@
     "google_rating": 4,
     "google_review_count": 141,
     "google_summary_cn": "https://share.google/zzTxsDzzIeXc2311L",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Sariyer Medical Center",
+    "name_zh": "Sariyer Medical Center"
   },
   {
     "clinic_id": "cl_115",
@@ -1722,7 +1950,9 @@
     "google_rating": 3.5,
     "google_review_count": 211,
     "google_summary_cn": "https://share.google/knH1twi728uycA0mW",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Bati Medical Center",
+    "name_zh": "Bati Medical Center"
   },
   {
     "clinic_id": "cl_116",
@@ -1737,7 +1967,9 @@
     "google_rating": 4.3,
     "google_review_count": 251,
     "google_summary_cn": "https://share.google/QGXQchBkux1CCODv1",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Silivri Yasam Medical Center",
+    "name_zh": "Silivri Yasam Medical Center"
   },
   {
     "clinic_id": "cl_117",
@@ -1752,7 +1984,9 @@
     "google_rating": 3.7,
     "google_review_count": 361,
     "google_summary_cn": "https://share.google/TQI8NXi8tsvgQQh9a",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cekmekoy Medical Center",
+    "name_zh": "Cekmekoy Medical Center"
   },
   {
     "clinic_id": "cl_118",
@@ -1767,7 +2001,9 @@
     "google_rating": 4,
     "google_review_count": 981,
     "google_summary_cn": "https://share.google/lyhPeA2I1EnddNhTh",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Camlik Medical Center",
+    "name_zh": "Camlik Medical Center"
   },
   {
     "clinic_id": "cl_119",
@@ -1782,7 +2018,9 @@
     "google_rating": 4,
     "google_review_count": 155,
     "google_summary_cn": "https://share.google/xbZEa47wPQ0uv9SzG",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Megagoz Medical Center",
+    "name_zh": "Megagoz Medical Center"
   },
   {
     "clinic_id": "cl_120",
@@ -1797,7 +2035,9 @@
     "google_rating": 3.3,
     "google_review_count": 114,
     "google_summary_cn": "https://share.google/ElI6aRWnPbKQVJ4EE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Erdem Medical Center",
+    "name_zh": "Erdem Medical Center"
   },
   {
     "clinic_id": "cl_121",
@@ -1812,7 +2052,9 @@
     "google_rating": 3.6,
     "google_review_count": 858,
     "google_summary_cn": "https://share.google/YAfnQVzlzlGvn2yY3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "FSM Medical Center",
+    "name_zh": "FSM Medical Center"
   },
   {
     "clinic_id": "cl_122",
@@ -1827,7 +2069,9 @@
     "google_rating": 4.4,
     "google_review_count": 3463,
     "google_summary_cn": "https://share.google/iHu3CeGfUxzb1YrfG",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Umran Medical Center",
+    "name_zh": "Umran Medical Center"
   },
   {
     "clinic_id": "cl_123",
@@ -1842,7 +2086,9 @@
     "google_rating": 3.2,
     "google_review_count": 98,
     "google_summary_cn": "https://share.google/YdMcATP4FNWqaErQP",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Unutmaz Medical Center",
+    "name_zh": "Unutmaz Medical Center"
   },
   {
     "clinic_id": "cl_124",
@@ -1857,7 +2103,9 @@
     "google_rating": 4.3,
     "google_review_count": 138,
     "google_summary_cn": "https://share.google/NSUYkOG95Acmj6VBw",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medivia Medical Center",
+    "name_zh": "Medivia Medical Center"
   },
   {
     "clinic_id": "cl_125",
@@ -1872,7 +2120,9 @@
     "google_rating": 2.6,
     "google_review_count": 974,
     "google_summary_cn": "https://share.google/daBpDb6zoFa97DRbO",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Camlica Medicana Medical Center",
+    "name_zh": "Camlica Medicana Medical Center"
   },
   {
     "clinic_id": "cl_126",
@@ -1887,7 +2137,9 @@
     "google_rating": 4,
     "google_review_count": 126,
     "google_summary_cn": "https://share.google/rQGwnxTEYDmY9stBW",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Apeks Medical Center",
+    "name_zh": "Apeks Medical Center"
   },
   {
     "clinic_id": "cl_127",
@@ -1902,7 +2154,9 @@
     "google_rating": 4.8,
     "google_review_count": 1000,
     "google_summary_cn": "https://share.google/uv9aq8OorYQxX7KBd",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr. Serkan Aygin Clinic",
+    "name_zh": "Dr. Serkan Aygin Clinic"
   },
   {
     "clinic_id": "cl_128",
@@ -1917,7 +2171,9 @@
     "google_rating": 4.2,
     "google_review_count": 519,
     "google_summary_cn": "https://share.google/czSSNFSWL4S4EkXHy",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Tas Medical Center",
+    "name_zh": "Tas Medical Center"
   },
   {
     "clinic_id": "cl_129",
@@ -1932,7 +2188,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://maps.app.goo.gl/JMHpKswsjFhCN6WW9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Interliva Medical Center",
+    "name_zh": "Interliva Medical Center"
   },
   {
     "clinic_id": "cl_130",
@@ -1947,7 +2205,9 @@
     "google_rating": 4.6,
     "google_review_count": 319,
     "google_summary_cn": "https://maps.app.goo.gl/1XwfffAR9xVgUrZR8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Elit Istanbul Medical Center",
+    "name_zh": "Elit Istanbul Medical Center"
   },
   {
     "clinic_id": "cl_131",
@@ -1962,7 +2222,9 @@
     "google_rating": 4.7,
     "google_review_count": 478,
     "google_summary_cn": "https://maps.app.goo.gl/UshCZ1p43MWu5kGXA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Elit Clinic Medical Center",
+    "name_zh": "Elit Clinic Medical Center"
   },
   {
     "clinic_id": "cl_132",
@@ -1977,7 +2239,9 @@
     "google_rating": 4,
     "google_review_count": 616,
     "google_summary_cn": "https://maps.app.goo.gl/qzRff3G2G9NvzVds7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Vera SM Surgical Medical Center",
+    "name_zh": "Vera SM Surgical Medical Center"
   },
   {
     "clinic_id": "cl_133",
@@ -1992,7 +2256,9 @@
     "google_rating": 4.6,
     "google_review_count": 1605,
     "google_summary_cn": "https://maps.app.goo.gl/U58QL6qvGxEiBYm89",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cengelkoy Vanity Surgical Medical Center",
+    "name_zh": "Cengelkoy Vanity Surgical Medical Center"
   },
   {
     "clinic_id": "cl_134",
@@ -2007,7 +2273,9 @@
     "google_rating": 4.7,
     "google_review_count": 4448,
     "google_summary_cn": "https://maps.app.goo.gl/iqiCUQnMxwrM454N6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Avicenna Atasehir Hospital",
+    "name_zh": "Avicenna Atasehir Hospital"
   },
   {
     "clinic_id": "cl_135",
@@ -2022,7 +2290,9 @@
     "google_rating": 4.2,
     "google_review_count": 1901,
     "google_summary_cn": "https://maps.app.goo.gl/nNYHdNtPVSk65Xhq6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medical Park Atasehir Hospital",
+    "name_zh": "Medical Park Atasehir Hospital"
   },
   {
     "clinic_id": "cl_136",
@@ -2037,7 +2307,9 @@
     "google_rating": 4.7,
     "google_review_count": 8302,
     "google_summary_cn": "https://maps.app.goo.gl/kJeoBVdujgWGAEbh8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Memorial Atasehir Hospital",
+    "name_zh": "Memorial Atasehir Hospital"
   },
   {
     "clinic_id": "cl_137",
@@ -2052,7 +2324,9 @@
     "google_rating": 3.7,
     "google_review_count": 1098,
     "google_summary_cn": "https://maps.app.goo.gl/4YUzXUJaC1Qq3pzF9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Avcilar Anadolu Hospital",
+    "name_zh": "Avcilar Anadolu Hospital"
   },
   {
     "clinic_id": "cl_138",
@@ -2067,7 +2341,9 @@
     "google_rating": 4,
     "google_review_count": 1244,
     "google_summary_cn": "https://maps.app.goo.gl/znwjPFfT4P9nAxMr8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "A Plus Hospital",
+    "name_zh": "A Plus Hospital"
   },
   {
     "clinic_id": "cl_139",
@@ -2082,7 +2358,9 @@
     "google_rating": 3.4,
     "google_review_count": 1379,
     "google_summary_cn": "https://maps.app.goo.gl/divQAoP3iTpZ8K8d8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medipol Bahcelievler Hospital",
+    "name_zh": "Medipol Bahcelievler Hospital"
   },
   {
     "clinic_id": "cl_140",
@@ -2097,7 +2375,9 @@
     "google_rating": 4.7,
     "google_review_count": 9623,
     "google_summary_cn": "https://maps.app.goo.gl/jYE5WnFRRog5W7xN7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Memorial Bahcelievler Hospital",
+    "name_zh": "Memorial Bahcelievler Hospital"
   },
   {
     "clinic_id": "cl_141",
@@ -2112,7 +2392,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Camlik Hospital",
+    "name_zh": "Camlik Hospital"
   },
   {
     "clinic_id": "cl_142",
@@ -2127,7 +2409,9 @@
     "google_rating": 2.9,
     "google_review_count": 391,
     "google_summary_cn": "https://maps.app.goo.gl/dxpXA9nNDN7KYgrZ8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yasar Hospital",
+    "name_zh": "Yasar Hospital"
   },
   {
     "clinic_id": "cl_143",
@@ -2142,7 +2426,9 @@
     "google_rating": 4.5,
     "google_review_count": 2040,
     "google_summary_cn": "https://maps.app.goo.gl/EqgX8T34uiwDmmSF6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medivita Incirli Hospital",
+    "name_zh": "Medivita Incirli Hospital"
   },
   {
     "clinic_id": "cl_144",
@@ -2157,7 +2443,9 @@
     "google_rating": 3.8,
     "google_review_count": 59,
     "google_summary_cn": "https://share.google/YSfwrYUBygbERxdTu",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Bayrampasa Eye Hospital",
+    "name_zh": "Bayrampasa Eye Hospital"
   },
   {
     "clinic_id": "cl_145",
@@ -2172,7 +2460,9 @@
     "google_rating": 4.3,
     "google_review_count": 5178,
     "google_summary_cn": "https://share.google/oEaz0sdDWnatgmkNk",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Medicine Hospital",
+    "name_zh": "Istanbul Medicine Hospital"
   },
   {
     "clinic_id": "cl_146",
@@ -2187,7 +2477,9 @@
     "google_rating": 4.3,
     "google_review_count": 5178,
     "google_summary_cn": "https://share.google/BVHHui1OUNEeH65yg",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Atlas University Faculty of Medicine Hospital",
+    "name_zh": "Istanbul Atlas University Faculty of Medicine Hospital"
   },
   {
     "clinic_id": "cl_147",
@@ -2202,7 +2494,9 @@
     "google_rating": 3.5,
     "google_review_count": 1471,
     "google_summary_cn": "https://share.google/ebbnQr3sRIt004PhQ",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Erdem Hospital Gunesli",
+    "name_zh": "Erdem Hospital Gunesli"
   },
   {
     "clinic_id": "cl_148",
@@ -2217,7 +2511,9 @@
     "google_rating": 3.3,
     "google_review_count": 3550,
     "google_summary_cn": "https://share.google/XjiQ9hHP3SBhwOFqG",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medipol Mega Hospitals Complex",
+    "name_zh": "Medipol Mega Hospitals Complex"
   },
   {
     "clinic_id": "cl_149",
@@ -2232,7 +2528,9 @@
     "google_rating": 3.3,
     "google_review_count": 1136,
     "google_summary_cn": "https://maps.app.goo.gl/CZ1yp2XZvTt1WsRx8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medistate Kavacik Hospital",
+    "name_zh": "Medistate Kavacik Hospital"
   },
   {
     "clinic_id": "cl_150",
@@ -2247,7 +2545,9 @@
     "google_rating": 4,
     "google_review_count": 1068,
     "google_summary_cn": "https://maps.app.goo.gl/LpcJ359iKbtg85Xg8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Avicenna Hospital",
+    "name_zh": "Avicenna Hospital"
   },
   {
     "clinic_id": "cl_151",
@@ -2262,7 +2562,9 @@
     "google_rating": 3.4,
     "google_review_count": 788,
     "google_summary_cn": "https://maps.app.goo.gl/62PphXkCPkrumNWn6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Doga Hospital",
+    "name_zh": "Doga Hospital"
   },
   {
     "clinic_id": "cl_152",
@@ -2277,7 +2579,9 @@
     "google_rating": 3.9,
     "google_review_count": 3103,
     "google_summary_cn": "https://maps.app.goo.gl/UPkqCGnrULp3kHaY9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Esencan Hospital",
+    "name_zh": "Esencan Hospital"
   },
   {
     "clinic_id": "cl_153",
@@ -2292,7 +2596,9 @@
     "google_rating": 3.2,
     "google_review_count": 999,
     "google_summary_cn": "https://maps.app.goo.gl/RAWZG81TUgr6AHKYA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Avrasya Hospital Gaziosmanpasa",
+    "name_zh": "Avrasya Hospital Gaziosmanpasa"
   },
   {
     "clinic_id": "cl_154",
@@ -2307,7 +2613,9 @@
     "google_rating": 3.4,
     "google_review_count": 690,
     "google_summary_cn": "https://maps.app.goo.gl/hDWmwGyWw4WhaWQWA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Duygu Hospital",
+    "name_zh": "Duygu Hospital"
   },
   {
     "clinic_id": "cl_155",
@@ -2322,7 +2630,9 @@
     "google_rating": 3.6,
     "google_review_count": 1031,
     "google_summary_cn": "https://maps.app.goo.gl/SpwjVEPPWg98SyFB9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Basari Hospital",
+    "name_zh": "Basari Hospital"
   },
   {
     "clinic_id": "cl_156",
@@ -2337,7 +2647,9 @@
     "google_rating": 3.5,
     "google_review_count": 400,
     "google_summary_cn": "https://maps.app.goo.gl/Cr2P77RDTr4qmEfv7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medipol Acibadem Regional Hospital Hair Transplant Unit",
+    "name_zh": "Medipol Acibadem Regional Hospital Hair Transplant Unit"
   },
   {
     "clinic_id": "cl_157",
@@ -2352,7 +2664,9 @@
     "google_rating": 3.5,
     "google_review_count": 958,
     "google_summary_cn": "https://maps.app.goo.gl/hRikqdiXnMCpe6e4A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Megapol Hospital",
+    "name_zh": "Megapol Hospital"
   },
   {
     "clinic_id": "cl_158",
@@ -2367,7 +2681,9 @@
     "google_rating": 3.8,
     "google_review_count": 1851,
     "google_summary_cn": "https://maps.app.goo.gl/Sc3Hz4QR6wnwk3AY6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kizilay Kagithane Hospital",
+    "name_zh": "Kizilay Kagithane Hospital"
   },
   {
     "clinic_id": "cl_159",
@@ -2382,7 +2698,9 @@
     "google_rating": 3.9,
     "google_review_count": 2441,
     "google_summary_cn": "https://maps.app.goo.gl/YbpgTXsDj8Tgdo869",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Tema Hospital",
+    "name_zh": "Istanbul Tema Hospital"
   },
   {
     "clinic_id": "cl_160",
@@ -2397,7 +2715,9 @@
     "google_rating": 3.9,
     "google_review_count": 687,
     "google_summary_cn": "https://maps.app.goo.gl/TR3G4XBufQKDwBXKA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kucukcekmece Hospital",
+    "name_zh": "Kucukcekmece Hospital"
   },
   {
     "clinic_id": "cl_161",
@@ -2412,7 +2732,9 @@
     "google_rating": 4,
     "google_review_count": 777,
     "google_summary_cn": "https://maps.app.goo.gl/i6FsV7go3jq8z8yk8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dogan Hospital",
+    "name_zh": "Dogan Hospital"
   },
   {
     "clinic_id": "cl_162",
@@ -2427,7 +2749,9 @@
     "google_rating": 4.4,
     "google_review_count": 8928,
     "google_summary_cn": "https://maps.app.goo.gl/TpC6tJDX9oDfzHnE9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "VM Medical Park Maltepe Hospital",
+    "name_zh": "VM Medical Park Maltepe Hospital"
   },
   {
     "clinic_id": "cl_163",
@@ -2442,7 +2766,9 @@
     "google_rating": 4,
     "google_review_count": 998,
     "google_summary_cn": "https://maps.app.goo.gl/MyUspUDKavYnwmZ5A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Maltepe Ersoy Hospital",
+    "name_zh": "Maltepe Ersoy Hospital"
   },
   {
     "clinic_id": "cl_164",
@@ -2457,7 +2783,9 @@
     "google_rating": 4.3,
     "google_review_count": 4554,
     "google_summary_cn": "https://maps.app.goo.gl/FQFRySEbQAyQzZst7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Lokman Hekim Istanbul Hospital",
+    "name_zh": "Lokman Hekim Istanbul Hospital"
   },
   {
     "clinic_id": "cl_165",
@@ -2472,7 +2800,9 @@
     "google_rating": 4.4,
     "google_review_count": 2499,
     "google_summary_cn": "https://maps.app.goo.gl/Wrs7F6ygZ16xmeKq9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Pendik Bolge Hospital",
+    "name_zh": "Pendik Bolge Hospital"
   },
   {
     "clinic_id": "cl_166",
@@ -2487,7 +2817,9 @@
     "google_rating": 3.4,
     "google_review_count": 1494,
     "google_summary_cn": "https://maps.app.goo.gl/iRQ73i4SDhU2qFLMA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Emsey Hospital",
+    "name_zh": "Emsey Hospital"
   },
   {
     "clinic_id": "cl_167",
@@ -2502,7 +2834,9 @@
     "google_rating": 4,
     "google_review_count": 2564,
     "google_summary_cn": "https://maps.app.goo.gl/nE8S9Jkc9h6K6k2JA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kurtkoy Ersoy Hospital",
+    "name_zh": "Kurtkoy Ersoy Hospital"
   },
   {
     "clinic_id": "cl_168",
@@ -2517,7 +2851,9 @@
     "google_rating": 4,
     "google_review_count": 6097,
     "google_summary_cn": "https://maps.app.goo.gl/3R8xnf2X8DSWQV2L8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "VM Medical Park Pendik Hospital",
+    "name_zh": "VM Medical Park Pendik Hospital"
   },
   {
     "clinic_id": "cl_169",
@@ -2532,7 +2868,9 @@
     "google_rating": 4.4,
     "google_review_count": 1277,
     "google_summary_cn": "https://maps.app.goo.gl/YWbio3Pkg8w4Ykm28",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Liv Hospital Vadi Istanbul Hospital",
+    "name_zh": "Liv Hospital Vadi Istanbul Hospital"
   },
   {
     "clinic_id": "cl_170",
@@ -2547,7 +2885,9 @@
     "google_rating": 4.4,
     "google_review_count": 1428,
     "google_summary_cn": "https://maps.app.goo.gl/TKExNHGphDUc2HYq7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Medical Park TEM Hospital",
+    "name_zh": "Medical Park TEM Hospital"
   },
   {
     "clinic_id": "cl_171",
@@ -2562,7 +2902,9 @@
     "google_rating": 3.8,
     "google_review_count": 749,
     "google_summary_cn": "https://maps.app.goo.gl/Wko5mPw9B1sv4ftS9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Silivri Anadolu Hospital Hair Transplant Unit",
+    "name_zh": "Silivri Anadolu Hospital Hair Transplant Unit"
   },
   {
     "clinic_id": "cl_172",
@@ -2577,7 +2919,9 @@
     "google_rating": 4.2,
     "google_review_count": 1776,
     "google_summary_cn": "https://maps.app.goo.gl/HSrPDNJmfjx7G8LFA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Hisar Intercontinental Hospital",
+    "name_zh": "Hisar Intercontinental Hospital"
   },
   {
     "clinic_id": "cl_173",
@@ -2592,7 +2936,9 @@
     "google_rating": 4.6,
     "google_review_count": 363,
     "google_summary_cn": "https://maps.app.goo.gl/Grk9ZKc7Saksf3ap6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Erdem Hospital",
+    "name_zh": "Erdem Hospital"
   },
   {
     "clinic_id": "cl_174",
@@ -2607,7 +2953,9 @@
     "google_rating": 3.6,
     "google_review_count": 289,
     "google_summary_cn": "https://maps.app.goo.gl/8WEEYGwWwtEYpZkEA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Uskudar Hospitalturk Hospital",
+    "name_zh": "Uskudar Hospitalturk Hospital"
   },
   {
     "clinic_id": "cl_175",
@@ -2622,7 +2970,9 @@
     "google_rating": 4,
     "google_review_count": 754,
     "google_summary_cn": "https://maps.app.goo.gl/8MAaD9JvFCvD6Ezd7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Academic Hospital",
+    "name_zh": "Academic Hospital"
   },
   {
     "clinic_id": "cl_176",
@@ -2637,7 +2987,9 @@
     "google_rating": 3.6,
     "google_review_count": 2775,
     "google_summary_cn": "https://maps.app.goo.gl/R3kZrJaQiQRkVr939",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Sisli Kolan International Hospital",
+    "name_zh": "Sisli Kolan International Hospital"
   },
   {
     "clinic_id": "cl_177",
@@ -2652,7 +3004,9 @@
     "google_rating": 4.4,
     "google_review_count": 1331,
     "google_summary_cn": "https://maps.app.goo.gl/xX8tQj4GVoDff9A7A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Acibadem Taksim Hospital",
+    "name_zh": "Acibadem Taksim Hospital"
   },
   {
     "clinic_id": "cl_178",
@@ -2667,7 +3021,9 @@
     "google_rating": 3.7,
     "google_review_count": 355,
     "google_summary_cn": "https://maps.app.goo.gl/5pN2Z4z5teXsmVWu7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Cerrahi Hospital",
+    "name_zh": "Istanbul Cerrahi Hospital"
   },
   {
     "clinic_id": "cl_179",
@@ -2682,7 +3038,9 @@
     "google_rating": 4.2,
     "google_review_count": 585,
     "google_summary_cn": "https://maps.app.goo.gl/z6ZRPKPLBfrMJMTQ7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Tanfer Hospital",
+    "name_zh": "Tanfer Hospital"
   },
   {
     "clinic_id": "cl_180",
@@ -2697,7 +3055,9 @@
     "google_rating": 3.5,
     "google_review_count": 1000,
     "google_summary_cn": "https://maps.app.goo.gl/BvkVD5CgumDwiZqR7",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Florence Nightingale Hospital",
+    "name_zh": "Istanbul Florence Nightingale Hospital"
   },
   {
     "clinic_id": "cl_181",
@@ -2712,7 +3072,9 @@
     "google_rating": null,
     "google_review_count": 27,
     "google_summary_cn": "https://maps.app.goo.gl/7bsiexRwJeuWcn1r9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Turkiye Gazetesi Hospital",
+    "name_zh": "Turkiye Gazetesi Hospital"
   },
   {
     "clinic_id": "cl_182",
@@ -2727,7 +3089,9 @@
     "google_rating": 4.2,
     "google_review_count": 509,
     "google_summary_cn": "https://maps.app.goo.gl/uActc41Wd4aNNuu4A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Etiler Hospital",
+    "name_zh": "Etiler Hospital"
   },
   {
     "clinic_id": "cl_183",
@@ -2742,7 +3106,9 @@
     "google_rating": 4,
     "google_review_count": 1244,
     "google_summary_cn": "https://maps.app.goo.gl/TsEd8wxQnA7GXTAY8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "A Hospital",
+    "name_zh": "A Hospital"
   },
   {
     "clinic_id": "cl_184",
@@ -2757,7 +3123,9 @@
     "google_rating": 4,
     "google_review_count": 4723,
     "google_summary_cn": "https://maps.app.goo.gl/NXeVFShTW18oumse6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Istinye University Health Practice and Research Center",
+    "name_zh": "Istanbul Istinye University Health Practice and Research Center"
   },
   {
     "clinic_id": "cl_185",
@@ -2772,7 +3140,9 @@
     "google_rating": 3.9,
     "google_review_count": 3205,
     "google_summary_cn": "https://maps.app.goo.gl/gzYCbbNtUTJxY8zt6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Istinye University Health Practice and Research Center Gaziosmanpasa Campus",
+    "name_zh": "Istanbul Istinye University Health Practice and Research Center Gaziosmanpasa Campus"
   },
   {
     "clinic_id": "cl_186",
@@ -2787,7 +3157,9 @@
     "google_rating": 4.4,
     "google_review_count": 990,
     "google_summary_cn": "https://maps.app.goo.gl/BuVG7q6ia3Uyco9m6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Acibadem Dr Sinasi Can Hospital",
+    "name_zh": "Acibadem Dr Sinasi Can Hospital"
   },
   {
     "clinic_id": "cl_187",
@@ -2802,7 +3174,9 @@
     "google_rating": 3.3,
     "google_review_count": 382,
     "google_summary_cn": "https://maps.app.goo.gl/5bCgLHXji19NEqSe6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kadikoy Florence Nightingale Medical Center",
+    "name_zh": "Kadikoy Florence Nightingale Medical Center"
   },
   {
     "clinic_id": "cl_188",
@@ -2817,7 +3191,9 @@
     "google_rating": 3.2,
     "google_review_count": 1568,
     "google_summary_cn": "https://maps.app.goo.gl/Wx29Qp6fZgnkWc2h6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Medipol University Health Education Practice Center Pendik Campus",
+    "name_zh": "Istanbul Medipol University Health Education Practice Center Pendik Campus"
   },
   {
     "clinic_id": "cl_189",
@@ -2832,7 +3208,9 @@
     "google_rating": 4.8,
     "google_review_count": 3754,
     "google_summary_cn": "https://maps.app.goo.gl/CCuGs4i8pLEsL1gC8",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr. Cinik Clinic",
+    "name_zh": "Dr. Cinik Clinic"
   },
   {
     "clinic_id": "cl_190",
@@ -2847,7 +3225,9 @@
     "google_rating": 4.9,
     "google_review_count": 1682,
     "google_summary_cn": "https://maps.app.goo.gl/Awyc7dN8FzFAxg8XA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cosmedica",
+    "name_zh": "Cosmedica"
   },
   {
     "clinic_id": "cl_191",
@@ -2862,7 +3242,9 @@
     "google_rating": 4.7,
     "google_review_count": 1179,
     "google_summary_cn": "https://maps.app.goo.gl/JwJ6fZZBHe9QEZ1S6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr.Yetkin Bayer Clinic",
+    "name_zh": "Dr.Yetkin Bayer Clinic"
   },
   {
     "clinic_id": "cl_192",
@@ -2877,7 +3259,9 @@
     "google_rating": 4.9,
     "google_review_count": 767,
     "google_summary_cn": "https://maps.app.goo.gl/M4mjo2Zk5Js8SDUJ9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr. Terziler",
+    "name_zh": "Dr. Terziler"
   },
   {
     "clinic_id": "cl_193",
@@ -2892,7 +3276,9 @@
     "google_rating": 4.9,
     "google_review_count": 449,
     "google_summary_cn": "https://maps.app.goo.gl/4fMzjksCMeCj62rVA",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Adem Kose Polyclinic",
+    "name_zh": "Adem Kose Polyclinic"
   },
   {
     "clinic_id": "cl_194",
@@ -2907,7 +3293,9 @@
     "google_rating": 5,
     "google_review_count": 6,
     "google_summary_cn": "https://maps.app.goo.gl/WHW1PxduoaJkyAA5A",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Melik Yagmur Polyclinic",
+    "name_zh": "Melik Yagmur Polyclinic"
   },
   {
     "clinic_id": "cl_195",
@@ -2922,7 +3310,9 @@
     "google_rating": 4.9,
     "google_review_count": 2227,
     "google_summary_cn": "https://maps.app.goo.gl/Eu3wFKqjFma3qyK76",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Heva Clinic Polyclinic",
+    "name_zh": "Heva Clinic Polyclinic"
   },
   {
     "clinic_id": "cl_196",
@@ -2937,7 +3327,9 @@
     "google_rating": 4.9,
     "google_review_count": 1404,
     "google_summary_cn": "https://maps.app.goo.gl/gU4UpknAaf79GKSL6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Murat Makasci Polyclinic",
+    "name_zh": "Murat Makasci Polyclinic"
   },
   {
     "clinic_id": "cl_197",
@@ -2952,7 +3344,9 @@
     "google_rating": 4.9,
     "google_review_count": 2235,
     "google_summary_cn": "https://maps.app.goo.gl/TV2pKkg1TfcizfHL6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Smile Polyclinic",
+    "name_zh": "Smile Polyclinic"
   },
   {
     "clinic_id": "cl_198",
@@ -2967,7 +3361,9 @@
     "google_rating": 4.3,
     "google_review_count": 285,
     "google_summary_cn": "https://share.google/CjXTXpRlYIUC5kp6g",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Fatih Kose Polyclinic",
+    "name_zh": "Fatih Kose Polyclinic"
   },
   {
     "clinic_id": "cl_199",
@@ -2982,7 +3378,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "https://maps.app.goo.gl/fF1W6snhbWVbg3Qj9",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Healthzen Polyclinic",
+    "name_zh": "Healthzen Polyclinic"
   },
   {
     "clinic_id": "cl_200",
@@ -2997,7 +3395,9 @@
     "google_rating": 4.7,
     "google_review_count": 214,
     "google_summary_cn": "https://share.google/hvJlUEiEmirobRqcK",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estepalace Polyclinic",
+    "name_zh": "Estepalace Polyclinic"
   },
   {
     "clinic_id": "cl_201",
@@ -3012,7 +3412,9 @@
     "google_rating": 4.9,
     "google_review_count": 1137,
     "google_summary_cn": "https://share.google/UMkVrBb32I24sVVS4",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estepera Polyclinic",
+    "name_zh": "Estepera Polyclinic"
   },
   {
     "clinic_id": "cl_202",
@@ -3027,7 +3429,9 @@
     "google_rating": 4.8,
     "google_review_count": 489,
     "google_summary_cn": "https://share.google/oWXIqS8kFuI5JeOCY",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "DY MED Hair Clinic",
+    "name_zh": "DY MED Hair Clinic"
   },
   {
     "clinic_id": "cl_203",
@@ -3042,7 +3446,9 @@
     "google_rating": 4.9,
     "google_review_count": 1753,
     "google_summary_cn": "https://share.google/mVTuQO34XTVqFiwqV",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Sule Clinic",
+    "name_zh": "Sule Clinic"
   },
   {
     "clinic_id": "cl_204",
@@ -3057,7 +3463,9 @@
     "google_rating": 4.8,
     "google_review_count": 729,
     "google_summary_cn": "https://share.google/mH1Osa1jFCvCkGUkJ",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Now Hair Time",
+    "name_zh": "Now Hair Time"
   },
   {
     "clinic_id": "cl_205",
@@ -3072,7 +3480,9 @@
     "google_rating": 4.9,
     "google_review_count": 153,
     "google_summary_cn": "https://share.google/ucqpvBHl8ycx62oOx",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "G.E",
+    "name_zh": "G.E"
   },
   {
     "clinic_id": "cl_206",
@@ -3087,7 +3497,9 @@
     "google_rating": 4,
     "google_review_count": 1,
     "google_summary_cn": "https://share.google/0OLV91u8HmWyjvr33",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Alp Hac Polyclinic",
+    "name_zh": "Alp Hac Polyclinic"
   },
   {
     "clinic_id": "cl_207",
@@ -3102,7 +3514,9 @@
     "google_rating": 4.5,
     "google_review_count": 353,
     "google_summary_cn": "https://share.google/QRtiDP5Bx3Nn12w7x",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "ASMED Medical Center",
+    "name_zh": "ASMED Medical Center"
   },
   {
     "clinic_id": "cl_208",
@@ -3117,7 +3531,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Istanbul Atlas University Faculty of Medicine Hair Transplant Unit",
+    "name_zh": "Istanbul Atlas University Faculty of Medicine Hair Transplant Unit"
   },
   {
     "clinic_id": "cl_209",
@@ -3132,7 +3548,9 @@
     "google_rating": 4.8,
     "google_review_count": 2457,
     "google_summary_cn": "https://share.google/Qkdd3e2YZd84DoRv6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Asli Tarcan",
+    "name_zh": "Asli Tarcan"
   },
   {
     "clinic_id": "cl_210",
@@ -3147,7 +3565,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Asli Tarcan",
+    "name_zh": "Asli Tarcan"
   },
   {
     "clinic_id": "cl_211",
@@ -3162,7 +3582,9 @@
     "google_rating": 4.8,
     "google_review_count": 2330,
     "google_summary_cn": "https://share.google/UtrjSsUNTrpSCvED3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "EsteWorld",
+    "name_zh": "EsteWorld"
   },
   {
     "clinic_id": "cl_212",
@@ -3177,7 +3599,9 @@
     "google_rating": 4.8,
     "google_review_count": 5200,
     "google_summary_cn": "https://share.google/jAMqv9fclqcQkrUTK",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "EsteWorld",
+    "name_zh": "EsteWorld"
   },
   {
     "clinic_id": "cl_213",
@@ -3192,7 +3616,9 @@
     "google_rating": 4.2,
     "google_review_count": 101,
     "google_summary_cn": "https://share.google/9ZZetqGIJbqXopJ3t",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr Alp Aslan Clinic",
+    "name_zh": "Dr Alp Aslan Clinic"
   },
   {
     "clinic_id": "cl_214",
@@ -3207,7 +3633,9 @@
     "google_rating": 4.8,
     "google_review_count": 564,
     "google_summary_cn": "https://share.google/GWOfd9EZHyXifaLOl",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Berkay Tulpar Polyclinic",
+    "name_zh": "Berkay Tulpar Polyclinic"
   },
   {
     "clinic_id": "cl_215",
@@ -3222,7 +3650,9 @@
     "google_rating": 4.5,
     "google_review_count": 51,
     "google_summary_cn": "https://share.google/cMNmnVflV1scuOzJn",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "A Plus Polyclinic",
+    "name_zh": "A Plus Polyclinic"
   },
   {
     "clinic_id": "cl_216",
@@ -3237,7 +3667,9 @@
     "google_rating": 4.5,
     "google_review_count": 558,
     "google_summary_cn": "https://share.google/t9GBQK1Z9QEl5YMhn",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "AKL Polyclinic",
+    "name_zh": "AKL Polyclinic"
   },
   {
     "clinic_id": "cl_217",
@@ -3252,7 +3684,9 @@
     "google_rating": 4.6,
     "google_review_count": 268,
     "google_summary_cn": "https://share.google/qivCUVjymvtVPa41y",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Zen Hairpol Polyclinic",
+    "name_zh": "Zen Hairpol Polyclinic"
   },
   {
     "clinic_id": "cl_218",
@@ -3267,7 +3701,9 @@
     "google_rating": 4.5,
     "google_review_count": 3000,
     "google_summary_cn": "https://share.google/MyY0kOZLSwz7mA1ui",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Turkeyana Polyclinic",
+    "name_zh": "Turkeyana Polyclinic"
   },
   {
     "clinic_id": "cl_219",
@@ -3282,7 +3718,9 @@
     "google_rating": 4.8,
     "google_review_count": 2500,
     "google_summary_cn": "https://share.google/kAYKG1Id5gAa0Vxgi",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Vera Clinic Polyclinic",
+    "name_zh": "Vera Clinic Polyclinic"
   },
   {
     "clinic_id": "cl_220",
@@ -3297,7 +3735,9 @@
     "google_rating": 4.5,
     "google_review_count": 134,
     "google_summary_cn": "https://share.google/SVqEqBrF3lKnFFmoS",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr Yasemin Savas",
+    "name_zh": "Dr Yasemin Savas"
   },
   {
     "clinic_id": "cl_221",
@@ -3312,7 +3752,9 @@
     "google_rating": 4.7,
     "google_review_count": 128,
     "google_summary_cn": "https://share.google/mxje5J6aPHGGDMfjE",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Oktay Tuney Polyclinic",
+    "name_zh": "Oktay Tuney Polyclinic"
   },
   {
     "clinic_id": "cl_222",
@@ -3327,7 +3769,9 @@
     "google_rating": 4.3,
     "google_review_count": 97,
     "google_summary_cn": "https://share.google/LpNYb7FX9MHkYyFC3",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Dr Ali Kerim Diler Polyclinic",
+    "name_zh": "Dr Ali Kerim Diler Polyclinic"
   },
   {
     "clinic_id": "cl_223",
@@ -3342,7 +3786,9 @@
     "google_rating": 4.3,
     "google_review_count": 764,
     "google_summary_cn": "https://share.google/sNZNnYFmyHZHsUIoN",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Estevien Polyclinic",
+    "name_zh": "Estevien Polyclinic"
   },
   {
     "clinic_id": "cl_224",
@@ -3357,7 +3803,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cosmedica",
+    "name_zh": "Cosmedica"
   },
   {
     "clinic_id": "cl_225",
@@ -3372,7 +3820,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Cinik",
+    "name_zh": "Cinik"
   },
   {
     "clinic_id": "cl_226",
@@ -3387,7 +3837,9 @@
     "google_rating": 4.8,
     "google_review_count": 356,
     "google_summary_cn": "https://share.google/XOGR9Dg1HC0By6ywg",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Vialife Polyclinic",
+    "name_zh": "Vialife Polyclinic"
   },
   {
     "clinic_id": "cl_227",
@@ -3402,7 +3854,9 @@
     "google_rating": 4.9,
     "google_review_count": 51,
     "google_summary_cn": "https://share.google/oEJotexp6WoHmWBvC",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Yildizlar Polyclinic",
+    "name_zh": "Yildizlar Polyclinic"
   },
   {
     "clinic_id": "cl_228",
@@ -3417,7 +3871,9 @@
     "google_rating": 4.2,
     "google_review_count": 249,
     "google_summary_cn": "https://share.google/dScgZ0Nx8TIQaTLD6",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Pendik Medical Center",
+    "name_zh": "Pendik Medical Center"
   },
   {
     "clinic_id": "cl_229",
@@ -3432,7 +3888,9 @@
     "google_rating": 4.5,
     "google_review_count": 1641,
     "google_summary_cn": "https://share.google/HUXpHCj1MX9rKCoVw",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Promed Polyclinic",
+    "name_zh": "Promed Polyclinic"
   },
   {
     "clinic_id": "cl_230",
@@ -3447,6 +3905,8 @@
     "google_rating": 4.3,
     "google_review_count": 169,
     "google_summary_cn": "https://share.google/9cIqi0BLbdQ4tfXdY",
-    "google_checked_at": "2026-03"
+    "google_checked_at": "2026-03",
+    "name_en": "Kartal Medical Center Hair Transplant Unit",
+    "name_zh": "Kartal Medical Center Hair Transplant Unit"
   }
 ]

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="查看已审核通过的土耳其植发评论，支持按医生或诊所筛选，并查看移植单位、价格和打孔方式。"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://trhairguide.com/reviews/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="评论交流区 | 土耳其植发透明指南" />
+    <meta property="og:description" content="查看已审核通过的土耳其植发评论，支持按医生或诊所筛选，并查看移植单位、价格和打孔方式。" />
+    <meta property="og:url" content="https://trhairguide.com/reviews/" />
+    <title>评论交流区 | 土耳其植发透明指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { sand: '#f6f0e7', ink: '#1f1a14', clay: '#8b5e34', line: '#e4d8c8' },
+            boxShadow: { soft: '0 20px 50px rgba(46, 31, 17, 0.08)' },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="../assets/styles.css?v=20260329a" />
+  </head>
+  <body data-page="reviews" class="bg-sand text-ink">
+    <div class="min-h-screen">
+      <header class="border-b border-stone-200/80 bg-white/80 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="../" class="flex flex-col">
+            <span class="text-2xl font-semibold tracking-tight">土耳其植发透明指南</span>
+            <span class="text-xs uppercase tracking-[0.28em] text-stone-500">Transparent Hair Transplant Guide</span>
+          </a>
+          <nav class="hidden gap-6 text-sm text-stone-600 md:flex">
+            <a href="../" class="nav-link">首页</a>
+            <a href="../doctors/" class="nav-link">医生库</a>
+            <a href="../clinics/" class="nav-link">诊所库</a>
+            <a href="../guides/" class="nav-link">术语解释</a>
+            <a href="../blog/" class="nav-link">科普文章</a>
+            <a href="../about/" class="nav-link">关于</a>
+            <a href="../reviews/" class="nav-link nav-link-active">评论交流区</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 lg:px-8">
+        <section class="page-hero rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft lg:p-10">
+          <div class="page-kicker">Approved Reviews</div>
+          <div class="review-top-nav mt-5">
+            <a href="../consult/" class="review-filter-btn">提交评论</a>
+            <a href="../reviews/" class="review-filter-btn is-active">评论交流区</a>
+          </div>
+          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">植发评论交流区</h1>
+          <p class="mt-5 max-w-4xl text-base leading-8 text-stone-600">
+            这里展示的是已经审核通过的评论。你可以按医生或诊所筛选，查看不同对象的移植单位数量、价格和打孔方式。
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-stone-600">
+            <span>当前展示 <strong id="reviews-count">0</strong> 条评论</span>
+            <a href="../consult/" class="inline-flex items-center rounded-full bg-[#0f4c81] px-4 py-2 font-semibold text-white transition hover:brightness-95">去提交评论</a>
+          </div>
+        </section>
+
+        <section id="reviews-app" class="mt-8 review-grid">
+          <div class="review-panel p-5 lg:p-6">
+            <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <h2 class="text-2xl font-semibold text-stone-900">筛选评论</h2>
+                <p class="mt-2 text-sm leading-7 text-stone-600">只会读取 approved 状态的评论，默认按创建时间倒序显示。</p>
+              </div>
+              <div class="review-filter-row">
+                <button type="button" class="review-filter-btn is-active" data-review-filter="all" aria-pressed="true">全部</button>
+                <button type="button" class="review-filter-btn" data-review-filter="doctor" aria-pressed="false">医生</button>
+                <button type="button" class="review-filter-btn" data-review-filter="clinic" aria-pressed="false">诊所</button>
+              </div>
+            </div>
+            <div id="reviews-message" class="review-message mt-4" aria-live="polite"></div>
+          </div>
+
+          <div id="reviews-list" class="review-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/runtime-config.js"></script>
+    <script src="../assets/app.js?v=20260329a" defer></script>
+    <script type="module" src="../assets/reviews.js?v=20260329a"></script>
+  </body>
+</html>

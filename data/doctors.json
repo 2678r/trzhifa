@@ -24,7 +24,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Kayihan Sahinoglu",
+    "name_zh": "卡伊汉·沙希诺卢"
   },
   {
     "doctor_id": "DR_EMRE_KARADENIZ",
@@ -51,7 +53,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Emre Karadeniz",
+    "name_zh": "埃姆雷·卡拉代尼兹"
   },
   {
     "doctor_id": "DR_SAIT_BIRCAN",
@@ -78,7 +82,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Sait Bircan",
+    "name_zh": "赛义特·比尔詹"
   },
   {
     "doctor_id": "DR_ILKER_APAYDIN",
@@ -105,7 +111,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Ilker Apaydin",
+    "name_zh": "伊尔克尔·阿帕伊登"
   },
   {
     "doctor_id": "DR_MERIH_TOMBUL",
@@ -132,7 +140,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Merih Tombul",
+    "name_zh": "梅里赫·通布尔"
   },
   {
     "doctor_id": "DR_SIRAC_DEMIR",
@@ -159,7 +169,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "M. Sirac Demir",
+    "name_zh": "M·西拉奇·德米尔"
   },
   {
     "doctor_id": "DR_ILHAN_SERDAROGLU",
@@ -186,7 +198,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Ilhan Serdaroglu",
+    "name_zh": "伊尔汉·塞尔达罗卢"
   },
   {
     "doctor_id": "DR_OZLEM_BICER",
@@ -213,7 +227,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Ozlem Bicer",
+    "name_zh": "厄兹莱姆·比切尔"
   },
   {
     "doctor_id": "DR_ERKAN_DEMIRSOY",
@@ -240,7 +256,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Erkan Demirsoy",
+    "name_zh": "埃尔坎·德米尔索伊"
   },
   {
     "doctor_id": "DR_KORAY_ERDOGAN",
@@ -267,7 +285,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Koray Erdogan",
+    "name_zh": "科拉伊·埃尔多安"
   },
   {
     "doctor_id": "DR_OSMAN_TAYFUN_OGUZOGLU",
@@ -294,7 +314,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Osman Tayfun Oguzoglu",
+    "name_zh": "奥斯曼·塔伊丰·奥古佐格鲁"
   },
   {
     "doctor_id": "DR_OZGUR_OZTAN",
@@ -321,7 +343,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Ozgur Oztan",
+    "name_zh": "奥兹古尔·奥兹坦"
   },
   {
     "doctor_id": "DR_EKREM_CIVAS",
@@ -348,7 +372,9 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Ekrem Civas",
+    "name_zh": "埃克雷姆·吉瓦什"
   },
   {
     "doctor_id": "DR_KAAN_PEKINER",
@@ -375,6 +401,8 @@
     "google_rating": null,
     "google_review_count": null,
     "google_summary_cn": "",
-    "google_checked_at": ""
+    "google_checked_at": "",
+    "name_en": "Kaan Pekiner",
+    "name_zh": "卡恩·佩基纳"
   }
 ]
