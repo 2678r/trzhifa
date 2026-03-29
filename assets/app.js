@@ -443,6 +443,89 @@ function setupDoctors() {
       .map((city) => `<option value="${city}">${city}</option>`)
       .join('')}`
 
+    const sectionMeta = {
+      fellow: {
+        title: '1｜ISHRS Fellow 会员',
+        description:
+          'FISHRS（Fellow Member，会士）：ISHRS 授予的最高荣誉级别。这些医生不仅拥有丰富的手术经验，还在教学、研究或学会贡献方面有突出表现，是植发领域公认的顶尖专家。',
+      },
+      member: {
+        title: '2｜正式会员',
+        description:
+          'Member（正式会员）：ISHRS 的核心会员级别。这些医生已完成系统的植发专业教育培训，并获得同行推荐，具备扎实的专业知识和临床能力，属于较为优秀的植发医生群体。',
+      },
+      former_member: {
+        title: '3｜前会员',
+        description: '前会员表示之前是会员、现已退出，查看时需要结合最新公开信息判断。',
+      },
+      associate_member: {
+        title: '4｜准会员',
+        description: 'Associate Member（准会员）：入门级别会员。通常是对植发领域感兴趣的执业医生，教育和经验要求相对基础。',
+      },
+    }
+
+    const renderDoctorCard = (doctor) => {
+      const note = summarizeDoctorNote(doctor)
+      const hasAbhrs = normalize(doctor.abhrs).toLowerCase() === 'yes'
+      const photo = resolveDoctorPhoto(doctor.photo)
+      const initials = (doctor.doctor_name_cn || doctor.doctor_name_en || 'TR').slice(0, 2)
+      const status = normalize(doctor.ishrs_status).toLowerCase()
+      const statusClass = status === 'fellow' ? 'pill-success' : status === 'member' ? 'pill-brand' : ''
+      return `
+        <article class="group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:border-stone-300">
+          <div class="grid gap-0 lg:grid-cols-[260px_minmax(0,1fr)]">
+            <div class="relative min-h-[240px] border-b border-stone-200 bg-stone-100 lg:min-h-full lg:border-b-0 lg:border-r">
+              ${photo ? `<img src="${photo}" alt="${doctor.doctor_name_cn || doctor.doctor_name_en}" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" />` : ''}
+              <div class="avatar-fallback ${photo ? '' : '!grid'} absolute inset-0 place-items-center bg-stone-100 text-4xl font-semibold text-stone-500">${initials}</div>
+            </div>
+
+            <div class="p-5 lg:p-6">
+              <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
+                  <div class="min-w-0">
+                    <h2 class="mt-2 text-3xl font-semibold tracking-tight text-stone-900">${doctor.doctor_name_en || doctor.doctor_name_cn}</h2>
+                    <p class="mt-1 text-sm text-stone-500">${doctor.doctor_name_cn || ''}</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                      <span class="pill ${statusClass}">${formatDoctorStatus(doctor)}</span>
+                      <span class="pill ${hasAbhrs ? 'pill-brand' : ''}">${hasAbhrs ? 'ABHRS 认证' : '无 ABHRS'}</span>
+                      <span class="pill">${doctor.city_cn || doctor.city || '未标注城市'}</span>
+                    </div>
+                  </div>
+
+                  <div class="grid gap-2 rounded-[1.35rem] border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600 xl:min-w-[240px]">
+                    <div>
+                      <div class="text-xs uppercase tracking-[0.18em] text-stone-400">职业背景</div>
+                      <div class="mt-1 font-medium text-stone-900">${doctor.background_type_cn || doctor.background_type_en || '未标注'}</div>
+                    </div>
+                    <div>
+                      <div class="text-xs uppercase tracking-[0.18em] text-stone-400">手术模式</div>
+                      <div class="mt-1 font-medium text-stone-900">${doctor.surgery_model_cn || doctor.surgery_model || '未标注'}</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+                  <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-4">
+                    <div class="text-xs uppercase tracking-[0.18em] text-stone-400">专长方向</div>
+                    <div class="mt-2 text-base font-medium text-stone-900">${doctor.specialty_cn || doctor.specialty_en || '未标注'}</div>
+                  </div>
+
+                  <div class="rounded-[1.35rem] border border-stone-200 bg-white p-4">
+                    <div class="text-xs uppercase tracking-[0.18em] text-stone-400">备注</div>
+                    <div class="mt-2 whitespace-pre-line text-sm leading-7 text-stone-700">${note}</div>
+                  </div>
+                </div>
+
+                <div class="border-t border-stone-100 pt-4">
+                  <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="${doctor.website ? 'button button-primary' : 'button pointer-events-none bg-stone-200 text-stone-400'}">${doctor.website ? '官网地址' : '暂无官网地址'}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      `
+    }
+
     const render = () => {
       const q = searchInput.value.trim().toLowerCase()
       const city = citySelect.value
@@ -484,66 +567,45 @@ function setupDoctors() {
       })
 
       count.textContent = result.length
-      grid.innerHTML = result
-        .map((doctor) => {
-          const note = summarizeDoctorNote(doctor)
-          const hasAbhrs = normalize(doctor.abhrs).toLowerCase() === 'yes'
-          const photo = resolveDoctorPhoto(doctor.photo)
-          const initials = (doctor.doctor_name_cn || doctor.doctor_name_en || 'TR').slice(0, 2)
-          const status = normalize(doctor.ishrs_status).toLowerCase()
-          const statusClass = status === 'fellow' ? 'pill-success' : status === 'member' ? 'pill-brand' : ''
+      const grouped = {
+        fellow: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'fellow'),
+        member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'member'),
+        former_member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'former_member'),
+        associate_member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'associate_member'),
+      }
+
+      grid.innerHTML = Object.entries(sectionMeta)
+        .map(([key, meta]) => {
+          const items = grouped[key] || []
+          const isAssociateMember = key === 'associate_member'
           return `
-            <article class="group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:border-stone-300">
-              <div class="grid gap-0 lg:grid-cols-[260px_minmax(0,1fr)]">
-                <div class="relative min-h-[240px] border-b border-stone-200 bg-stone-100 lg:min-h-full lg:border-b-0 lg:border-r">
-                  ${photo ? `<img src="${photo}" alt="${doctor.doctor_name_cn || doctor.doctor_name_en}" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" />` : ''}
-                  <div class="avatar-fallback ${photo ? '' : '!grid'} absolute inset-0 place-items-center bg-stone-100 text-4xl font-semibold text-stone-500">${initials}</div>
-                </div>
-
-                <div class="p-5 lg:p-6">
-                  <div class="flex flex-col gap-5">
-                    <div class="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
-                      <div class="min-w-0">
-                        <h2 class="mt-2 text-3xl font-semibold tracking-tight text-stone-900">${doctor.doctor_name_cn || doctor.doctor_name_en}</h2>
-                        <p class="mt-1 text-sm text-stone-500">${doctor.doctor_name_en || ''}</p>
-                        <div class="mt-3 flex flex-wrap gap-2">
-                          <span class="pill ${statusClass}">${formatDoctorStatus(doctor)}</span>
-                          <span class="pill ${hasAbhrs ? 'pill-brand' : ''}">${hasAbhrs ? 'ABHRS 认证' : '无 ABHRS'}</span>
-                          <span class="pill">${doctor.city_cn || doctor.city || '未标注城市'}</span>
-                        </div>
-                      </div>
-
-                      <div class="grid gap-2 rounded-[1.35rem] border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600 xl:min-w-[240px]">
-                        <div>
-                          <div class="text-xs uppercase tracking-[0.18em] text-stone-400">职业背景</div>
-                          <div class="mt-1 font-medium text-stone-900">${doctor.background_type_cn || doctor.background_type_en || '未标注'}</div>
-                        </div>
-                        <div>
-                          <div class="text-xs uppercase tracking-[0.18em] text-stone-400">手术模式</div>
-                          <div class="mt-1 font-medium text-stone-900">${doctor.surgery_model_cn || doctor.surgery_model || '未标注'}</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
-                      <div class="rounded-[1.35rem] border border-stone-200 bg-stone-50 p-4">
-                        <div class="text-xs uppercase tracking-[0.18em] text-stone-400">专长方向</div>
-                        <div class="mt-2 text-base font-medium text-stone-900">${doctor.specialty_cn || doctor.specialty_en || '未标注'}</div>
-                      </div>
-
-                      <div class="rounded-[1.35rem] border border-stone-200 bg-white p-4">
-                        <div class="text-xs uppercase tracking-[0.18em] text-stone-400">备注</div>
-                        <div class="mt-2 whitespace-pre-line text-sm leading-7 text-stone-700">${note}</div>
-                      </div>
-                    </div>
-
-                    <div class="border-t border-stone-100 pt-4">
-                      <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="${doctor.website ? 'button button-primary' : 'button pointer-events-none bg-stone-200 text-stone-400'}">${doctor.website ? '官网地址' : '暂无官网地址'}</a>
-                    </div>
+            <section class="grid gap-5">
+              <div class="rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-soft">
+                <div class="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+                  <div>
+                    <h2 class="text-2xl font-semibold tracking-tight text-stone-900">${meta.title}</h2>
+                    <p class="mt-3 text-base leading-8 text-stone-700 sm:text-lg">${meta.description}</p>
                   </div>
+                  <div class="text-sm text-stone-500">当前显示 <strong class="text-stone-900">${items.length}</strong> 位</div>
                 </div>
               </div>
-            </article>
+              ${
+                items.length
+                  ? isAssociateMember
+                    ? `<div class="rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-soft">
+                        <div class="grid gap-2 text-sm text-stone-700 sm:grid-cols-2 lg:grid-cols-3">
+                          ${items
+                            .map((doctor) => {
+                              const name = doctor.doctor_name_en || doctor.doctor_name_cn || '未命名医生'
+                              return `<div class="rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 leading-7">${name}</div>`
+                            })
+                            .join('')}
+                        </div>
+                      </div>`
+                    : items.map(renderDoctorCard).join('')
+                  : `<div class="rounded-[1.5rem] border border-dashed border-stone-300 bg-white/80 p-8 text-center text-sm leading-7 text-stone-500">当前这一组还没有收录医生，后续如数据补充会自动显示在这里。</div>`
+              }
+            </section>
           `
         })
         .join('')
