@@ -1,6 +1,28 @@
 const formatDoctorStatus = (doctor) => doctor.ishrs_status_cn || doctor.ishrs_status || '—'
 const normalize = (value) => String(value || '').trim()
 
+function slugify(value) {
+  return normalize(value)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
+function buildUniqueSlugMap(items, getBase, getId) {
+  const counts = new Map()
+  const slugs = new Map()
+  items.forEach((item) => {
+    const base = slugify(getBase(item)) || normalize(getId(item)).toLowerCase()
+    const seen = counts.get(base) || 0
+    counts.set(base, seen + 1)
+    slugs.set(getId(item), seen === 0 ? base : `${base}-${seen + 1}`)
+  })
+  return slugs
+}
+
 function withBase(path) {
   const cleanPath = `/${String(path || '').replace(/^\/+/, '')}`
   return cleanPath
@@ -421,6 +443,16 @@ function clinicSurgeryModeCompactLabel(clinic) {
   return '未公开'
 }
 
+function doctorProfilePath(doctor, slugMap) {
+  const slug = slugMap.get(doctor.doctor_id)
+  return slug ? `/doctors/${slug}/` : '/doctors/'
+}
+
+function clinicProfilePath(clinic, slugMap) {
+  const slug = slugMap.get(clinic.clinic_id)
+  return slug ? `/clinics/${slug}/` : '/clinics/'
+}
+
 function setupDoctors() {
   const grid = document.getElementById('doctor-grid')
   const count = document.getElementById('doctor-count')
@@ -430,6 +462,11 @@ function setupDoctors() {
   const sortSelect = document.getElementById('doctor-sort')
 
   loadJson('/data/doctors.json').then((doctors) => {
+    const doctorSlugMap = buildUniqueSlugMap(
+      doctors,
+      (doctor) => doctor.doctor_name_en || doctor.doctor_name_cn || doctor.doctor_id,
+      (doctor) => doctor.doctor_id
+    )
     const cities = [...new Set(doctors.map((doctor) => doctor.city_cn || doctor.city).filter(Boolean))]
     citySelect.innerHTML = `<option value="all">全部城市</option>${cities
       .map((city) => `<option value="${city}">${city}</option>`)
@@ -459,6 +496,7 @@ function setupDoctors() {
       const initials = (doctor.doctor_name_cn || doctor.doctor_name_en || 'TR').slice(0, 2)
       const status = normalize(doctor.ishrs_status).toLowerCase()
       const statusClass = status === 'fellow' ? 'pill-success' : status === 'member' ? 'pill-brand' : ''
+      const profilePath = doctorProfilePath(doctor, doctorSlugMap)
       return `
         <article class="group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:border-stone-300">
           <div class="grid gap-0 lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -505,7 +543,10 @@ function setupDoctors() {
                 </div>
 
                 <div class="border-t border-stone-100 pt-4">
-                  <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="${doctor.website ? 'button button-primary' : 'button pointer-events-none bg-stone-200 text-stone-400'}">${doctor.website ? '官网地址' : '暂无官网地址'}</a>
+                  <div class="flex flex-wrap gap-3">
+                    <a href="${profilePath}" class="button button-primary">查看资料页</a>
+                    <a href="${doctor.website || '#'}" ${doctor.website ? 'target="_blank" rel="noreferrer"' : ''} class="${doctor.website ? 'button button-secondary' : 'button pointer-events-none bg-stone-200 text-stone-400'}">${doctor.website ? '官网地址' : '暂无官网地址'}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -606,6 +647,11 @@ function setupClinics() {
 
   loadJson('/data/clinics.json')
     .then((clinics) => {
+      const clinicSlugMap = buildUniqueSlugMap(
+        clinics,
+        (clinic) => clinic.name_en || clinic.clinic_name || clinic.official_name || clinic.clinic_id,
+        (clinic) => clinic.clinic_id
+      )
       total.textContent = clinics.length
       const updatedCount = clinics.filter((clinic) => normalize(clinic.price_transparency) === 'package').length
       const highRatingCount = clinics.filter((clinic) => Number(clinic.google_rating) >= 4.7).length
@@ -713,6 +759,7 @@ function setupClinics() {
             const doctorName = normalize(clinic.lead_doctor) ? formatLeadDoctorName(clinic.lead_doctor) : ''
             const publicPrice = normalize(clinic.price_transparency) ? clinicPriceLabel(clinic) : ''
             const noteText = normalize(clinic.note)
+            const profilePath = clinicProfilePath(clinic, clinicSlugMap)
             return `
               <tr class="border-b border-stone-200 transition hover:bg-stone-50/70">
                 <td class="px-0 py-0 text-stone-900">
@@ -721,7 +768,7 @@ function setupClinics() {
                       <div class="min-w-0 flex-1">
                         <div class="grid min-w-0 gap-3 xl:grid-cols-[minmax(260px,320px)_minmax(90px,110px)_minmax(140px,170px)_minmax(96px,120px)_auto_auto] xl:items-center">
                           <div class="min-w-0">
-                            <span class="block truncate text-[17px] font-semibold tracking-[-0.02em] leading-6 text-stone-900" title="${clinic.clinic_name || '—'}">${clinic.clinic_name || '—'}</span>
+                            <a href="${profilePath}" class="block truncate text-[17px] font-semibold tracking-[-0.02em] leading-6 text-stone-900 hover:text-[#0f4c81]" title="${clinic.clinic_name || '—'}">${clinic.clinic_name || '—'}</a>
                           </div>
                           <div>
                             <span class="inline-flex shrink-0 rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700">${clinicTypeLabel(clinic)}</span>
@@ -756,6 +803,10 @@ function setupClinics() {
                           <div class="text-xs font-semibold uppercase tracking-[0.14em] text-stone-500">备注</div>
                           <div class="mt-1">${noteText || '—'}</div>
                         </div>
+                      </div>
+                      <div class="mt-4 flex flex-wrap gap-3">
+                        <a href="${profilePath}" class="inline-flex items-center rounded-full bg-[#0f4c81] px-4 py-2 text-xs font-semibold text-white transition hover:brightness-95">查看资料页</a>
+                        ${clinic.website ? `<a href="${clinic.website}" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-full border border-stone-300 bg-white px-4 py-2 text-xs font-semibold text-stone-700 transition hover:bg-stone-100">访问官网</a>` : ''}
                       </div>
                     </div>
                   </details>
