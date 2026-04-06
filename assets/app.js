@@ -1,17 +1,9 @@
 const formatDoctorStatus = (doctor) => doctor.ishrs_status_cn || doctor.ishrs_status || '—'
 const normalize = (value) => String(value || '').trim()
 
-function getBasePath() {
-  const { pathname, hostname } = window.location
-  if (hostname === 'localhost' || hostname === '127.0.0.1') return ''
-  const segments = pathname.split('/').filter(Boolean)
-  if (segments.length <= 1) return ''
-  return `/${segments[0]}`
-}
-
 function withBase(path) {
   const cleanPath = `/${String(path || '').replace(/^\/+/, '')}`
-  return `${getBasePath()}${cleanPath}`
+  return cleanPath
 }
 
 function injectGoogleAnalytics() {

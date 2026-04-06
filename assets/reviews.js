@@ -1,16 +1,8 @@
 import { getSupabaseClient } from './supabase-client.js'
 
-function getBasePath() {
-  const { pathname, hostname } = window.location
-  if (hostname === 'localhost' || hostname === '127.0.0.1') return ''
-  const segments = pathname.split('/').filter(Boolean)
-  if (segments.length <= 1) return ''
-  return `/${segments[0]}`
-}
-
 function withBase(path) {
   const cleanPath = `/${String(path || '').replace(/^\/+/, '')}`
-  return `${getBasePath()}${cleanPath}`
+  return cleanPath
 }
 
 function normalize(value) {
