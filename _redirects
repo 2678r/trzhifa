@@ -4,7 +4,9 @@ http://www.trhairguide.com/* https://trhairguide.com/:splat 301!
 /doctors.html /doctors/ 301
 /clinics.html /clinics/ 301
 /guide.html /guides/ 301
-/submit.html /consult/ 301
+/submit.html / 301
+/consult/ / 301
+/reviews/ / 301
 /fue-vs-dhi.html /blog/fue-vs-dhi 301
 /blog/hiv-hair-transplant /hiv/ 301
 /blog/hiv-hair-transplant.html /hiv/ 301

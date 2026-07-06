@@ -478,17 +478,6 @@ main article section {
   background: rgba(15, 76, 129, 0.05) !important;
 }
 
-.feedback-box {
-  margin-top: 2rem;
-  border: 1px solid rgba(15, 76, 129, 0.14) !important;
-  background:
-    linear-gradient(135deg, rgba(15, 76, 129, 0.05) 0%, rgba(0, 196, 180, 0.06) 100%) !important;
-}
-
-.feedback-box p {
-  max-width: none;
-}
-
 main article section[class*="rounded-[1.5rem]"][class*="bg-stone-50"],
 main article div[class*="rounded-[1.5rem]"][class*="bg-stone-50"],
 main article blockquote,

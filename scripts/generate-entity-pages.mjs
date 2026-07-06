@@ -535,14 +535,13 @@ function routePriority(url) {
   if (url === '/') return '1.0'
   if (url === '/doctors/' || url === '/clinics/') return '0.9'
   if (url.startsWith('/doctors/') || url.startsWith('/clinics/')) return '0.8'
-  if (url === '/blog/' || url === '/guides/' || url === '/about/' || url === '/reviews/') return '0.8'
+  if (url === '/blog/' || url === '/guides/' || url === '/about/') return '0.8'
   if (url === '/hiv/') return '0.9'
-  if (url === '/consult/') return '0.7'
   return '0.8'
 }
 
 function routeChangeFreq(url) {
-  if (url === '/' || url === '/doctors/' || url === '/clinics/' || url === '/blog/' || url === '/reviews/') return 'weekly'
+  if (url === '/' || url === '/doctors/' || url === '/clinics/' || url === '/blog/') return 'weekly'
   return 'monthly'
 }
 
@@ -559,9 +558,7 @@ async function buildSitemap(doctorSlugs, clinicSlugs) {
     ['/guides/', path.join(rootDir, 'guides/index.html')],
     ['/blog/', path.join(rootDir, 'blog/index.html')],
     ['/hiv/', path.join(rootDir, 'hiv/index.html')],
-    ['/consult/', path.join(rootDir, 'consult/index.html')],
     ['/about/', path.join(rootDir, 'about/index.html')],
-    ['/reviews/', path.join(rootDir, 'reviews/index.html')],
   ]
 
   for (const file of blogFiles) {
