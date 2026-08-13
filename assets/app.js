@@ -351,7 +351,6 @@ function statusScore(doctor) {
   const status = normalize(doctor.ishrs_status).toLowerCase()
   if (status === 'fellow') return 3
   if (status === 'member') return 2
-  if (status === 'former_member') return 1
   return 0
 }
 
@@ -458,10 +457,6 @@ function setupDoctors() {
         title: '2｜正式会员',
         description:
           'Member（正式会员）：ISHRS 的核心会员级别。这些医生已完成系统的植发专业教育培训，并获得同行推荐，具备扎实的专业知识和临床能力，属于较为优秀的植发医生群体。',
-      },
-      former_member: {
-        title: '3｜前会员',
-        description: '前会员表示之前是会员、现已退出，查看时需要结合最新公开信息判断。',
       },
     }
 
@@ -575,7 +570,6 @@ function setupDoctors() {
       const grouped = {
         fellow: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'fellow'),
         member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'member'),
-        former_member: result.filter((doctor) => normalize(doctor.ishrs_status).toLowerCase() === 'former_member'),
       }
 
       grid.innerHTML = Object.entries(sectionMeta)
